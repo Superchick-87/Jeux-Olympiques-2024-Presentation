@@ -77,6 +77,7 @@ h2 {
     color: white;
     opacity: 0.6;
     margin: 0px;
+    line-height: 1.3em;
 }
 
 h3 {
@@ -87,7 +88,9 @@ h3 {
     font-size: 1em;
     font-weight: 200;
 }
-
+button{
+    cursor: pointer;
+}
 .fond {
     background: url("../images/fond.gif");
     background-position: center;
@@ -285,7 +288,7 @@ input[type=radio]:checked~.switch{
 
 .hommes,
 .femmes,
-.mixte, .medaille {
+.mixte, .medaille,button {
     display: inline-block;
     border-radius: 50%;
     padding: 0 0 0 0px;
@@ -294,23 +297,28 @@ input[type=radio]:checked~.switch{
     width: 40px;
     background-size: 90%;
     background-position: center;
-    
+    cursor: pointer;
 }
 
 input[type=checkbox]:checked~.hommes {
     background-color: #12486B;
+    cursor: pointer;
 }
 
 input[type=checkbox]:checked~.femmes {
     background-color: #C70039;
+    cursor: pointer;
 }
 
 input[type=checkbox]:checked~.mixte {
     background-color: #618264;
+    cursor: pointer;
 }
 input[type=checkbox]:checked~.medaille {
     background-color: #E9B824;
+    cursor: pointer;
 }
+
 
 .hommes {
     /* background: url("../images/filtres.png") no-repeat; */

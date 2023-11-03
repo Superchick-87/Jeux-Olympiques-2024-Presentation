@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <script src="https://unpkg.com/vue@next"></script>
 
     <!-- * Sert à faire apparaître au défilement * -->
@@ -116,13 +117,13 @@
             <!-- * Filtre sur les deps -->
             
 
-            <div v-if="(selected == selected && selected != false)" style="margin: -10px;">
+            <div v-if="(selected == selected && selected != false)">
             
                 <fieldset>
                     <!-- <div>Epreuve : {{ selectedSSDisci }}</div> -->
                     <div v-for="(s, index) in ssDiscipline">
                         <div v-if="(selected == s.Discipline)">
-                            <div>
+                            <div >
                                 <legend>Choisir une épreuve</legend>
                             </div>
                             <select v-model="selectedSSDisci" class="select">
@@ -159,7 +160,12 @@
                         </div>
                 
                         <hr>
-                
+                        <div v-if=" 
+                        (
+                            (hommes != false)
+                        || (femmes != false)
+                        || (mixte != false)
+                        )">
                         <div>
                             <legend>Médailles</legend>
                             <div class="enLigne" >
@@ -177,12 +183,14 @@
                         </div>
                         <hr>
                         <div  class="enLigne" >
-                            <fieldset>
+                            <div>
                                 <legend>Filtre heure</legend>
                                 <button @click="sortJsonAH">+tôt</button>
                                 <button @click="sortJsonHA">+tard</button>
-                            </fieldset>
+                            </div>
                         </div>
+                    </div>
+                        <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
                     </fieldset>
                 </div>
                 <div v-else>mmmmm</div>
@@ -233,11 +241,12 @@
                 <div class="large desk" :class="[couleurSex[index]]">
                     <h1>{{p.Discipline}} </h1>
                     <div :class="[medailles[index]]"></div>
-                    <h3 class="pre-formatted">{{miseEnForme[index]}}</h3>
+                    <h3 class="">{{miseEnForme[index]}}</h3>
                     <hr class="hrWhite">
-                    <h2>{{jours[index]}}</h2>
-                    <p>{{p.Debut}} - {{p.Fin}}</br>
-                        {{p.Lieu}}</p>
+                    <h2>{{jours[index]}}
+                        <br>{{p.Debut}} - {{p.Fin}}
+                    </h2>
+                    <p> {{p.Lieu}}</p>
                     <img class="tv" :src="'images/'+p.TV+'.png'">
                 </div>
                 <div class="large mob" :class="[couleurSex[index]]">
@@ -245,10 +254,9 @@
                         <h1>{{p.Discipline}}</h1>
                         <div class="medailles" :class="[medailles[index]]"></div>
                     </div>
-                    <h3 class="x pre-formatted">{{miseEnForme[index]}}</h3>
+                    <h3 class="x">{{miseEnForme[index]}}</h3>
                     <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
-                    <p>
-                        {{p.Lieu}}</p>
+                    <p>{{p.Lieu}}</p>
                     <img class="tv" :src="'images/'+p.TV+'.png'">
                 </div>  
             </div>
