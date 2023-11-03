@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- * Sert à faire apparaître au défilement * -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style_V2.css">
+    <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
+</head>
+
+<body class="fond">
+    <!-- <div class="fond"></div> -->
+    <script>
+        /**
+         * Sert à faire apparaître la flêche au défilement
+        */
+
+        jQuery(document).ready(function () {
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 100) {
+                    // Si un défillement de 100 pixels ou plus.
+                    // Ajoute le bouton
+                    jQuery('.cRetour').fadeIn(duration);
+                } else {
+                    // Sinon enlève le bouton
+                    jQuery('.cRetour').fadeOut(duration);
+                }
+            });
+
+            jQuery('.cRetour').click(function (event) {
+                // Un clic provoque le retour en haut animé.
+                event.preventDefault();
+                jQuery('html, body').animate({
+                    scrollTop: 0
+                }, duration);
+                return false;
+            })
+        });
+    </script>
+   
+   
+   <div id="app">
+       <fieldset>
+           <div class="selctMode">Sélectionner un mode de recherche</div>
+           <div class="enLigne">
+               <div>
+                   <input type="radio" checked/>
+                   <label  class="switch swidates">Dates</label>
+               </div>
+               <div id="sportsBouton">
+                   <input type="radio"/>
+                   <label  class="switch swisports">Sports</label>
+               </div>
+           </div>
+       </fieldset>
+        <!-- * Filtre sur les deps -->
+         
+        <fieldset class="menuDates">
+            <!-- <legend><mark>Choisir une Date</mark></legend> -->
+            <div class="mois"><mark>Juillet</mark></div>
+            <div class="flex">
+                <label>
+                    <input type="checkbox" checked v-model="Mercredi24Juillet">
+                    <span class="choixButtomOn">24</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Jeudi25Juillet">
+                    <span class="choixButtomOn">25</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Vendredi26Juillet">
+                    <span class="choixButtomOn">26</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Samedi27Juillet">
+                    <span class="choixButtomOn">27</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Dimanche28Juillet">
+                    <span class="choixButtomOn">28</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Lundi29Juillet">
+                    <span class="choixButtomOn">29</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Mardi30Juillet">
+                    <span class="choixButtomOn">30</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Mercredi31Juillet">
+                    <span class="choixButtomOn">31</span>
+                </label>
+            </div>
+            <div class="mois"><mark>Août</mark></div>
+            <div class="flex">
+                <label>
+                    <input type="checkbox" checked v-model="Jeudi1Aout">
+                    <span class="choixButtomOn">1<sub>er</sub></span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Vendredi2Aout">
+                    <span class="choixButtomOn">2</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Samedi3Aout">
+                    <span class="choixButtomOn">3</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Dimanche4Aout">
+                    <span class="choixButtomOn">4</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Lundi5Aout">
+                    <span class="choixButtomOn">5</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Mardi6Aout">
+                    <span class="choixButtomOn">6</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Mercredi7Aout">
+                    <span class="choixButtomOn">7</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Jeudi8Aout">
+                    <span class="choixButtomOn">8</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Vendredi9Aout">
+                    <span class="choixButtomOn">9</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Samedi10Aout" value="Samedi10Aout">
+                    <span class="choixButtomOn">10</span>
+                </label>
+                <label>
+                    <input type="checkbox" checked v-model="Dimanche11Aout">
+                    <span class="choixButtomOn">11</span>
+                </label>
+
+            </div>
+        </fieldset>
+
+        <fieldset class="menuDates">
+            <div v-if="(
+                    (Mercredi24Juillet != false) || (Jeudi25Juillet != false)
+                    || (Vendredi26Juillet != false) || (Samedi27Juillet != false)
+                    || (Dimanche28Juillet != false) || (Lundi29Juillet != false)
+                    || (Mardi30Juillet != false) || (Mercredi31Juillet != false)
+                    || (Jeudi1Aout != false) || (Vendredi2Aout != false)
+                    || (Samedi3Aout != false) || (Dimanche4Aout != false)
+                    || (Lundi5Aout != false) || (Mardi6Aout != false)
+                    || (Mercredi7Aout != false) || (Jeudi8Aout != false)
+                    || (Vendredi9Aout != false) || (Samedi10Aout != false)
+                    || (Dimanche11Aout != false)
+            )">
+                <div class="enLigne">
+                    <label class="center">
+                        <input type="checkbox" v-model="hommes" class="">
+                        <span class="hommes"></span>
+                        <span class="libele">hommes</span>
+                    </label>
+                    <label class="center">
+                        <input type="checkbox" v-model="femmes" class="">
+                        <span class="femmes"></span>
+                        <span class="libele">femmes</span>
+                    </label>
+                    <label class="center">
+                        <input type="checkbox" v-model="mixte" class="">
+                        <span class="mixte"></span>
+                        <span class="libele">mixte</span>
+                    </label>
+                </div>
+                <hr>
+                <div v-if=" 
+                    (
+                        (hommes != false)
+                    || (femmes != false)
+                    || (mixte != false)
+                    )">
+                    <div>
+                        <legend>Médailles</legend>
+                        <div class="enLigne" >
+                            <label class="center">
+                                <input type="checkbox" v-model="medailleOn">
+                                <span class="medaille"></span>
+                                <span class="libele">Oui</span>
+                            </label>
+                            <label class="center">
+                                <input type="checkbox" v-model="medailleOff">
+                                <span class="medaille"></span>
+                                <span class="libele">Non</span>
+                            </label>
+                        </div>
+                    </div>
+                    <hr>
+                    <div  class="enLigne" >
+
+                        <fieldset>
+                            <legend>Filtre AZ</legend>
+                            <button @click="sortJsonAZ" class="">AZ</button>
+                            <button @click="sortJsonZA" class="">ZA</button>
+                        </fieldset>
+
+                        <fieldset>
+                            <legend>Filtre heure</legend>
+                            <button @click="sortJsonAH">+tôt</button>
+                            <button @click="sortJsonHA">+tard</button>
+                        </fieldset>
+                    </div>
+            </div>
+                <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
+            </div>
+            <div v-else></div>
+        </fieldset>
+        <!-- * Vignette -->
+        <div id="container" class="flex center">
+            <div v-for="(p, index) in personnes">
+                <div v-if="(
+                        
+                        (
+                            (Mercredi24Juillet && p.Date == 'mercredi 24 juillet')
+                            || (Jeudi25Juillet && p.Date == 'jeudi 25 juillet')
+                            || (Vendredi26Juillet && p.Date == 'vendredi 26 juillet')
+                            || (Samedi27Juillet && p.Date == 'samedi 27 juillet')
+                            || (Dimanche28Juillet && p.Date == 'dimanche 28 juillet')
+                            || (Lundi29Juillet && p.Date == 'lundi 29 juillet')
+                            || (Mardi30Juillet && p.Date == 'mardi 30 juillet')
+                            || (Mercredi31Juillet && p.Date == 'mercredi 31 juillet')
+                            || (Jeudi1Aout && p.Date == 'jeudi 1 août')
+                            || (Vendredi2Aout && p.Date == 'vendredi 2 août')
+                            || (Samedi3Aout && p.Date == 'samedi 3 août')
+                            || (Dimanche4Aout && p.Date == 'dimanche 4 août')
+                            || (Lundi5Aout && p.Date == 'lundi 5 août')
+                            || (Mardi6Aout && p.Date == 'mardi 6 août')
+                            || (Mercredi7Aout && p.Date == 'mercredi 7 août')
+                            || (Jeudi8Aout && p.Date == 'jeudi 8 août')
+                            || (Vendredi9Aout && p.Date == 'vendredi 9 août')
+                            || (Samedi10Aout && p.Date == 'samedi 10 août')
+                            || (Dimanche11Aout && p.Date == 'dimanche 11 août')
+                        )
+                        &&
+                        (
+                            (hommes && p.Hommes == 'Oui')
+                            || (femmes && p.Femmes == 'Oui')
+                            || (mixte && p.Mixte == 'Oui')
+                        )
+                        && 
+                        (
+                            (medailleOn && p.Medaille != '')
+                            || (medailleOff && p.Medaille == '')
+                            )
+                    
+                    )">
+                   
+
+                    <div class="large desk" :class="[couleurSex[index]]">
+                        <h1>{{p.Discipline}} </h1>
+                        <div :class="[medailles[index]]"></div>
+                        <h3 class="pre-formatted">{{miseEnForme[index]}}</h3>
+                        <hr>
+                        <h2>{{jours[index]}}</h2>
+                        <p>{{p.Debut}} - {{p.Fin}}</br>
+                            {{p.Lieu}}</p>
+                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                    </div>
+                    <div class="large mob" :class="[couleurSex[index]]">
+                        <div class="flexMob">
+                            <h1>{{p.Discipline}}</h1>
+                            <div class="medailles" :class="[medailles[index]]"></div>
+                        </div>
+                        <h3 class="x pre-formatted">{{miseEnForme[index]}}</h3>
+                        <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
+                        <p>
+                            {{p.Lieu}}</p>
+                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                    </div>
+                </div>
+                <div v-else></div>
+
+            </div>
+        </div>
+        <!-- * Fin Vignette -->
+    </div>
+
+    
+
+    <script src="js/doneV2.js"></script>
+    <script language="javascript" type="text/javascript">
+        function bascule(hide) {
+            etat = document.getElementById(hide).style.display;
+            if (etat == "none") {
+                document.getElementById(hide).style.display = "block";
+            }
+            else {
+                document.getElementById(hide).style.display = "none";
+            }
+        };
+            document.getElementById("sportsBouton").onclick = function() {
+                window.location.href = "index_01_.html";
+            };
+    </script>
+    <div class="cRetour"></div>
+</body>
+
+</html>

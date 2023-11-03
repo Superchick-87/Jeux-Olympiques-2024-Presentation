@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald:300,400,900');
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300');
+@import url('https://fonts.googleapis.com/css2?family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mate+SC&family=Vidaloka&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Mate+SC&family=Vidaloka&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    /* text-align: center; */
+    margin: 0 auto;
+}
+
+p {
+    color: white;
+    /* text-align: center; */
+    font-weight: lighter;
+    margin: 10px 0px 10px 0px;
+    line-height: 20px;
+    font-size: 0.9em;
+}
+
+hr {
+    width: 95%;
+    border-style: dotted;
+    margin-top: 12px;
+    color: black;
+    opacity: 0.5;
+}
+.hrWhite{
+    color: rgb(255, 255, 255);
+    opacity: 0.5;
+}
+
+.menuDates {
+    /* width: 340px; */
+    margin: 0px auto;
+}
+
+img {
+    margin-right: 0.2rem;
+}
+
+legend {
+    font-family: 'Cormorant', serif;
+    font-size: 1.2em;
+    margin: 0px auto;
+    font-weight: 500;
+}
+
+h1,
+h2,
+h3,
+p,
+.calcul {
+    font-family: 'Oswald', sans-serif;
+
+}
+
+h1 {
+    margin: 0px;
+    color: white;
+    font-size: 1.4em;
+    line-height: 27px;
+    margin-bottom: 5px;
+    hyphens: auto;
+}
+
+h2 {
+    display: block;
+    font-size: 1.5em;
+    color: white;
+    opacity: 0.6;
+    margin: 0px;
+}
+
+h3 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: white;
+    line-height: 21px;
+    font-size: 1em;
+    font-weight: 200;
+}
+
+.fond {
+    background: url("../images/fond.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* position: fixed; */
+    height: 80vh;
+    width: 80vw;
+}
+.selctMode{
+    text-align: center;
+    font-family: 'Cormorant', serif;
+    font-size: 2.1em;
+    margin-bottom: 10px;
+    font-weight: 100;
+}
+.mois {
+    margin-top: 0px;
+    /* margin-bottom: 5px; */
+    color: #005CB2;
+    line-height: 21px;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.pre-formatted {
+    white-space: pre-wrap;
+    text-wrap: wrap;
+}
+
+.large {
+    width: 150px;
+    height: auto;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0px 0px 15px #8e8e8e;
+}
+
+.center {
+    margin: 0px 10px auto;
+}
+
+.medaillesOff {
+    display: none;
+}
+
+.argOr,
+.bron,
+.bronArgOr {
+    height: 30px;
+    background-repeat: no-repeat;
+    background-size: 60px;
+}
+
+.argOr {
+    background-image: url(../images/ArgOr.png);
+}
+
+.bron {
+    background-image: url(../images/Bron.png);
+}
+
+.bronArgOr {
+    background-image: url(../images/BronArgOr.png);
+}
+
+.H {
+    background-color: #12486B;
+    padding: 0.3rem;
+}
+
+.F {
+    background-color: #C70039;
+    padding: 0.3rem;
+}
+
+.M {
+    background-color: #618264;
+    padding: 0.3rem;
+}
+
+.tv {
+    height: 14px;
+    width: fit-content;
+}
+
+mark {
+    background-color: white;
+    padding: 0px 5px 0px 5px;
+}
+
+fieldset {
+        text-align: center;
+        background-color: #ffffffdb;
+        border: none;
+}
+
+input[type="checkbox"],
+[type="radio"] {
+    margin-right: 1rem;
+    display: contents;
+}
+
+.enLigne {
+    display: flex;
+    margin: 0px auto;
+    justify-content: center;
+    /* justify-content: space-evenly; */
+    /* width: 210px; */
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.choixButtomOn {
+    position: relative;
+    border: 1px solid #005CB2;
+    background-color: #68b6ff;
+    border-radius: 50%;
+    transition: 0.4s;
+    /* padding: 0 15px; */
+    height: 25px;
+    width: 25px;
+    color: #ffffff;
+    margin: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.switch{
+    cursor: pointer;
+    position: relative;
+    border: 1px solid #005CB2;
+    background-color: #68b6ff;
+    border-radius: 10%;
+    transition: 0.4s;
+    height: 45px;
+    width: 85px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: 0.4s;
+}
+.swidates{
+    border-radius: 20px 0px 0px 20px;
+}
+.swisports{
+    border-radius: 0px 20px 20px 0px;
+}
+.select{
+    cursor: pointer;
+    border: 1px solid #68b6ff;
+    background-color: #005CB2;
+    margin: 0px auto;
+    height: 25px;
+    width: 250px;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+input[type=checkbox]:hover,
+input[type=checkbox]:hover~.choixButtomOn,
+input[type=radio]:hover,
+.switch:hover{
+    background-color: #005cb236;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked~.choixButtomOn,
+input[type=radio]:checked,
+input[type=radio]:checked~.switch{
+    background-color: #005CB2;
+    cursor: default;
+}
+
+.filtreMaster {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0 0 0 0px;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #005CB2;
+    background-color: #68b6ff;
+    background-size: 90%;
+    background-position: center;
+}
+
+.hommes,
+.femmes,
+.mixte, .medaille {
+    display: inline-block;
+    border-radius: 50%;
+    padding: 0 0 0 0px;
+    margin: 3px;
+    height: 40px;
+    width: 40px;
+    background-size: 90%;
+    background-position: center;
+    
+}
+
+input[type=checkbox]:checked~.hommes {
+    background-color: #12486B;
+}
+
+input[type=checkbox]:checked~.femmes {
+    background-color: #C70039;
+}
+
+input[type=checkbox]:checked~.mixte {
+    background-color: #618264;
+}
+input[type=checkbox]:checked~.medaille {
+    background-color: #E9B824;
+}
+
+.hommes {
+    /* background: url("../images/filtres.png") no-repeat; */
+    background-color: #12476b3e;
+}
+
+.femmes {
+    /* background: url("../images/filtres.png") no-repeat; */
+    background-color: #c7003933;
+}
+
+.mixte {
+    /* background: url("../images/filtres.png") no-repeat; */
+    background-color: #6182645c;
+}
+.medaille {
+    /* background: url("../images/filtres.png") no-repeat; */
+    background-color: #e9b82463;
+}
+
+label {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.libele {
+    font-size: 0.8rem;
+}
+
+input {
+    border-radius: 5px;
+    border-color: white;
+    font-size: 1.5em;
+    text-align: center;
+    width: 150px;
+}
+
+.cRetour {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 10px;
+    line-height: 42px;
+    font-size: 43px;
+    text-align: center;
+    color: #ffffffd5;
+    background: rgba(0, 0, 0, 0.25);
+    border: 1px solid black;
+    z-index: 99999;
+    transition: all ease-in 0.2s;
+    position: fixed;
+    cursor: pointer;
+    bottom: 1em;
+    right: 20px;
+    display: none;
+}
+
+.cRetour:before {
+    content: "\25b2";
+}
+
+.cRetour:hover {
+    background: rgba(0, 0, 0, 1);
+    transition: all ease-in 0.2s;
+}
+
+.mob {
+    display: none;
+}
+
+.desk {
+    display: block;
+}
+
+
+
+@media (max-device-width : 420px) {
+    .pre-formatted {
+        white-space: pre-wrap;
+        text-wrap: wrap;
+        margin-bottom: 0px;
+    }
+
+    h2 {
+        display: block;
+        font-size: 1.1em;
+    }
+
+    p {
+        margin: 0px 0px 5px 0px;
+    }
+
+    .tv {
+        height: 20px;
+    }
+
+    .flexMob {
+        display: flex;
+    }
+
+    .mob {
+        display: block;
+    }
+
+    .desk {
+        display: none;
+    }
+
+    .large {
+        width: 290px;
+    }
+
+    .menuDates {
+        width: 270px;
+    }
+
+    .medailles {
+        width: 60px;
+        margin-left: 8px;
+    }
+}

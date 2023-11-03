@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
+    <script src="https://unpkg.com/vue@next"></script>
+
+    <!-- * Sert à faire apparaître au défilement * -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/style_V2.css">
+    <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
+</head>
+
+<body class="fond">
+    <!-- <div class="fond"></div> -->
+    <script>
+        /**
+         * Sert à faire apparaître la flêche au défilement
+        */
+
+        jQuery(document).ready(function () {
+            var duration = 500;
+            jQuery(window).scroll(function () {
+                if (jQuery(this).scrollTop() > 100) {
+                    // Si un défillement de 100 pixels ou plus.
+                    // Ajoute le bouton
+                    jQuery('.cRetour').fadeIn(duration);
+                } else {
+                    // Sinon enlève le bouton
+                    jQuery('.cRetour').fadeOut(duration);
+                }
+            });
+
+            jQuery('.cRetour').click(function (event) {
+                // Un clic provoque le retour en haut animé.
+                event.preventDefault();
+                jQuery('html, body').animate({
+                    scrollTop: 0
+                }, duration);
+                return false;
+            })
+        });
+    </script>
+    <fieldset class="enLigne">
+        <legend>Selectionner un mode de recherche</legend>
+        <div  id="sportsBouton">
+          <input type="radio" />
+          <label  class="switch swidates">Dates</label>
+        </div>
+        <div>
+          <input type="radio" checked/>
+          <label  class="switch swisports">Sports</label>
+        </div>
+    </fieldset>
+
+    <div id="app">
+        <fieldset>
+            <div>Selected: {{ selected }}</div>
+                <select v-model="selected">
+                    <option disabled value="">Please select one</option>
+                    <option>ATHLETISME</option>
+                    <option>AVIRON</option>
+                    <option>BADMINTON</option>
+                    <option>BASKETBALL</option>
+                    <option>BASKETBALL 3x3</option>
+                    <option>BEACH VOLLEYBALL</option>
+                    <option>BMX FREESTYLE</option>
+                    <option>BMX RACING</option>
+                    <option>BOXE</option>
+                    <option>BREAKING</option>
+                    <option>CANOE SLALOM</option>
+                    <option>CANOË, COURSE EN LIGNE</option>
+                    <option>CYCLISME SUR PISTE</option>
+                    <option>CYCLISME SUR ROUTE</option>
+                    <option>ESCALADE</option>
+                    <option>ESCRIME</option>
+                    <option>FOOTBALL</option>
+                    <option>GOLF</option>
+                    <option>GYMNASTIQUE ARTISTIQUE</option>
+                    <option>GYMNASTIQUE RYTHMIQUE</option>
+                    <option>GYMNASTIQUE TRAMPOLINE</option>
+                    <option>HALTEROPHILIE</option>
+                    <option>HANDBALL</option>
+                    <option>HOCKEY</option>
+                    <option>JUDO</option>
+                    <option>LUTTE</option>
+                    <option>NATATION</option>
+                    <option>NATATION ARTISTIQUE</option>
+                    <option>NATATION MARATHON</option>
+                    <option>PENTATHLON MODERNE</option>
+                    <option>PLONGEON</option>
+                    <option>RUGBY</option>
+                    <option>SKATEBOARD</option>
+                    <option>SPORTS EQUESTRES</option>
+                    <option>SURF</option>
+                    <option>TAEKWONDO</option>
+                    <option>TENNIS</option>
+                    <option>TENNIS DE TABLE</option>
+                    <option>TIR</option>
+                    <option>TIR A L'ARC</option>
+                    <option>TRIATHLON</option>
+                    <option>VOILE</option>
+                    <option>VOLLEYBALL</option>
+                    <option>VTT</option>
+                    <option>WATER POLO</option>
+                </select>
+            </fieldset>
+            <!-- * Filtre sur les deps -->
+            <div v-if=" 
+                        (selected == 'ATHLETISME')
+                        || (selected == 'AVIRON')
+                        || (selected == 'BADMINTON')
+                        || (selected == 'BASKETBALL')
+                        || (selected == 'BASKETBALL 3x3')
+                        || (selected == 'BEACH VOLLEYBALL')
+                        || (selected == 'BMX FREESTYLE')
+                        || (selected == 'BMX RACING')
+                        || (selected == 'BOXE')
+                        || (selected == 'BREAKING')
+                        || (selected == 'CANOE SLALOM')
+                        || (selected == 'CANOË, COURSE EN LIGNE')
+                        || (selected == 'CYCLISME SUR PISTE')
+                        || (selected == 'CYCLISME SUR ROUTE')
+                        || (selected == 'ESCALADE')
+                        || (selected == 'ESCRIME')
+                        || (selected == 'FOOTBALL')
+                        || (selected == 'GOLF')
+                        || (selected == 'GYMNASTIQUE ARTISTIQUE')
+                        || (selected == 'GYMNASTIQUE RYTHMIQUE')
+                        || (selected == 'GYMNASTIQUE TRAMPOLINE')
+                        || (selected == 'HALTEROPHILIE')
+                        || (selected == 'HANDBALL')
+                        || (selected == 'HOCKEY')
+                        || (selected == 'JUDO')
+                        || (selected == 'LUTTE')
+                        || (selected == 'NATATION')
+                        || (selected == 'NATATION ARTISTIQUE')
+                        || (selected == 'NATATION MARATHON')
+                        || (selected == 'PENTATHLON MODERNE')
+                        || (selected == 'PLONGEON')
+                        || (selected == 'RUGBY')
+                        || (selected == 'SKATEBOARD')
+                        || (selected == 'SPORTS EQUESTRES')
+                        || (selected == 'SURF')
+                        || (selected == 'TAEKWONDO')
+                        || (selected == 'TENNIS')
+                        || (selected == 'TENNIS DE TABLE')
+                        || (selected == 'TIR')
+                        || (selected == 'TIR A L\'ARC')
+                        || (selected == 'TRIATHLON')
+                        || (selected == 'VOILE')
+                        || (selected == 'VOLLEYBALL')
+                        || (selected == 'VTT')
+                        || (selected == 'WATER POLO')
+            ">
+            <fieldset>
+                <div class="enLigne">
+                    <label class="center">
+                        <input type="checkbox" v-model="hommes" class="">
+                        <span class="hommes"></span>
+                        <span class="libele">hommes</span>
+                    </label>
+                    <label class="center">
+                        <input type="checkbox" v-model="femmes" class="">
+                        <span class="femmes"></span>
+                        <span class="libele">femmes</span>
+                    </label>
+                    <label class="center">
+                        <input type="checkbox" v-model="mixte" class="">
+                        <span class="mixte"></span>
+                        <span class="libele">mixte</span>
+                    </label>
+                </div>
+           
+                <hr>
+        
+                <div>
+                    <legend>Médailles</legend>
+                    <div class="enLigne" >
+                        <label class="center">
+                            <input type="checkbox" v-model="medailleOn">
+                            <span class="mixte"></span>
+                            <span class="libele">Oui</span>
+                        </label>
+                        <label class="center">
+                            <input type="checkbox" v-model="medailleOff">
+                            <span class="mixte"></span>
+                            <span class="libele">Non</span>
+                        </label>
+                    </div>
+                </div>
+                <hr>
+                <div  class="enLigne" >
+                    <fieldset>
+                        <legend>Filtre heure</legend>
+                        <button @click="sortJsonAH">+tôt</button>
+                        <button @click="sortJsonHA">+tard</button>
+                    </fieldset>
+                </div>
+            </div>
+        </fieldset>
+        
+          
+        <div id="container" class="flex center">
+            <div v-for="(p, index) in personnes">
+                <div v-if="(
+                            (
+                                (selected == 'ATHLETISME' && p.Discipline == 'ATHLETISME')
+                                || (selected == 'AVIRON' && p.Discipline == 'AVIRON')
+                                || (selected == 'BADMINTON' && p.Discipline == 'BADMINTON')
+                                || (selected == 'BASKETBALL' && p.Discipline == 'BASKETBALL')
+                                || (selected == 'BASKETBALL 3x3' && p.Discipline == 'BASKETBALL 3x3')
+                                || (selected == 'BEACH VOLLEYBALL' && p.Discipline == 'BEACH VOLLEYBALL')
+                                || (selected == 'BMX FREESTYLE' && p.Discipline == 'BMX FREESTYLE')
+                                || (selected == 'BMX RACING' && p.Discipline == 'BMX RACING')
+                                || (selected == 'BOXE' && p.Discipline == 'BOXE')
+                                || (selected == 'BREAKING' && p.Discipline == 'BREAKING')
+                                || (selected == 'CANOE SLALOM' && p.Discipline == 'CANOE SLALOM')
+                                || (selected == 'CANOË, COURSE EN LIGNE' && p.Discipline == 'CANOË, COURSE EN LIGNE')
+                                || (selected == 'CYCLISME SUR PISTE' && p.Discipline == 'CYCLISME SUR PISTE')
+                                || (selected == 'CYCLISME SUR ROUTE' && p.Discipline == 'CYCLISME SUR ROUTE')
+                                || (selected == 'ESCALADE' && p.Discipline == 'ESCALADE')
+                                || (selected == 'ESCRIME' && p.Discipline == 'ESCRIME')
+                                || (selected == 'FOOTBALL' && p.Discipline == 'FOOTBALL')
+                                || (selected == 'GOLF' && p.Discipline == 'GOLF')
+                                || (selected == 'GYMNASTIQUE ARTISTIQUE' && p.Discipline == 'GYMNASTIQUE ARTISTIQUE')
+                                || (selected == 'GYMNASTIQUE RYTHMIQUE' && p.Discipline == 'GYMNASTIQUE RYTHMIQUE')
+                                || (selected == 'GYMNASTIQUE TRAMPOLINE' && p.Discipline == 'GYMNASTIQUE TRAMPOLINE')
+                                || (selected == 'HALTEROPHILIE' && p.Discipline == 'HALTEROPHILIE')
+                                || (selected == 'HANDBALL' && p.Discipline == 'HANDBALL')
+                                || (selected == 'HOCKEY' && p.Discipline == 'HOCKEY')
+                                || (selected == 'JUDO' && p.Discipline == 'JUDO')
+                                || (selected == 'LUTTE' && p.Discipline == 'LUTTE')
+                                || (selected == 'NATATION' && p.Discipline == 'NATATION')
+                                || (selected == 'NATATION ARTISTIQUE' && p.Discipline == 'NATATION ARTISTIQUE')
+                                || (selected == 'NATATION MARATHON' && p.Discipline == 'NATATION MARATHON')
+                                || (selected == 'PENTATHLON MODERNE' && p.Discipline == 'PENTATHLON MODERNE')
+                                || (selected == 'PLONGEON' && p.Discipline == 'PLONGEON')
+                                || (selected == 'RUGBY' && p.Discipline == 'RUGBY')
+                                || (selected == 'SKATEBOARD' && p.Discipline == 'SKATEBOARD')
+                                || (selected == 'SPORTS EQUESTRES' && p.Discipline == 'SPORTS EQUESTRES')
+                                || (selected == 'SURF' && p.Discipline == 'SURF')
+                                || (selected == 'TAEKWONDO' && p.Discipline == 'TAEKWONDO')
+                                || (selected == 'TENNIS' && p.Discipline == 'TENNIS')
+                                || (selected == 'TENNIS DE TABLE' && p.Discipline == 'TENNIS DE TABLE')
+                                || (selected == 'TIR' && p.Discipline == 'TIR')
+                                || (selected == 'TIR A L\'ARC' && p.Discipline == 'TIR A L\'ARC')
+                                || (selected == 'TRIATHLON' && p.Discipline == 'TRIATHLON')
+                                || (selected == 'VOILE' && p.Discipline == 'VOILE')
+                                || (selected == 'VOLLEYBALL' && p.Discipline == 'VOLLEYBALL')
+                                || (selected == 'VTT' && p.Discipline == 'VTT')
+                                || (selected == 'WATER POLO' && p.Discipline == 'WATER POLO')
+                            )
+                            &&
+                            (
+                                (Mercredi24Juillet == false) || (Jeudi25Juillet == false)
+                                || (Vendredi26Juillet == false) || (Samedi27Juillet == false)
+                                || (Dimanche28Juillet == false) || (Lundi29Juillet == false)
+                                || (Mardi30Juillet == false) || (Mercredi31Juillet == false)
+                                || (Jeudi1Aout == false) || (Vendredi2Aout == false)
+                                || (Samedi3Aout == false) || (Dimanche4Aout == false)
+                                || (Lundi5Aout == false) || (Mardi6Aout == false)
+                                || (Mercredi7Aout == false) || (Jeudi8Aout == false)
+                                || (Vendredi9Aout == false) || (Samedi10Aout == false)
+                                || (Dimanche11Aout == false)
+                            )
+                            &&
+                            (
+                                (hommes && p.Hommes == 'Oui')
+                                || (femmes && p.Femmes == 'Oui')
+                                || (mixte && p.Mixte == 'Oui')
+                            )
+                            && 
+                            (
+                                (medailleOn && p.Medaille != '')
+                                || (medailleOff && p.Medaille == '')
+                            ))
+                            
+                ">
+                
+
+                
+                <div class="large desk" :class="[couleurSex[index]]">
+                    <h1>{{p.Discipline}} </h1>
+                    <div :class="[medailles[index]]"></div>
+                    <h3 class="pre-formatted">{{miseEnForme[index]}}</h3>
+                    <hr>
+                    <h2>{{jours[index]}}</h2>
+                    <p>{{p.Debut}} - {{p.Fin}}</br>
+                        {{p.LIEU}}</p>
+                    <img class="tv" :src="'images/'+p.TV+'.png'">
+                </div>
+                <div class="large mob" :class="[couleurSex[index]]">
+                    <div class="flexMob">
+                        <h1>{{p.Discipline}}</h1>
+                        <div class="medailles" :class="[medailles[index]]"></div>
+                    </div>
+                    <h3 class="x pre-formatted">{{miseEnForme[index]}}</h3>
+                    <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
+                    <p>
+                        {{p.LIEU}}</p>
+                    <img class="tv" :src="'images/'+p.TV+'.png'">
+                </div>  
+            </div>
+        </div> 
+    </div> 
+           
+        
+   
+        </div>
+    <script src="js/doneV2.js"></script>
+    <script language="javascript" type="text/javascript">
+        function bascule(hide) {
+            etat = document.getElementById(hide).style.display;
+            if (etat == "none") {
+                document.getElementById(hide).style.display = "block";
+            }
+            else {
+                document.getElementById(hide).style.display = "none";
+            }
+        };
+        document.getElementById("sportsBouton").onclick = function() {
+                window.location.href = "index.html";
+            };
+    </script>
+    <div class="cRetour"></div>
+</body>
+
+</html>
