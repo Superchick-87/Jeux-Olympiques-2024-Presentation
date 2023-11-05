@@ -120,14 +120,14 @@
             <div v-if="(selected == selected && selected != false)">
             
                 <fieldset>
-                    <!-- <div>Epreuve : {{ selectedSSDisci }}</div> -->
+                    <div>Epreuve : {{ selectedSSDisci }}</div>
                     <div v-for="(s, index) in ssDiscipline">
                         <div v-if="(selected == s.Discipline)">
                             <div >
                                 <legend>Choisir une épreuve</legend>
                             </div>
                             <select v-model="selectedSSDisci" class="select">
-                                <!-- <option selected value="Please">Please select one</option> -->
+                                <option selected value="Please">Sélectionner une épreuve</option>
                                 <option v-for="(ss, index) in s.Detail">{{s.Detail[index]}}</option>
                             </select>
                         </div>

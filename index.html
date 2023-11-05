@@ -47,24 +47,24 @@
             })
         });
     </script>
-   
-   
-   <div id="app">
-       <fieldset>
-           <div class="selctMode">Sélectionner un mode de recherche</div>
-           <div class="enLigne">
-               <div>
-                   <input type="radio" checked/>
-                   <label  class="switch swidates">Dates</label>
-               </div>
-               <div id="sportsBouton">
-                   <input type="radio"/>
-                   <label  class="switch swisports">Sports</label>
-               </div>
-           </div>
-       </fieldset>
+
+
+    <div id="app">
+        <fieldset>
+            <div class="selctMode">Sélectionner un mode de recherche</div>
+            <div class="enLigne">
+                <div>
+                    <input type="radio" checked />
+                    <label class="switch swidates">Dates</label>
+                </div>
+                <div id="sportsBouton">
+                    <input type="radio" />
+                    <label class="switch swisports">Sports</label>
+                </div>
+            </div>
+        </fieldset>
         <!-- * Filtre sur les deps -->
-         
+
         <fieldset class="menuDates">
             <!-- <legend><mark>Choisir une Date</mark></legend> -->
             <div class="mois"><mark>Juillet</mark></div>
@@ -191,7 +191,7 @@
                     )">
                     <div>
                         <legend>Médailles</legend>
-                        <div class="enLigne" >
+                        <div class="enLigne">
                             <label class="center">
                                 <input type="checkbox" v-model="medailleOn">
                                 <span class="medaille"></span>
@@ -205,7 +205,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div  class="enLigne" >
+                    <div class="enLigne">
 
                         <div>
                             <legend>Filtre AZ</legend>
@@ -219,7 +219,7 @@
                             <button @click="sortJsonHA">+tard</button>
                         </div>
                     </div>
-            </div>
+                </div>
                 <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
             </div>
             <div v-else></div>
@@ -263,7 +263,7 @@
                             )
                     
                     )">
-                   
+
 
                     <div class="large desk" :class="[couleurSex[index]]">
                         <h1>{{p.Discipline}} </h1>
@@ -293,7 +293,7 @@
         <!-- * Fin Vignette -->
     </div>
 
-    
+
 
     <script src="js/doneV2.js"></script>
     <script language="javascript" type="text/javascript">
@@ -306,9 +306,9 @@
                 document.getElementById(hide).style.display = "none";
             }
         };
-            document.getElementById("sportsBouton").onclick = function() {
-                window.location.href = "index_01_.html";
-            };
+        document.getElementById("sportsBouton").onclick = function () {
+            window.location.href = "index_01_.html";
+        };
     </script>
     <div class="cRetour"></div>
 </body>
