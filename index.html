@@ -205,7 +205,11 @@
                         </div>
                     </div>
                     <hr>
-                    <div class="enLigne">
+                    <div  class="enLigne" 
+                                v-if="
+                                    (medailleOn != false)
+                                    || (medailleOn != medailleOff)
+                        ">
 
                         <div>
                             <legend>Filtre AZ</legend>
@@ -219,6 +223,7 @@
                             <button @click="sortJsonHA">+tard</button>
                         </div>
                     </div>
+                    <div v-else>Sélectionner "Oui" ou "Non"</div>
                 </div>
                 <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
             </div>
@@ -269,7 +274,7 @@
                         <h1>{{p.Discipline}} </h1>
                         <div :class="[medailles[index]]"></div>
                         <h3 class="">{{miseEnForme[index]}}</h3>
-                        <hr>
+                        <hr class="hrWhite">
                         <h2>{{jours[index]}}</br>{{p.Debut}} - {{p.Fin}}</h2>
                         <p>
                             {{p.Lieu}}</p>

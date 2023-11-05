@@ -42129,6 +42129,14 @@ const app = Vue.createApp({
         }
     },
     methods: {
+      resetDropdown() {
+        this.selectedSSDisci = false;
+        this.medailleOn = true;
+        this.medailleOff = true;
+        this.hommes = true;
+        this.femmes = true;
+        this.mixte = true;
+      },
         handleInputOnChange() {
             this.filtreVille = this.filtreVille.toUpperCase()
             console.log(this.filtreVille)
