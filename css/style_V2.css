@@ -177,7 +177,10 @@ button{
 .tv {
     height: 19px;
 }
-
+.pictoSport{
+    width: 20px;
+    height: 20px;
+}
 mark {
     background-color: white;
     padding: 0px 5px 0px 5px;
@@ -343,7 +346,15 @@ label {
     flex-direction: column;
     align-items: center;
 }
-
+.flexPictoSport{
+    display: flex;
+    align-items: center;
+}
+.traitPictoSport{
+    border-right: 1px solid white;
+    height: 20px;
+    margin: 0px 7px 0px 3px;
+}
 .libele {
     font-size: 0.8rem;
 }

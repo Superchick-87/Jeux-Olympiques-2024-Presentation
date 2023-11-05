@@ -42120,13 +42120,25 @@ const app = Vue.createApp({
             })
 
         },
-
         jours: function () {
             return this.personnes.map(function (p) {
                 return p.Date.replace("lundi", "Lun").replace("mardi", "Mar").replace("mercredi", "Mer").replace("jeudi", "Jeu").replace("vendredi", "Ven").replace("samedi", "Sam").replace("dimanche", "Dim").replace("juillet", "juil.");
             })
-
+        },
+        pictoSport: function () {
+            return this.personnes.map(function (p) {
+                return p.Discipline.replaceAll(' ', '')
+                .replaceAll("'", "")
+                .replaceAll("Ë", "E")
+                .replaceAll(",", "");
+            }
+            )
         }
+        // ,
+        // removeSpacesInImageName() {
+        //   this.p.Discipline = this.p.Discipline.replace(/ /g, '_');
+        //   return p.Discipline;
+        // },
     },
     methods: {
       resetDropdown() {
