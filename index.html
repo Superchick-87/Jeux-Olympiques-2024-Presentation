@@ -205,8 +205,7 @@
                         </div>
                     </div>
                     <hr>
-                    <div  class="enLigne" 
-                                v-if="
+                    <div class="enLigne" v-if="
                                     (medailleOn != false)
                                     || (medailleOn != medailleOff)
                         ">
@@ -271,7 +270,11 @@
 
 
                     <div class="large desk" :class="[couleurSex[index]]">
-                        <h1>{{p.Discipline}} </h1>
+                        <div class="flexPictoSport">
+                            <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
+                            <div class="traitPictoSport"></div>
+                            <h1>{{p.Discipline}} </h1>
+                        </div>
                         <div :class="[medailles[index]]"></div>
                         <h3 class="">{{miseEnForme[index]}}</h3>
                         <hr class="hrWhite">
@@ -282,7 +285,11 @@
                     </div>
                     <div class="large mob" :class="[couleurSex[index]]">
                         <div class="flexMob">
-                            <h1>{{p.Discipline}}</h1>
+                            <div class="flexPictoSport">
+                                <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
+                                <div class="traitPictoSport"></div>
+                                <h1>{{p.Discipline}} </h1>
+                            </div>
                             <div class="medailles" :class="[medailles[index]]"></div>
                         </div>
                         <h3 class="x pre-formatted">{{miseEnForme[index]}}</h3>

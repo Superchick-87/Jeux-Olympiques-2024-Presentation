@@ -32,7 +32,8 @@ hr {
     color: black;
     opacity: 0.5;
 }
-.hrWhite{
+
+.hrWhite {
     color: rgb(255, 255, 255);
     opacity: 0.5;
 }
@@ -88,9 +89,11 @@ h3 {
     font-size: 1em;
     font-weight: 200;
 }
-button{
+
+button {
     cursor: pointer;
 }
+
 .fond {
     background: url("../images/fond.gif");
     background-position: center;
@@ -100,13 +103,15 @@ button{
     height: 80vh;
     width: 80vw;
 }
-.selctMode{
+
+.selctMode {
     text-align: center;
     font-family: 'Cormorant', serif;
     font-size: 2.1em;
     margin-bottom: 10px;
     font-weight: 100;
 }
+
 .mois {
     margin-top: 0px;
     /* margin-bottom: 5px; */
@@ -177,19 +182,21 @@ button{
 .tv {
     height: 19px;
 }
-.pictoSport{
-    width: 20px;
-    height: 20px;
+
+.pictoSport {
+    width: 25px;
+    height: 25px;
 }
+
 mark {
     background-color: white;
     padding: 0px 5px 0px 5px;
 }
 
 fieldset {
-        text-align: center;
-        background-color: #ffffffdb;
-        border: none;
+    text-align: center;
+    background-color: #ffffffdb;
+    border: none;
 }
 
 input[type="checkbox"],
@@ -211,6 +218,7 @@ input[type="checkbox"],
     flex-wrap: wrap;
     justify-content: center;
 }
+
 .choixButtomOn {
     position: relative;
     border: 1px solid #005CB2;
@@ -228,7 +236,7 @@ input[type="checkbox"],
     font-weight: bold;
 }
 
-.switch{
+.switch {
     cursor: pointer;
     position: relative;
     border: 1px solid #005CB2;
@@ -244,13 +252,16 @@ input[type="checkbox"],
     font-weight: bold;
     transition: 0.4s;
 }
-.swidates{
+
+.swidates {
     border-radius: 20px 0px 0px 20px;
 }
-.swisports{
+
+.swisports {
     border-radius: 0px 20px 20px 0px;
 }
-.select{
+
+.select {
     cursor: pointer;
     border: 1px solid #68b6ff;
     background-color: #005CB2;
@@ -264,14 +275,14 @@ input[type="checkbox"],
 input[type=checkbox]:hover,
 input[type=checkbox]:hover~.choixButtomOn,
 input[type=radio]:hover,
-.switch:hover{
+.switch:hover {
     background-color: #005cb236;
     cursor: pointer;
 }
 
 input[type=checkbox]:checked~.choixButtomOn,
 input[type=radio]:checked,
-input[type=radio]:checked~.switch{
+input[type=radio]:checked~.switch {
     background-color: #005CB2;
     cursor: default;
 }
@@ -290,7 +301,9 @@ input[type=radio]:checked~.switch{
 
 .hommes,
 .femmes,
-.mixte, .medaille,button {
+.mixte,
+.medaille,
+button {
     display: inline-block;
     border-radius: 50%;
     padding: 0 0 0 0px;
@@ -316,6 +329,7 @@ input[type=checkbox]:checked~.mixte {
     background-color: #618264;
     cursor: pointer;
 }
+
 input[type=checkbox]:checked~.medaille {
     background-color: #E9B824;
     cursor: pointer;
@@ -336,6 +350,7 @@ input[type=checkbox]:checked~.medaille {
     /* background: url("../images/filtres.png") no-repeat; */
     background-color: #6182645c;
 }
+
 .medaille {
     /* background: url("../images/filtres.png") no-repeat; */
     background-color: #e9b82463;
@@ -346,15 +361,18 @@ label {
     flex-direction: column;
     align-items: center;
 }
-.flexPictoSport{
+
+.flexPictoSport {
     display: flex;
     align-items: center;
 }
-.traitPictoSport{
+
+.traitPictoSport {
     border-right: 1px solid white;
     height: 20px;
     margin: 0px 7px 0px 3px;
 }
+
 .libele {
     font-size: 0.8rem;
 }
@@ -422,7 +440,16 @@ input {
         margin: 0px 0px 5px 0px;
     }
 
+    .select {
+        font-size: 2rem;
+    }
+
     .tv {
+        height: 20px;
+    }
+
+    .pictoSport {
+        width: 20px;
         height: 20px;
     }
 
