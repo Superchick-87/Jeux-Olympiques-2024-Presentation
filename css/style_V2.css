@@ -441,7 +441,8 @@ input {
     }
 
     .select {
-        font-size: 2rem;
+        font-size: 20px;
+        height: auto;
     }
 
     .tv {
