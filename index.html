@@ -7,7 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+
+    <script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script>
+    <!-- <script src="https://unpkg.com/vue/dist/vue.global.prod.js"></script> -->
 
     <!-- * Sert à faire apparaître au défilement * -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -47,7 +50,6 @@
             })
         });
     </script>
-
 
     <div id="app">
         <fieldset>
@@ -190,7 +192,7 @@
                     || (mixte != false)
                     )">
                     <div>
-                        <legend>Médailles</legend>
+                        <legend>Médailles en jeu</legend>
                         <div class="enLigne">
                             <label class="center">
                                 <input type="checkbox" v-model="medailleOn">
@@ -207,24 +209,44 @@
                     <hr>
                     <div class="enLigne" v-if="
                                     (medailleOn != false)
-                                    || (medailleOn != medailleOff)
+                                    && (medailleOn != false)
                         ">
-
                         <div>
-                            <legend>Filtre AZ</legend>
-                            <button @click="sortJsonAZ" class="">AZ</button>
-                            <button @click="sortJsonZA" class="">ZA</button>
-                        </div>
+                            <legend>A la télé</legend>
+                            <div style="display: flex;">
+                                <label>
+                                    <input type="checkbox" v-model="matin">
+                                    <span class="progTV">Matin</span>
+                                </label>
 
-                        <div>
-                            <legend>Filtre heure</legend>
-                            <button @click="sortJsonAH">+tôt</button>
-                            <button @click="sortJsonHA">+tard</button>
+                                <label>
+                                    <input type="checkbox" v-model="am">
+                                    <span class="progTV">Après-midi</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox" v-model="soir">
+                                    <span class="progTV">Soirée</span>
+                                </label>
+                            </div>
                         </div>
                     </div>
                     <div v-else>Sélectionner "Oui" ou "Non"</div>
                 </div>
                 <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
+            </div>
+            <div v-if="
+                    (
+                        (matin == false)
+                        && (am == false)
+                        && (soir == false)
+                    )
+                    &&
+                    (
+                        (medailleOn != false)
+                        && (medailleOn != false)
+                    )
+            ">
+                Sélectionner une plage horaire
             </div>
             <div v-else></div>
         </fieldset>
@@ -264,7 +286,13 @@
                         (
                             (medailleOn && p.Medaille != '')
                             || (medailleOff && p.Medaille == '')
-                            )
+                        )
+                        && 
+                        (
+                            (matin && p.Matin != '')
+                            || (am && p.Am != '')
+                            || (soir && p.Soir != '')
+                        )
                     
                     )">
 
@@ -282,7 +310,9 @@
                         <p>
                             {{p.Lieu}}</p>
                         <img class="tv" :src="'images/'+p.TV+'.png'">
+
                     </div>
+
                     <div class="large mob" :class="[couleurSex[index]]">
                         <div class="flexMob">
                             <div class="flexPictoSport">
@@ -298,11 +328,13 @@
                         <img class="tv" :src="'images/'+p.TV+'.png'">
                     </div>
                 </div>
-                <div v-else></div>
+
 
             </div>
         </div>
-        <!-- * Fin Vignette -->
+    </div>
+
+    <!-- * Fin Vignette -->
     </div>
 
 

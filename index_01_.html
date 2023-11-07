@@ -7,12 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+
+    <script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script>
+    <!-- <script src="https://unpkg.com/vue/dist/vue.global.prod.js"></script> -->
+
 
     <!-- * Sert à faire apparaître au défilement * -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style_V2.css">
+    <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
 </head>
 
 <body class="fond">
@@ -129,12 +135,7 @@
                 </div>
             </fieldset>
             <!-- <div v-else>mmmmm</div> -->
-
-
-
-
             <div v-if="(selectedSSDisci != false || selectedSSDisci != '')">
-
                 <fieldset>
                     <div class="enLigne">
                         <label class="center">
@@ -164,7 +165,7 @@
                             )
                         )">
                         <div>
-                            <legend>Médailles</legend>
+                            <legend>Médailles en jeu</legend>
                             <div class="enLigne">
                                 <label class="center">
                                     <input type="checkbox" v-model="medailleOn">
@@ -180,7 +181,7 @@
 
                         </div>
                         <hr>
-                        <div class="enLigne" v-if="
+                        <!-- <div class="enLigne" v-if="
                                     (medailleOn != false)
                                     || (medailleOff != false)
                         ">
@@ -189,16 +190,56 @@
                                 <button @click="sortJsonAH">+tôt</button>
                                 <button @click="sortJsonHA">+tard</button>
                             </div>
+                        </div> -->
+                        <div class="enLigne" v-if="
+                                    (medailleOn != false)
+                                    || (medailleOn != false)
+                        ">
+                            <div>
+                                <legend>A la télé</legend>
+                                <div style="display: flex;">
+                                    <label>
+                                        <input type="checkbox" v-model="matin">
+                                        <span class="progTV">Matin</span>
+                                    </label>
+
+                                    <label>
+                                        <input type="checkbox" v-model="am">
+                                        <span class="progTV">Après-midi</span>
+                                    </label>
+                                    <label>
+                                        <input type="checkbox" v-model="soir">
+                                        <span class="progTV">Soirée</span>
+                                    </label>
+                                </div>
+                            </div>
                         </div>
                         <div v-else>Sélectionner "Oui" ou "Non"</div>
                     </div>
                     <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
-                </fieldset>
             </div>
-        </div>
-        <div id="container" class="flex center">
-            <div v-for="(p, index) in personnes">
-                <div v-if="(
+            <div v-if="
+                            (
+                                (matin == false)
+                                && (am == false)
+                                && (soir == false)
+                            )
+                            &&
+                            (
+                                (medailleOn != false)
+                                && (medailleOn != false)
+                            )
+                    ">
+                Sélectionner une plage horaire
+
+            </div>
+            <div v-else></div>
+
+            </fieldset>
+            <!-- * Vignette -->
+            <div id="container" class="flex center">
+                <div v-for="(p, index) in personnes">
+                    <div v-if="(
                             (
                                 (p.Epreuve == selectedSSDisci)
                                 || (selectedSSDisci == false)
@@ -231,62 +272,70 @@
                             (
                                 (medailleOn && p.Medaille != '')
                                 || (medailleOff && p.Medaille == '')
-                            ))
+                            )
+                            && 
+                            (
+                                (matin && p.Matin != '')
+                                || (am && p.Am != '')
+                                || (soir && p.Soir != '')
+                            )
+                        )
                             
                 ">
-                    <div class="large desk" :class="[couleurSex[index]]">
-                        <div class="flexPictoSport">
-                            <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
-                            <div class="traitPictoSport"></div>
-                            <h1>{{p.Discipline}} </h1>
-                        </div>
-                        <div :class="[medailles[index]]"></div>
-                        <h3 class="">{{miseEnForme[index]}}</h3>
-                        <hr class="hrWhite">
-                        <h2>{{jours[index]}}
-                            <br>{{p.Debut}} - {{p.Fin}}
-                        </h2>
-                        <p> {{p.Lieu}}</p>
-                        <img class="tv" :src="'images/'+p.TV+'.png'">
-                    </div>
-                    <div class="large mob" :class="[couleurSex[index]]">
-                        <div class="flexMob">
+                        <div class="large desk" :class="[couleurSex[index]]">
                             <div class="flexPictoSport">
                                 <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
                                 <div class="traitPictoSport"></div>
                                 <h1>{{p.Discipline}} </h1>
                             </div>
-                            <div class="medailles" :class="[medailles[index]]"></div>
+                            <div :class="[medailles[index]]"></div>
+                            <h3 class="">{{miseEnForme[index]}}</h3>
+                            <hr class="hrWhite">
+                            <h2>{{jours[index]}}
+                                <br>{{p.Debut}} - {{p.Fin}}
+                            </h2>
+                            <p> {{p.Lieu}}</p>
+                            <img class="tv" :src="'images/'+p.TV+'.png'">
                         </div>
-                        <h3 class="x">{{miseEnForme[index]}}</h3>
-                        <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
-                        <p>{{p.Lieu}}</p>
-                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                        <div class="large mob" :class="[couleurSex[index]]">
+                            <div class="flexMob">
+                                <div class="flexPictoSport">
+                                    <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
+                                    <div class="traitPictoSport"></div>
+                                    <h1>{{p.Discipline}} </h1>
+                                </div>
+                                <div class="medailles" :class="[medailles[index]]"></div>
+                            </div>
+                            <h3 class="x">{{miseEnForme[index]}}</h3>
+                            <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
+                            <p>{{p.Lieu}}</p>
+                            <img class="tv" :src="'images/'+p.TV+'.png'">
+                        </div>
                     </div>
+                    <div v-else></div>
                 </div>
             </div>
         </div>
-    </div>
-    <div style="height: 200px;"></div>
-    <script src="js/doneV2.js"></script>
-    <script language="javascript" type="text/javascript">
-        function bascule(hide) {
-            etat = document.getElementById(hide).style.display;
-            if (etat == "none") {
-                document.getElementById(hide).style.display = "block";
-            }
-            else {
-                document.getElementById(hide).style.display = "none";
-            }
-        };
-        document.getElementById("sportsBouton").onclick = function () {
-            window.location.href = "index.html";
-        };
+        <div style="height: 200px;"></div>
+        <script src="js/doneV2.js"></script>
+        <script language="javascript" type="text/javascript">
+            function bascule(hide) {
+                etat = document.getElementById(hide).style.display;
+                if (etat == "none") {
+                    document.getElementById(hide).style.display = "block";
+                }
+                else {
+                    document.getElementById(hide).style.display = "none";
+                }
+            };
+            document.getElementById("sportsBouton").onclick = function () {
+                window.location.href = "index.html";
+            };
 
 
 
-    </script>
-    <div class="cRetour"></div>
+        </script>
+        <div class="cRetour"></div>
 </body>
 
 </html>

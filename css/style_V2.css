@@ -315,6 +315,18 @@ button {
     cursor: pointer;
 }
 
+.progTV {
+    display: inline-block;
+    padding: 10px 0 10px 0px;
+    margin: 0px;
+    width: 88px;
+    background-color: rgba(0, 0, 0, 0.294);
+    color: white;
+    border: 1px solid white;
+    font-size: 0.9rem;
+    cursor: pointer;
+}
+
 input[type=checkbox]:checked~.hommes {
     background-color: #12486B;
     cursor: pointer;
@@ -332,6 +344,11 @@ input[type=checkbox]:checked~.mixte {
 
 input[type=checkbox]:checked~.medaille {
     background-color: #E9B824;
+    cursor: pointer;
+}
+
+input[type=checkbox]:checked~.progTV {
+    background-color: #000000;
     cursor: pointer;
 }
 
@@ -421,6 +438,7 @@ input {
 .desk {
     display: block;
 }
+
 
 
 
