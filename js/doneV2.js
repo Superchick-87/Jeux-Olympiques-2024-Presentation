@@ -142,6 +142,7 @@ const app = Vue.createApp({
             "Poules préliminaires",
             "8e de finale",
             "Quarts de finale",
+            "Demi-finale",
             "Demi-finales",
             "Match bronze",
             "Match or"
@@ -175,17 +176,10 @@ const app = Vue.createApp({
           ]
         },
         {
-          "Discipline": "BMX FREESTYLE",
+          "Discipline": "BMX",
           "Detail": [
-            "Femmes | Park",
-            "Hommes | Park"
-          ]
-        },
-        {
-          "Discipline": "BMX RACING",
-          "Detail": [
-            "Hommes",
-            "Femmes"
+            "Freestyle",
+            "Racing"
           ]
         },
         {
@@ -210,21 +204,16 @@ const app = Vue.createApp({
         {
           "Discipline": "CYCLISME SUR ROUTE",
           "Detail": [
-            "Femmes | Contre-la-montre individuel",
-            "Hommes | Contre-la-montre individuel",
-            "Hommes | Course en ligne",
-            "Femmes | Course en ligne"
+            "Contre-la-montre individuel",
+            "Course en ligne"
           ]
         },
         {
           "Discipline": "CANOE SLALOM",
           "Detail": [
-            "Hommes | Canoë",
-            "Femmes | Kayak",
-            "Femmes | Canoë",
-            "Hommes | Kayak",
-            "Femmes | Kayak Cross",
-            "Hommes | Kayak Cross"
+            "Canoë",
+            "Kayak",
+            "Kayak Cross"
           ]
         },
         {
@@ -233,49 +222,35 @@ const app = Vue.createApp({
             "COURSE EN LIGNE"
           ],
           "Detail": [
-            "Femmes | Kayak à quatre (K4) 500 m",
-            "Hommes | Kayak à quatre (K4) 500 m",
-            "Hommes | Canoë biplace (C2) 500 m",
-            "Femmes | Canoë biplace (C2) 500 m",
-            "Femmes | Kayak biplace (K2) 500 m",
-            "Hommes | Kayak biplace (K2) 500 m",
-            "Femmes | Kayak monoplace (K1) 500 m",
-            "Hommes | Kayak monoplace (K1) 1 000 m",
-            "Hommes | Canoë monoplace (C1) 1 000 m",
-            "Femmes | Kayak monoplace (K1) 500m",
-            "Femmes | Canoë monoplace (C1) 200 m"
+            "Kayak à quatre (K4) 500 m",
+            "Canoë biplace (C2) 500 m",
+            "Kayak biplace (K2) 500 m",
+            "Kayak monoplace (K1) 500 m",
+            "Kayak monoplace (K1) 1 000 m",
+            "Canoë monoplace (C1) 1 000 m",
+            "Kayak monoplace (K1) 500m",
+            "Canoë monoplace (C1) 200 m"
           ]
         },
         {
           "Discipline": "CYCLISME SUR PISTE",
           "Detail": [
-            "Femmes | Vitesse par équipes",
-            "Hommes | Poursuite équipes",
-            "Hommes | Vitesse par équipes",
-            "Femmes | Poursuite par équipes",
-            "Hommes | Poursuite par équipes",
-            "Hommes | Vitesse",
-            "Femmes | Keirin",
+            "Vitesse par équipes",
+            "Poursuite équipes",
             "Poursuite par équipes",
-            "Hommes | Omnium",
-            "Femmes | Vitesse",
-            "Femmes | Madison",
-            "Hommes | Keirin",
-            "Hommes | Madison",
-            "Femmes | Omnium"
+            "Vitesse",
+            "Keirin",
+            "Omnium",
+            "Madison"
           ]
         },
         {
           "Discipline": "PLONGEON",
           "Detail": [
-            "Femmes | Tremplin 3 m synchronisé",
-            "Hommes | Haut vol 10 m synchronisé",
-            "Femmes | Haut vol 10 m synchronisé",
-            "Hommes | Tremplin 3 m synchronisé",
-            "Femmes | Haut vol 10m",
-            "Hommes | Tremplin 3m",
-            "Femmes | Tremplin 3m",
-            "Hommes | Haut vol 10m"
+            "Tremplin 3 m synchronisé",
+            "Haut vol 10 m synchronisé",
+            "Tremplin 3m",
+            "Haut vol 10m"
           ]
         },
         {
@@ -335,189 +310,156 @@ const app = Vue.createApp({
         {
           "Discipline": "GYMNASTIQUE TRAMPOLINE",
           "Detail": [
-            "Femmes",
-            "Hommes"
+            "Qualifications",
+            "Finale"
           ]
         },
         {
           "Discipline": "HANDBALL",
           "Detail": [
-            "Femmes",
-            "Hommes"
+            "Tours préliminaires",
+            "Quarts de finale",
+            "Demi-finales",
+            "Matchs pour la médaille de bronze",
+            "Matchs pour la médaille d'or"
           ]
         },
         {
           "Discipline": "HOCKEY",
           "Detail": [
-            "Femmes",
-            "Hommes"
+            "Éliminatoires",
+            "Quarts de finale",
+            "Demi-finales",
+            "Matchs pour la médaille de bronze",
+            "Matchs pour la médaille d'or"
           ]
         },
         {
           "Discipline": "JUDO",
           "Detail": [
-            "Femmes | 48 kg",
-            "Hommes | 60 kg",
-            "Femmes | 52 kg",
-            "Hommes | 66 kg",
-            "Femmes | 57 kg",
-            "Hommes | 73 kg",
-            "Femmes | 63 kg",
-            "Hommes | 81 kg",
-            "Femmes | 70 kg",
-            "Hommes | 90 kg",
-            "Femmes | 78 kg",
-            "Hommes | 100 kg",
-            "Femmes | +78 kg",
-            "Hommes | +100 kg",
-            "Equipe mixte"
+            "Éliminatoires",
+            "Repêchages",
+            "Demi-finales",
+            "Combats bronze",
+            "Finale",
+            "Repêchage"
           ]
         },
         {
           "Discipline": "PENTATHLON MODERNE",
           "Detail": [
-            "Hommes | Épreuve d'escrime",
-            "Femmes | Épreuve d'escrime",
-            "Hommes",
-            "Femmes"
+            "Tours de classement",
+            "Demi-finales",
+            "Finales"
           ]
         },
         {
           "Discipline": "VTT",
-          "Detail": [
-            "Femmes | Cross-country",
-            "Hommes | Cross-country"
-          ]
+          "Detail": "Cross-country"
         },
         {
           "Discipline": "NATATION MARATHON",
-          "Detail": [
-            "Femmes | 10 km",
-            "Hommes |10 km"
-          ]
+          "Detail": "10 km"
         },
         {
           "Discipline": "AVIRON",
           "Detail": [
-            "Hommes | Skiff",
-            "Femmes | Skiff",
-            "Hommes | Deux de couple",
-            "Femmes | Deux de couple",
-            "Hommes | Quatre de couple",
-            "Femmes | Quatre de couple",
-            "Femmes | Deux de pointe sans barreur",
-            "Hommes | Deux de pointe sans barreur",
-            "Femmes | Deux de couple poids léger",
-            "Hommes | Deux de couple poids léger",
-            "Femmes | Quatre de pointe sans barreur",
-            "Hommes | Quatre de pointe sans barreur",
-            "Hommes | Huit de pointe avec barreur",
-            "Femmes | Huit de pointe avec barreur"
+            "Skiff",
+            "Deux de couple",
+            "Quatre de couple",
+            "Deux de pointe sans barreur",
+            "Deux de couple poids léger",
+            "Quatre de pointe sans barreur",
+            "Huit de pointe avec barreur"
           ]
         },
         {
           "Discipline": "RUGBY",
           "Detail": [
-            "Femmes",
-            "Hommes"
+            "Poules",
+            "Placement 9-12",
+            "Quarts de finale",
+            "Placement 5-8",
+            "Demi-finales",
+            "Placement 11-12",
+            "Placement 9-10",
+            "Placement 7-8",
+            "Placement 5-6",
+            "Matchs pour la médaille de bronze",
+            "Matchs pour la médaille d'or"
           ]
         },
         {
           "Discipline": "VOILE",
           "Detail": [
-            "Hommes | Planche à voile",
-            "Femmes | Planche à voile",
-            "Hommes | Skiff",
-            "Femmes | Skiff",
-            "Hommes | Dériveur",
-            "Femmes | Dériveur",
-            "Mixte | Dériveur",
-            "Mixte | Multicoque",
-            "Hommes | Kite",
-            "Femmes | Kite"
+            "Planche à voile",
+            "Skiff",
+            "Dériveur",
+            "Multicoque",
+            "Kite"
           ]
         },
         {
           "Discipline": "TIR",
           "Detail": [
-            "Equipe mixte | Carabine à air comprimé 10 m",
-            "Hommes | 10 m pistolet à air",
-            "Femmes | 10 m pistolet à air",
-            "Femmes | 10 m rifle à air",
-            "Hommes | 10 m rifle à air",
-            "Equipe mixte | Pistolet à air comprimé 10 m",
-            "Hommes | Fosse olympique",
-            "Femmes | Fosse olympique",
-            "Hommes | 50 m rifle 3 positions",
-            "Femmes | 50 m rifle 3 positions",
-            "Hommes | Skeet",
-            "Femmes | 25 m pistolet",
-            "Femmes | Skeet",
-            "Hommes | 25 m pistolet feu rapide",
-            "Equipe mixte | Skeet"
+            "Carabine à air comprimé 10 m",
+            "10 m pistolet à air",
+            "10 m rifle à air",
+            "Pistolet à air comprimé 10 m",
+            "Fosse olympique",
+            "50 m rifle 3 positions",
+            "Skeet",
+            "25 m pistolet",
+            "25 m pistolet feu rapide"
           ]
         },
         {
           "Discipline": "SKATEBOARD",
           "Detail": [
-            "Hommes | Street",
-            "Femmes | Street",
-            "Femmes | Park",
-            "Hommes | Park"
+            "Street",
+            "Park"
           ]
         },
         {
           "Discipline": "SURF",
           "Detail": [
-            "Femmes",
-            "Hommes"
+            "1er tour",
+            "2e tour",
+            "3e tour",
+            "Quarts de finale",
+            "Demi-finales",
+            "Médailles de bronze",
+            "Médailles d'or"
           ]
         },
         {
           "Discipline": "NATATION ARTISTIQUE",
           "Detail": [
-            "Épreuve d'équipe",
-            "Épreuve de duo"
+            "Programme technique",
+            "Programme libre",
+            "Programme acrobatique"
           ]
         },
         {
           "Discipline": "NATATION",
           "Detail": [
-            "Femmes | 100 m papillon",
-            "Femmes | 400 m nage libre",
-            "Hommes | 100 m brasse",
-            "Hommes | 400 m nage libre",
-            "Femmes | Relais 4x100 m nage libre",
-            "Hommes | Relais 4x100 m nage libre",
-            "Hommes | 200 m nage libre",
-            "Hommes | 400 m quatre nages individuel",
-            "Femmes | 100 m brasse",
-            "Hommes | 100 m dos",
-            "Femmes | 200 m nage libre",
-            "Femmes | 400 m quatre nages individuel",
-            "Femmes | 100 m dos",
-            "Hommes | 800 m nage libre",
-            "Hommes | 200 m papillon",
-            "Hommes | 100 m nage libre",
-            "Femmes | 1 500 m nage libre",
-            "Femmes | 100 m nage libre",
-            "Hommes | 200 m brasse",
-            "Hommes | Relais 4x200 m nage libre",
-            "Femmes | 200 m brasse",
-            "Hommes | 200 m dos",
-            "Femmes | 200 m papillon",
-            "Femmes | 200 m dos",
-            "Hommes | 50 m nage libre",
-            "Hommes | 200 m quatre nages individuel",
-            "Femmes | Relais 4x200 m nage libre",
-            "Hommes | 100 m papillon",
-            "Femmes | 200 m quatre nages individuel",
-            "Femmes | 800 m nage libre",
-            "Mixte | Relais 4x100 m quatre nages",
-            "Femmes | 50 m nage libre",
-            "Hommes | 1 500 m nage libre",
-            "Hommes | Relais 4x100 m quatre nages",
-            "Femmes | Relais 4x100 m quatre nages"
+            "100 m brasse",
+            "200 m brasse",
+            "100 m dos",
+            "200 m dos",
+            "100 m papillon",
+            "200 m papillon",
+            "50 m nage libre",
+            "100 m nage libre",
+            "200 m nage libre",
+            "400 m nage libre",
+            "800 m nage libre",
+            "1 500 m nage libre",
+            "200 m quatre nages individuel",
+            "400 m quatre nages individuel",
+            "Relais 4x100 m nage libre",
+            "Relais 4x200 m nage libre",
+            "Relais 4x100 m quatre nages"
           ]
         },
         {
@@ -526,14 +468,11 @@ const app = Vue.createApp({
         {
           "Discipline": "TAEKWONDO",
           "Detail": [
-            "Femmes | 49kg",
-            "Hommes | 58kg",
-            "Hommes | 68kg",
-            "Femmes | 57kg",
-            "Femmes | 67kg",
-            "Hommes | 80kg",
-            "Hommes | +80kg",
-            "Femmes | +67 kg"
+            "Qualifications",
+            "Phases finales",
+            "Repêchages",
+            "Médailles de bronze",
+            "Médailles d'or"
           ]
         },
         {
@@ -547,13 +486,9 @@ const app = Vue.createApp({
         {
           "Discipline": "TENNIS DE TABLE",
           "Detail": [
-            "Simple hommes et femmes",
-            "Double mixte",
-            "Simple femmes",
-            "Simple hommes",
-            "Par équipe hommes et femmes",
-            "Par équipes hommes",
-            "Par équipes femmes"
+            "Simple",
+            "Double",
+            "Par équipe"
           ]
         },
         {
@@ -572,8 +507,11 @@ const app = Vue.createApp({
         {
           "Discipline": "VOLLEYBALL",
           "Detail": [
-            "Femmes",
-            "Hommes"
+            "Eliminatoires",
+            "Quarts de finale",
+            "Demi-finales",
+            "Matchs pour la médaille de bronze",
+            "Matchs pour la médaille d'or"
           ]
         },
         {
@@ -594,33 +532,19 @@ const app = Vue.createApp({
         {
           "Discipline": "WATER POLO",
           "Detail": [
-            "Femmes",
-            "Hommes"
+            "Tour préliminaire",
+            "Quarts de finale",
+            "Matchs de classement",
+            "Demi-finale",
+            "Matchs pour la médaille de bronze",
+            "Matchs pour la médaille d'or"
           ]
         },
         {
           "Discipline": "LUTTE",
           "Detail": [
-            "Hommes | Lutte gréco-romaine | 60 kg",
-            "Femmes | Lutte libre | 68 kg",
-            "Hommes | Lutte gréco-romaine | 130 kg",
-            "Hommes | Lutte gréco-romaine | 77 kg",
-            "Femmes | Lutte libre | 50 kg",
-            "Hommes | Lutte gréco-romaine | 97 kg",
-            "Femmes | Libre | 50 kg",
-            "Femmes | Libre | 68 kg",
-            "Hommes | Lutte gréco-romaine | 67 kg",
-            "Femmes | Libre | 53 kg",
-            "Hommes | Lutte gréco-romaine | 87 kg",
-            "Hommes | Libre | 57 kg",
-            "Femmes | Libre | 57 kg",
-            "Hommes | Libre | 86 kg",
-            "Hommes | Libre | 74 kg",
-            "Femmes | Libre | 62 kg",
-            "Hommes | Libre | 125 kg",
-            "Hommes | Libre | 65 kg",
-            "Femmes | Libre | 76 kg",
-            "Hommes | Libre | 97 kg"
+            "Lutte gréco-romaine",
+            "Lutte libre"
           ]
         }
       ],
@@ -9648,7 +9572,7 @@ const app = Vue.createApp({
           "Tour": "Hommes"
         },
         {
-          "Discipline": "BMX FREESTYLE",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMF01",
           "Calendrier": "JOUR 4 Mardi 30 Juillet",
@@ -9670,11 +9594,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Park",
+          "Epreuve": "Freestyle",
           "Tour": "qualification"
         },
         {
-          "Discipline": "BMX FREESTYLE",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMF02",
           "Calendrier": "JOUR 4 Mardi 30 Juillet",
@@ -9696,11 +9620,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Park",
+          "Epreuve": "Freestyle",
           "Tour": "qualification"
         },
         {
-          "Discipline": "BMX FREESTYLE",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMF03",
           "Calendrier": "JOUR 5 Mercredi 31 Juillet",
@@ -9722,11 +9646,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Park",
+          "Epreuve": "Freestyle",
           "Tour": "finale"
         },
         {
-          "Discipline": "BMX FREESTYLE",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMF04",
           "Calendrier": "JOUR 5 Mercredi 31 Juillet",
@@ -9748,11 +9672,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Park",
+          "Epreuve": "Freestyle",
           "Tour": "finale"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX01",
           "Calendrier": "JOUR 6 Jeudi 1 Août",
@@ -9774,11 +9698,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Racing",
           "Tour": "quarts de finale"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX01",
           "Calendrier": "JOUR 6 Jeudi 1 Août",
@@ -9800,11 +9724,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Racing",
           "Tour": "quarts de finale"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX01",
           "Calendrier": "JOUR 6 Jeudi 1 Août",
@@ -9826,11 +9750,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Racing",
           "Tour": "tour de la dernière chance"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX01",
           "Calendrier": "JOUR 6 Jeudi 1 Août",
@@ -9852,11 +9776,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Racing",
           "Tour": "tour de la dernière chance"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX02",
           "Calendrier": "JOUR 7 Vendredi 2 Août",
@@ -9878,11 +9802,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Racing",
           "Tour": "demi-finales"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX02",
           "Calendrier": "JOUR 7 Vendredi 2 Août",
@@ -9904,11 +9828,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Racing",
           "Tour": "demi-finales"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX02",
           "Calendrier": "JOUR 7 Vendredi 2 Août",
@@ -9930,11 +9854,11 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Racing",
           "Tour": "finale"
         },
         {
-          "Discipline": "BMX RACING",
+          "Discipline": "BMX",
           "Version": "",
           "Session": "BMX02",
           "Calendrier": "JOUR 7 Vendredi 2 Août",
@@ -9956,7 +9880,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Racing",
           "Tour": "finale"
         },
         {
@@ -16638,7 +16562,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Contre-la-montre individuel",
+          "Epreuve": "Contre-la-montre individuel",
           "Tour": ""
         },
         {
@@ -16664,7 +16588,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Contre-la-montre individuel",
+          "Epreuve": "Contre-la-montre individuel",
           "Tour": ""
         },
         {
@@ -16690,7 +16614,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Course en ligne",
+          "Epreuve": "Course en ligne",
           "Tour": ""
         },
         {
@@ -16716,7 +16640,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Course en ligne",
+          "Epreuve": "Course en ligne",
           "Tour": ""
         },
         {
@@ -16742,7 +16666,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë",
+          "Epreuve": "Canoë",
           "Tour": "éliminatoires manches 1 et 2"
         },
         {
@@ -16768,7 +16692,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak",
+          "Epreuve": "Kayak",
           "Tour": "éliminatoires manches 1 et 2"
         },
         {
@@ -16794,7 +16718,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak",
+          "Epreuve": "Kayak",
           "Tour": "demi-finale"
         },
         {
@@ -16820,7 +16744,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak",
+          "Epreuve": "Kayak",
           "Tour": "finale"
         },
         {
@@ -16846,7 +16770,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë",
+          "Epreuve": "Canoë",
           "Tour": "demi-finale"
         },
         {
@@ -16872,7 +16796,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë",
+          "Epreuve": "Canoë",
           "Tour": "finale"
         },
         {
@@ -16898,7 +16822,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë",
+          "Epreuve": "Canoë",
           "Tour": "éliminatoires manches 1 et 2"
         },
         {
@@ -16924,7 +16848,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak",
+          "Epreuve": "Kayak",
           "Tour": "éliminatoires manches 1 et 2"
         },
         {
@@ -16950,7 +16874,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë",
+          "Epreuve": "Canoë",
           "Tour": "demi-finale"
         },
         {
@@ -16976,7 +16900,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë",
+          "Epreuve": "Canoë",
           "Tour": "finale"
         },
         {
@@ -17002,7 +16926,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak",
+          "Epreuve": "Kayak",
           "Tour": "demi-finale"
         },
         {
@@ -17028,7 +16952,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak",
+          "Epreuve": "Kayak",
           "Tour": "finale"
         },
         {
@@ -17054,7 +16978,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "contre-la-montre"
         },
         {
@@ -17080,7 +17004,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "contre-la-montre"
         },
         {
@@ -17106,7 +17030,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "Repêchage 1"
         },
         {
@@ -17132,7 +17056,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "Repêchage 1"
         },
         {
@@ -17158,7 +17082,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "Repêchage 2"
         },
         {
@@ -17184,7 +17108,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "Repêchage 2"
         },
         {
@@ -17210,7 +17134,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "Eliminatoires"
         },
         {
@@ -17236,7 +17160,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "Eliminatoires"
         },
         {
@@ -17262,7 +17186,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "quarts de finale"
         },
         {
@@ -17288,7 +17212,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "quarts de finale"
         },
         {
@@ -17314,7 +17238,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "demi-finale"
         },
         {
@@ -17340,7 +17264,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "demi-finale"
         },
         {
@@ -17366,7 +17290,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "petite finale"
         },
         {
@@ -17392,7 +17316,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "petite finale"
         },
         {
@@ -17418,7 +17342,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "finale"
         },
         {
@@ -17444,7 +17368,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak Cross",
+          "Epreuve": "Kayak Cross",
           "Tour": "finale"
         },
         {
@@ -17470,7 +17394,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak à quatre (K4) 500 m",
+          "Epreuve": "Kayak à quatre (K4) 500 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17496,7 +17420,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak à quatre (K4) 500 m",
+          "Epreuve": "Kayak à quatre (K4) 500 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17522,7 +17446,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17548,7 +17472,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17574,7 +17498,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17600,7 +17524,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17626,7 +17550,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "quarts de finale"
         },
         {
@@ -17652,7 +17576,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "quarts de finale"
         },
         {
@@ -17678,7 +17602,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "quarts de finale"
         },
         {
@@ -17704,7 +17628,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "quarts de finale"
         },
         {
@@ -17730,7 +17654,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak monoplace (K1) 500 m",
+          "Epreuve": "Kayak monoplace (K1) 500 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17756,7 +17680,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak monoplace (K1) 1 000 m",
+          "Epreuve": "Kayak monoplace (K1) 1 000 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17782,7 +17706,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë monoplace (C1) 1 000 m",
+          "Epreuve": "Canoë monoplace (C1) 1 000 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17808,7 +17732,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak monoplace (K1) 500m",
+          "Epreuve": "Kayak monoplace (K1) 500m",
           "Tour": "quarts de finale"
         },
         {
@@ -17834,7 +17758,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak monoplace (K1) 1 000 m",
+          "Epreuve": "Kayak monoplace (K1) 1 000 m",
           "Tour": "quarts de finale"
         },
         {
@@ -17860,7 +17784,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë monoplace (C1) 1 000 m",
+          "Epreuve": "Canoë monoplace (C1) 1 000 m",
           "Tour": "quarts de finale"
         },
         {
@@ -17886,7 +17810,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë monoplace (C1) 200 m",
+          "Epreuve": "Canoë monoplace (C1) 200 m",
           "Tour": "éliminatoires"
         },
         {
@@ -17912,7 +17836,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "demi-finales"
         },
         {
@@ -17938,7 +17862,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak à quatre (K4) 500 m",
+          "Epreuve": "Kayak à quatre (K4) 500 m",
           "Tour": "demi-finales"
         },
         {
@@ -17964,7 +17888,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak à quatre (K4) 500 m",
+          "Epreuve": "Kayak à quatre (K4) 500 m",
           "Tour": "demi-finales"
         },
         {
@@ -17990,7 +17914,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë monoplace (C1) 200 m",
+          "Epreuve": "Canoë monoplace (C1) 200 m",
           "Tour": "quarts de finale"
         },
         {
@@ -18016,7 +17940,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "finale B"
         },
         {
@@ -18042,7 +17966,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "finale A"
         },
         {
@@ -18068,7 +17992,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak à quatre (K4) 500 m",
+          "Epreuve": "Kayak à quatre (K4) 500 m",
           "Tour": "finale A"
         },
         {
@@ -18094,7 +18018,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak à quatre (K4) 500 m",
+          "Epreuve": "Kayak à quatre (K4) 500 m",
           "Tour": "finale A"
         },
         {
@@ -18120,7 +18044,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "demi-finales"
         },
         {
@@ -18146,7 +18070,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "demi-finales"
         },
         {
@@ -18172,7 +18096,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "demi-finales"
         },
         {
@@ -18198,7 +18122,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë monoplace (C1) 1 000 m",
+          "Epreuve": "Canoë monoplace (C1) 1 000 m",
           "Tour": "demi-finales"
         },
         {
@@ -18224,7 +18148,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "finale B"
         },
         {
@@ -18250,7 +18174,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë biplace (C2) 500 m",
+          "Epreuve": "Canoë biplace (C2) 500 m",
           "Tour": "finale A"
         },
         {
@@ -18276,7 +18200,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "finale B"
         },
         {
@@ -18302,7 +18226,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "finale A"
         },
         {
@@ -18328,7 +18252,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "finale B"
         },
         {
@@ -18354,7 +18278,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak biplace (K2) 500 m",
+          "Epreuve": "Kayak biplace (K2) 500 m",
           "Tour": "finale A"
         },
         {
@@ -18380,7 +18304,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë monoplace (C1) 1 000 m",
+          "Epreuve": "Canoë monoplace (C1) 1 000 m",
           "Tour": "finale B"
         },
         {
@@ -18406,7 +18330,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Canoë monoplace (C1) 1 000 m",
+          "Epreuve": "Canoë monoplace (C1) 1 000 m",
           "Tour": "finale A"
         },
         {
@@ -18432,7 +18356,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak monoplace (K1) 500 m",
+          "Epreuve": "Kayak monoplace (K1) 500 m",
           "Tour": "demi-finales"
         },
         {
@@ -18458,7 +18382,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak monoplace (K1) 1 000 m",
+          "Epreuve": "Kayak monoplace (K1) 1 000 m",
           "Tour": "demi-finales"
         },
         {
@@ -18484,7 +18408,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë monoplace (C1) 200 m",
+          "Epreuve": "Canoë monoplace (C1) 200 m",
           "Tour": "demi-finales"
         },
         {
@@ -18510,7 +18434,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak monoplace (K1) 500 m",
+          "Epreuve": "Kayak monoplace (K1) 500 m",
           "Tour": "finale C"
         },
         {
@@ -18536,7 +18460,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak monoplace (K1) 500 m",
+          "Epreuve": "Kayak monoplace (K1) 500 m",
           "Tour": "finale B"
         },
         {
@@ -18562,7 +18486,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kayak monoplace (K1) 500 m",
+          "Epreuve": "Kayak monoplace (K1) 500 m",
           "Tour": "finale A"
         },
         {
@@ -18588,7 +18512,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak monoplace (K1) 1 000 m",
+          "Epreuve": "Kayak monoplace (K1) 1 000 m",
           "Tour": "finale B"
         },
         {
@@ -18614,7 +18538,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kayak monoplace (K1) 1 000 m",
+          "Epreuve": "Kayak monoplace (K1) 1 000 m",
           "Tour": "finale A"
         },
         {
@@ -18640,7 +18564,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë monoplace (C1) 200 m",
+          "Epreuve": "Canoë monoplace (C1) 200 m",
           "Tour": "finale B"
         },
         {
@@ -18666,7 +18590,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Canoë monoplace (C1) 200 m",
+          "Epreuve": "Canoë monoplace (C1) 200 m",
           "Tour": "finale A"
         },
         {
@@ -18692,7 +18616,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse par équipes",
+          "Epreuve": "Vitesse par équipes",
           "Tour": "qualifications"
         },
         {
@@ -18718,7 +18642,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Poursuite équipes",
+          "Epreuve": "Poursuite équipes",
           "Tour": "qualifications"
         },
         {
@@ -18744,7 +18668,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse par équipes",
+          "Epreuve": "Vitesse par équipes",
           "Tour": "1er tour"
         },
         {
@@ -18770,7 +18694,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse par équipes",
+          "Epreuve": "Vitesse par équipes",
           "Tour": "qualifications"
         },
         {
@@ -18796,7 +18720,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse par équipes",
+          "Epreuve": "Vitesse par équipes",
           "Tour": "finales"
         },
         {
@@ -18822,7 +18746,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Poursuite par équipes",
+          "Epreuve": "Poursuite par équipes",
           "Tour": "qualifications"
         },
         {
@@ -18848,7 +18772,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse par équipes",
+          "Epreuve": "Vitesse par équipes",
           "Tour": "1er tour"
         },
         {
@@ -18874,7 +18798,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Poursuite par équipes",
+          "Epreuve": "Poursuite par équipes",
           "Tour": "1er tour"
         },
         {
@@ -18900,7 +18824,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse par équipes",
+          "Epreuve": "Vitesse par équipes",
           "Tour": "finales"
         },
         {
@@ -18926,7 +18850,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "qualifications"
         },
         {
@@ -18952,7 +18876,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "1er tour"
         },
         {
@@ -19004,7 +18928,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "32e finale"
         },
         {
@@ -19030,7 +18954,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "repêchages"
         },
         {
@@ -19056,7 +18980,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "32e finale repêchages"
         },
         {
@@ -19082,7 +19006,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "16e finale"
         },
         {
@@ -19108,7 +19032,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Poursuite par équipes",
+          "Epreuve": "Poursuite par équipes",
           "Tour": "finales"
         },
         {
@@ -19134,7 +19058,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "16e finale repêchages"
         },
         {
@@ -19160,7 +19084,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Poursuite par équipes",
+          "Epreuve": "Poursuite par équipes",
           "Tour": "finales"
         },
         {
@@ -19186,7 +19110,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "8e finale"
         },
         {
@@ -19212,7 +19136,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "8e finale repêchages"
         },
         {
@@ -19238,7 +19162,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "scratch 1/4"
         },
         {
@@ -19264,7 +19188,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "1/4 finale"
         },
         {
@@ -19290,7 +19214,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "course tempo 2/4"
         },
         {
@@ -19316,7 +19240,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "1/4 finale"
         },
         {
@@ -19342,7 +19266,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "1/2 finales"
         },
         {
@@ -19368,7 +19292,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "course à l'élimination"
         },
         {
@@ -19394,7 +19318,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "finale 7-12"
         },
         {
@@ -19420,7 +19344,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "finale 1-6"
         },
         {
@@ -19446,7 +19370,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "course aux points 4/4"
         },
         {
@@ -19472,7 +19396,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "places 5-8"
         },
         {
@@ -19498,7 +19422,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "qualifications"
         },
         {
@@ -19524,7 +19448,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "1/2 finales"
         },
         {
@@ -19550,7 +19474,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "32e finale"
         },
         {
@@ -19576,7 +19500,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "32e finale repêchages"
         },
         {
@@ -19602,7 +19526,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Madison",
+          "Epreuve": "Madison",
           "Tour": "finale"
         },
         {
@@ -19628,7 +19552,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "16e finale"
         },
         {
@@ -19654,7 +19578,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "finales"
         },
         {
@@ -19680,7 +19604,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "16e finale repêchages"
         },
         {
@@ -19706,7 +19630,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "8e finale"
         },
         {
@@ -19732,7 +19656,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "1er tour"
         },
         {
@@ -19758,7 +19682,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "8e finale repêchages"
         },
         {
@@ -19784,7 +19708,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Madison",
+          "Epreuve": "Madison",
           "Tour": "finale"
         },
         {
@@ -19810,7 +19734,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "1/4 finale"
         },
         {
@@ -19836,7 +19760,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "repêchages"
         },
         {
@@ -19862,7 +19786,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "scratch 1/4"
         },
         {
@@ -19888,7 +19812,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "1/2 finales"
         },
         {
@@ -19914,7 +19838,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "1/4 finale"
         },
         {
@@ -19940,7 +19864,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "course tempo 2/4"
         },
         {
@@ -19966,7 +19890,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "places 5-8"
         },
         {
@@ -19992,7 +19916,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "1/2 finales"
         },
         {
@@ -20018,7 +19942,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "course à l'élimination"
         },
         {
@@ -20044,7 +19968,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "finale 7-12"
         },
         {
@@ -20070,7 +19994,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Keirin",
+          "Epreuve": "Keirin",
           "Tour": "finale 1-6"
         },
         {
@@ -20096,7 +20020,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Vitesse",
+          "Epreuve": "Vitesse",
           "Tour": "finales"
         },
         {
@@ -20122,7 +20046,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Omnium",
+          "Epreuve": "Omnium",
           "Tour": "course aux points 4/4"
         },
         {
@@ -20148,7 +20072,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Tremplin 3 m synchronisé",
+          "Epreuve": "Tremplin 3 m synchronisé",
           "Tour": ""
         },
         {
@@ -20174,7 +20098,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Haut vol 10 m synchronisé",
+          "Epreuve": "Haut vol 10 m synchronisé",
           "Tour": ""
         },
         {
@@ -20200,7 +20124,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Haut vol 10 m synchronisé",
+          "Epreuve": "Haut vol 10 m synchronisé",
           "Tour": ""
         },
         {
@@ -20226,7 +20150,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Tremplin 3 m synchronisé",
+          "Epreuve": "Tremplin 3 m synchronisé",
           "Tour": ""
         },
         {
@@ -20252,7 +20176,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Haut vol 10m",
+          "Epreuve": "Haut vol 10m",
           "Tour": "éliminatoires"
         },
         {
@@ -20278,7 +20202,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Haut vol 10m",
+          "Epreuve": "Haut vol 10m",
           "Tour": "demi-finale"
         },
         {
@@ -20304,7 +20228,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Tremplin 3m",
+          "Epreuve": "Tremplin 3m",
           "Tour": "éliminatoires"
         },
         {
@@ -20330,7 +20254,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Haut vol 10m",
+          "Epreuve": "Haut vol 10m",
           "Tour": "finale"
         },
         {
@@ -20356,7 +20280,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Tremplin 3m",
+          "Epreuve": "Tremplin 3m",
           "Tour": "demi-finale"
         },
         {
@@ -20382,7 +20306,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Tremplin 3m",
+          "Epreuve": "Tremplin 3m",
           "Tour": "éliminatoires"
         },
         {
@@ -20408,7 +20332,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Tremplin 3m",
+          "Epreuve": "Tremplin 3m",
           "Tour": "demi-finale"
         },
         {
@@ -20434,7 +20358,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Tremplin 3m",
+          "Epreuve": "Tremplin 3m",
           "Tour": "finale"
         },
         {
@@ -20460,7 +20384,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Haut vol 10m",
+          "Epreuve": "Haut vol 10m",
           "Tour": "éliminatoires"
         },
         {
@@ -20486,7 +20410,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Tremplin 3m",
+          "Epreuve": "Tremplin 3m",
           "Tour": "finale"
         },
         {
@@ -20512,7 +20436,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Haut vol 10m",
+          "Epreuve": "Haut vol 10m",
           "Tour": "demi-finale"
         },
         {
@@ -20538,7 +20462,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Haut vol 10m",
+          "Epreuve": "Haut vol 10m",
           "Tour": "finale"
         },
         {
@@ -24978,7 +24902,7 @@ const app = Vue.createApp({
           "Hommes": "Oui",
           "Femmes": "",
           "Mixte": "",
-          "Medaille": "",
+          "Medaille": "BRONZE - ARGENT - OR",
           "Commune": "",
           "TV": "Tf1Eurosport",
           "NationASuivre": "",
@@ -25082,7 +25006,7 @@ const app = Vue.createApp({
           "Hommes": "",
           "Femmes": "Oui",
           "Mixte": "",
-          "Medaille": "",
+          "Medaille": "BRONZE - ARGENT - OR",
           "Commune": "",
           "TV": "Tf1Eurosport",
           "NationASuivre": "",
@@ -25244,7 +25168,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Qualifications",
           "Tour": "qualifications"
         },
         {
@@ -25270,7 +25194,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -25296,7 +25220,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Qualifications",
           "Tour": "qualifications"
         },
         {
@@ -25322,7 +25246,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -25348,7 +25272,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25374,7 +25298,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25400,7 +25324,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25426,7 +25350,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25452,7 +25376,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25478,7 +25402,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25504,7 +25428,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25530,7 +25454,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25556,7 +25480,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25582,7 +25506,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25608,7 +25532,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25634,7 +25558,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25660,7 +25584,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25686,7 +25610,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25712,7 +25636,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25738,7 +25662,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25764,7 +25688,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25790,7 +25714,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25816,7 +25740,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25842,7 +25766,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25868,7 +25792,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25894,7 +25818,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25920,7 +25844,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25946,7 +25870,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25972,7 +25896,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -25998,7 +25922,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -26024,7 +25948,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -26050,7 +25974,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -26076,7 +26000,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -26102,7 +26026,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Tours préliminaires",
           "Tour": "tour préliminaire (2 matchs)"
         },
         {
@@ -26128,7 +26052,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26154,7 +26078,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26180,7 +26104,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26206,7 +26130,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26232,7 +26156,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26258,7 +26182,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26284,7 +26208,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26310,7 +26234,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quart de finale"
         },
         {
@@ -26336,7 +26260,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -26362,7 +26286,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -26388,7 +26312,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -26414,7 +26338,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -26440,7 +26364,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -26466,7 +26390,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -26492,7 +26416,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -26518,7 +26442,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -26544,7 +26468,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26570,7 +26494,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26596,7 +26520,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -26622,7 +26546,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -26648,7 +26572,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -26674,7 +26598,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -26700,7 +26624,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26726,7 +26650,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26752,7 +26676,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26778,7 +26702,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26804,7 +26728,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26830,7 +26754,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26856,7 +26780,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26882,7 +26806,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26908,7 +26832,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26934,7 +26858,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26960,7 +26884,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -26986,7 +26910,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27012,7 +26936,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27038,7 +26962,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -27064,7 +26988,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -27090,7 +27014,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -27116,7 +27040,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (1 match)"
         },
         {
@@ -27142,7 +27066,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27168,7 +27092,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27194,7 +27118,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27220,7 +27144,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27246,7 +27170,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27272,7 +27196,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27298,7 +27222,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27324,7 +27248,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27350,7 +27274,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27376,7 +27300,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27402,7 +27326,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires (2 matchs)"
         },
         {
@@ -27428,7 +27352,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quarts de finale (2 matchs)"
         },
         {
@@ -27454,7 +27378,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quarts de finale (2 matchs)"
         },
         {
@@ -27480,7 +27404,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quarts de finale (2 matchs)"
         },
         {
@@ -27506,7 +27430,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "quarts de finale (2 matchs)"
         },
         {
@@ -27532,7 +27456,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -27558,7 +27482,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -27584,7 +27508,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -27610,7 +27534,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finale"
         },
         {
@@ -27636,7 +27560,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -27662,7 +27586,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -27688,7 +27612,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -27714,7 +27638,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -27740,7 +27664,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 48 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -27766,7 +27690,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 60 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -27792,7 +27716,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 48 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -27818,7 +27742,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 48 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -27844,7 +27768,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 60 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -27870,7 +27794,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 60 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -27896,7 +27820,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 48 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -27922,7 +27846,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 48 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -27948,7 +27872,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 60 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -27974,7 +27898,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 60 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28000,7 +27924,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 52 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28026,7 +27950,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 66 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28052,7 +27976,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 66 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -28078,7 +28002,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 66 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28104,7 +28028,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 52 kg",
+          "Epreuve": "Repêchage",
           "Tour": "repêchage"
         },
         {
@@ -28130,7 +28054,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 52 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28156,7 +28080,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 66 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -28182,7 +28106,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 66 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28208,7 +28132,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 52 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -28234,7 +28158,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 52 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28260,7 +28184,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 57 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28286,7 +28210,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 73 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28312,7 +28236,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 57 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -28338,7 +28262,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 57 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28364,7 +28288,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 73 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -28390,7 +28314,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 73 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28416,7 +28340,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 57 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -28442,7 +28366,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 57 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28468,7 +28392,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 73 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -28494,7 +28418,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 73 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28520,7 +28444,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 63 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28546,7 +28470,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 81 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28572,7 +28496,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 81 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -28598,7 +28522,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 81 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28624,7 +28548,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 63 kg",
+          "Epreuve": "Repêchage",
           "Tour": "repêchage"
         },
         {
@@ -28650,7 +28574,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 63 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28676,7 +28600,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 81 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -28702,7 +28626,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 81 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28728,7 +28652,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 63 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -28754,7 +28678,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 63 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28780,7 +28704,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 70 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28806,7 +28730,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 90 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -28832,7 +28756,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 70 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -28858,7 +28782,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 70 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28884,7 +28808,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 90 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -28910,7 +28834,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 90 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -28936,7 +28860,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 70 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -28962,7 +28886,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 70 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -28988,7 +28912,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 90 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -29014,7 +28938,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 90 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -29040,7 +28964,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 78 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -29066,7 +28990,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -29092,7 +29016,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -29118,7 +29042,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -29144,7 +29068,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 78 kg",
+          "Epreuve": "Repêchage",
           "Tour": "repêchage"
         },
         {
@@ -29170,7 +29094,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 78 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -29196,7 +29120,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -29222,7 +29146,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -29248,7 +29172,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 78 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -29274,7 +29198,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 78 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -29300,7 +29224,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | +78 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -29326,7 +29250,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +100 kg",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -29352,7 +29276,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | +78 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -29378,7 +29302,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | +78 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -29404,7 +29328,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +100 kg",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -29430,7 +29354,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +100 kg",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -29456,7 +29380,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | +78 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -29482,7 +29406,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | +78 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -29508,7 +29432,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +100 kg",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -29534,7 +29458,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +100 kg",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -29560,7 +29484,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte",
+          "Epreuve": "Éliminatoires",
           "Tour": "éliminatoires"
         },
         {
@@ -29586,7 +29510,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte",
+          "Epreuve": "Repêchages",
           "Tour": "repêchages"
         },
         {
@@ -29612,7 +29536,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -29638,7 +29562,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte",
+          "Epreuve": "Combats bronze",
           "Tour": "combats bronze"
         },
         {
@@ -29664,7 +29588,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte",
+          "Epreuve": "Finale",
           "Tour": "finale"
         },
         {
@@ -29690,7 +29614,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Épreuve d'escrime",
+          "Epreuve": "Tours de classement",
           "Tour": "tour de classement"
         },
         {
@@ -29716,7 +29640,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Épreuve d'escrime",
+          "Epreuve": "Tours de classement",
           "Tour": "tour de classement"
         },
         {
@@ -29742,7 +29666,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -29768,7 +29692,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "demi-finales"
         },
         {
@@ -29794,7 +29718,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Finales",
           "Tour": "finale"
         },
         {
@@ -29820,7 +29744,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Finales",
           "Tour": "finale"
         },
         {
@@ -29846,7 +29770,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Cross-country",
+          "Epreuve": "Cross-country",
           "Tour": ""
         },
         {
@@ -29872,7 +29796,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Cross-country",
+          "Epreuve": "Cross-country",
           "Tour": ""
         },
         {
@@ -29898,7 +29822,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 10 km",
+          "Epreuve": "10 km",
           "Tour": ""
         },
         {
@@ -29924,7 +29848,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes |10 km",
+          "Epreuve": "10 km",
           "Tour": ""
         },
         {
@@ -29950,7 +29874,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "éliminatoires"
         },
         {
@@ -29976,7 +29900,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "éliminatoires"
         },
         {
@@ -30002,7 +29926,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "éliminatoires"
         },
         {
@@ -30028,7 +29952,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "éliminatoires"
         },
         {
@@ -30054,7 +29978,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "éliminatoires"
         },
         {
@@ -30080,7 +30004,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "éliminatoires"
         },
         {
@@ -30106,7 +30030,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "repêchages"
         },
         {
@@ -30132,7 +30056,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "repêchages"
         },
         {
@@ -30158,7 +30082,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "repêchage"
         },
         {
@@ -30184,7 +30108,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "repêchage"
         },
         {
@@ -30210,7 +30134,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "éliminatoires"
         },
         {
@@ -30236,7 +30160,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "éliminatoires"
         },
         {
@@ -30262,7 +30186,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "éliminatoires"
         },
         {
@@ -30288,7 +30212,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "éliminatoires"
         },
         {
@@ -30314,7 +30238,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "éliminatoires"
         },
         {
@@ -30340,7 +30264,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "éliminatoires"
         },
         {
@@ -30366,7 +30290,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "demi-finales E/F"
         },
         {
@@ -30392,7 +30316,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "demi-finales E/F"
         },
         {
@@ -30418,7 +30342,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "repêchage"
         },
         {
@@ -30444,7 +30368,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "repêchage"
         },
         {
@@ -30470,7 +30394,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "repêchages"
         },
         {
@@ -30496,7 +30420,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "repêchages"
         },
         {
@@ -30522,7 +30446,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "repêchage"
         },
         {
@@ -30548,7 +30472,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "repêchage"
         },
         {
@@ -30574,7 +30498,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Huit de pointe avec barreur",
+          "Epreuve": "Huit de pointe avec barreur",
           "Tour": "éliminatoires"
         },
         {
@@ -30600,7 +30524,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Huit de pointe avec barreur",
+          "Epreuve": "Huit de pointe avec barreur",
           "Tour": "éliminatoires"
         },
         {
@@ -30626,7 +30550,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "quarts de finale"
         },
         {
@@ -30652,7 +30576,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "quarts de finale"
         },
         {
@@ -30678,7 +30602,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "demi-finales"
         },
         {
@@ -30704,7 +30628,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "demi-finales"
         },
         {
@@ -30730,7 +30654,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "repêchage"
         },
         {
@@ -30756,7 +30680,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "repêchage"
         },
         {
@@ -30782,7 +30706,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "finale C"
         },
         {
@@ -30808,7 +30732,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "finale C"
         },
         {
@@ -30834,7 +30758,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "demi-finales C/D"
         },
         {
@@ -30860,7 +30784,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "demi-finales C/D"
         },
         {
@@ -30886,7 +30810,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "demi-finales"
         },
         {
@@ -30912,7 +30836,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "demi-finales"
         },
         {
@@ -30938,7 +30862,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "demi-finales"
         },
         {
@@ -30964,7 +30888,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "demi-finales"
         },
         {
@@ -30990,7 +30914,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "finale B"
         },
         {
@@ -31016,7 +30940,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "finale B"
         },
         {
@@ -31042,7 +30966,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "finale A"
         },
         {
@@ -31068,7 +30992,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de couple",
+          "Epreuve": "Quatre de couple",
           "Tour": "finale A"
         },
         {
@@ -31094,7 +31018,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "demi-finales A/B"
         },
         {
@@ -31120,7 +31044,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "demi-finales A/B"
         },
         {
@@ -31146,7 +31070,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Huit de pointe avec barreur",
+          "Epreuve": "Huit de pointe avec barreur",
           "Tour": "repêchage"
         },
         {
@@ -31172,7 +31096,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Huit de pointe avec barreur",
+          "Epreuve": "Huit de pointe avec barreur",
           "Tour": "repêchage"
         },
         {
@@ -31198,7 +31122,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "finale B"
         },
         {
@@ -31224,7 +31148,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "finale B"
         },
         {
@@ -31250,7 +31174,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "finale B"
         },
         {
@@ -31276,7 +31200,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "finale B"
         },
         {
@@ -31302,7 +31226,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "finale A"
         },
         {
@@ -31328,7 +31252,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple",
+          "Epreuve": "Deux de couple",
           "Tour": "finale A"
         },
         {
@@ -31354,7 +31278,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "finale A"
         },
         {
@@ -31380,7 +31304,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Quatre de pointe sans barreur",
+          "Epreuve": "Quatre de pointe sans barreur",
           "Tour": "finale A"
         },
         {
@@ -31406,7 +31330,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale F"
         },
         {
@@ -31432,7 +31356,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale F"
         },
         {
@@ -31458,7 +31382,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale E"
         },
         {
@@ -31484,7 +31408,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale E"
         },
         {
@@ -31510,7 +31434,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale D"
         },
         {
@@ -31536,7 +31460,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale D"
         },
         {
@@ -31562,7 +31486,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "finale B"
         },
         {
@@ -31588,7 +31512,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "finale B"
         },
         {
@@ -31614,7 +31538,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "finale B"
         },
         {
@@ -31640,7 +31564,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "finale B"
         },
         {
@@ -31666,7 +31590,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "finale A"
         },
         {
@@ -31692,7 +31616,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de pointe sans barreur",
+          "Epreuve": "Deux de pointe sans barreur",
           "Tour": "finale A"
         },
         {
@@ -31718,7 +31642,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "finale A"
         },
         {
@@ -31744,7 +31668,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Deux de couple poids léger",
+          "Epreuve": "Deux de couple poids léger",
           "Tour": "finale A"
         },
         {
@@ -31770,7 +31694,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale C"
         },
         {
@@ -31796,7 +31720,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale C"
         },
         {
@@ -31822,7 +31746,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale B"
         },
         {
@@ -31848,7 +31772,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale B"
         },
         {
@@ -31874,7 +31798,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale A"
         },
         {
@@ -31900,7 +31824,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "finale A"
         },
         {
@@ -31926,7 +31850,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Huit de pointe avec barreur",
+          "Epreuve": "Huit de pointe avec barreur",
           "Tour": "finale A"
         },
         {
@@ -31952,7 +31876,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Huit de pointe avec barreur",
+          "Epreuve": "Huit de pointe avec barreur",
           "Tour": "finale A"
         },
         {
@@ -31979,7 +31903,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "poules (12 matchs)"
+          "Tour": "Poules"
         },
         {
           "Discipline": "RUGBY",
@@ -32005,7 +31929,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "poules (6 matchs)"
+          "Tour": "Poules"
         },
         {
           "Discipline": "RUGBY",
@@ -32031,7 +31955,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "placement 9-12 (2 matchs)"
+          "Tour": "Placement 9-12"
         },
         {
           "Discipline": "RUGBY",
@@ -32057,7 +31981,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "quarts de finale (4 matchs)"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "RUGBY",
@@ -32083,7 +32007,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "placement 5-8 (2 matchs)"
+          "Tour": "Placement 5-8"
         },
         {
           "Discipline": "RUGBY",
@@ -32109,7 +32033,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "demi-finales (2 matchs)"
+          "Tour": "Demi-finales"
         },
         {
           "Discipline": "RUGBY",
@@ -32135,7 +32059,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "placement 11-12"
+          "Tour": "Placement 11-12"
         },
         {
           "Discipline": "RUGBY",
@@ -32161,7 +32085,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "placement 9-10"
+          "Tour": "Placement 9-10"
         },
         {
           "Discipline": "RUGBY",
@@ -32187,7 +32111,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "placement 7-8"
+          "Tour": "Placement 7-8"
         },
         {
           "Discipline": "RUGBY",
@@ -32213,7 +32137,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "placement 5-6"
+          "Tour": "Placement 5-6"
         },
         {
           "Discipline": "RUGBY",
@@ -32239,7 +32163,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match pour la médaille de bronze"
+          "Tour": "Matchs pour la médaille de bronze"
         },
         {
           "Discipline": "RUGBY",
@@ -32265,7 +32189,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match pour la médaille d'or"
+          "Tour": "Matchs pour la médaille d'or"
         },
         {
           "Discipline": "RUGBY",
@@ -32291,7 +32215,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "poules (12 matchs)"
+          "Tour": "Poules"
         },
         {
           "Discipline": "RUGBY",
@@ -32317,7 +32241,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "poules (6 matchs)"
+          "Tour": "Poules"
         },
         {
           "Discipline": "RUGBY",
@@ -32343,7 +32267,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "placement 9-12 (2 matchs)"
+          "Tour": "Placement 9-12"
         },
         {
           "Discipline": "RUGBY",
@@ -32369,7 +32293,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "quarts de finale (4 matchs)"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "RUGBY",
@@ -32395,7 +32319,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "placement 5-8 (2 matchs)"
+          "Tour": "Placement 5-8"
         },
         {
           "Discipline": "RUGBY",
@@ -32421,7 +32345,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "demi-finales (2 matchs)"
+          "Tour": "Demi-finales"
         },
         {
           "Discipline": "RUGBY",
@@ -32447,7 +32371,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "placement 11-12"
+          "Tour": "Placement 11-12"
         },
         {
           "Discipline": "RUGBY",
@@ -32473,7 +32397,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "placement 9-10"
+          "Tour": "Placement 9-10"
         },
         {
           "Discipline": "RUGBY",
@@ -32499,7 +32423,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "placement 7-8"
+          "Tour": "Placement 7-8"
         },
         {
           "Discipline": "RUGBY",
@@ -32525,7 +32449,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "placement 5-6"
+          "Tour": "Placement 5-6"
         },
         {
           "Discipline": "RUGBY",
@@ -32551,7 +32475,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "médaille de bronze"
+          "Tour": "Matchs pour la médaille de bronze"
         },
         {
           "Discipline": "RUGBY",
@@ -32577,7 +32501,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "médaille d'or"
+          "Tour": "Matchs pour la médaille d'or"
         },
         {
           "Discipline": "VOILE",
@@ -32602,7 +32526,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32628,7 +32552,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32654,7 +32578,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32680,7 +32604,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32706,7 +32630,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32732,7 +32656,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32758,7 +32682,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32784,7 +32708,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32810,7 +32734,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32836,7 +32760,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32862,7 +32786,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32888,7 +32812,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32914,7 +32838,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32940,7 +32864,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Série d'ouverture"
         },
         {
@@ -32966,7 +32890,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture Marathon"
         },
         {
@@ -32992,7 +32916,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Série d'ouverture Marathon"
         },
         {
@@ -33018,7 +32942,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33044,7 +32968,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skiff",
+          "Epreuve": "Skiff",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33070,7 +32994,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33096,7 +33020,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33122,7 +33046,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33148,7 +33072,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Planche à voile",
+          "Epreuve": "Planche à voile",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33174,7 +33098,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33200,7 +33124,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33226,7 +33150,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33252,7 +33176,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33278,7 +33202,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33304,7 +33228,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33330,7 +33254,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Multicoque",
+          "Epreuve": "Multicoque",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33356,7 +33280,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33382,7 +33306,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33408,7 +33332,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33434,7 +33358,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Multicoque",
+          "Epreuve": "Multicoque",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33460,7 +33384,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33486,7 +33410,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33512,7 +33436,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33538,7 +33462,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33564,7 +33488,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33590,7 +33514,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Multicoque",
+          "Epreuve": "Multicoque",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33616,7 +33540,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33642,7 +33566,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33668,7 +33592,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33694,7 +33618,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33720,7 +33644,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33746,7 +33670,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Multicoque",
+          "Epreuve": "Multicoque",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33772,7 +33696,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33798,7 +33722,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33824,7 +33748,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Dériveur",
+          "Epreuve": "Dériveur",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33850,7 +33774,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Multicoque",
+          "Epreuve": "Multicoque",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33876,7 +33800,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33902,7 +33826,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Série d'ouverture"
         },
         {
@@ -33928,7 +33852,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33954,7 +33878,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Kite",
+          "Epreuve": "Kite",
           "Tour": "Course pour les médailles"
         },
         {
@@ -33980,7 +33904,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte | Carabine à air comprimé 10 m",
+          "Epreuve": "Carabine à air comprimé 10 m",
           "Tour": "qualification"
         },
         {
@@ -34006,7 +33930,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 10 m pistolet à air",
+          "Epreuve": "10 m pistolet à air",
           "Tour": "qualification"
         },
         {
@@ -34032,7 +33956,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 10 m pistolet à air",
+          "Epreuve": "10 m pistolet à air",
           "Tour": "qualification"
         },
         {
@@ -34058,7 +33982,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte | Carabine à air comprimé 10 m",
+          "Epreuve": "Carabine à air comprimé 10 m",
           "Tour": "finale"
         },
         {
@@ -34084,7 +34008,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 10 m rifle à air",
+          "Epreuve": "10 m rifle à air",
           "Tour": "qualification"
         },
         {
@@ -34110,7 +34034,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 10 m rifle à air",
+          "Epreuve": "10 m rifle à air",
           "Tour": "qualification"
         },
         {
@@ -34136,7 +34060,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 10 m pistolet à air",
+          "Epreuve": "10 m pistolet à air",
           "Tour": "finale"
         },
         {
@@ -34162,7 +34086,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 10 m pistolet à air",
+          "Epreuve": "10 m pistolet à air",
           "Tour": "finale"
         },
         {
@@ -34188,7 +34112,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte | Pistolet à air comprimé 10 m",
+          "Epreuve": "Pistolet à air comprimé 10 m",
           "Tour": "qualification"
         },
         {
@@ -34214,7 +34138,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 10 m rifle à air",
+          "Epreuve": "10 m rifle à air",
           "Tour": "finale"
         },
         {
@@ -34240,7 +34164,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 10 m rifle à air",
+          "Epreuve": "10 m rifle à air",
           "Tour": "finale"
         },
         {
@@ -34266,7 +34190,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Fosse olympique",
+          "Epreuve": "Fosse olympique",
           "Tour": "qualification jour 1"
         },
         {
@@ -34292,7 +34216,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Fosse olympique",
+          "Epreuve": "Fosse olympique",
           "Tour": "qualification jour 2"
         },
         {
@@ -34318,7 +34242,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Fosse olympique",
+          "Epreuve": "Fosse olympique",
           "Tour": "qualification jour 1"
         },
         {
@@ -34344,7 +34268,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Fosse olympique",
+          "Epreuve": "Fosse olympique",
           "Tour": "finale"
         },
         {
@@ -34370,7 +34294,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte | Pistolet à air comprimé 10 m",
+          "Epreuve": "Pistolet à air comprimé 10 m",
           "Tour": "finale"
         },
         {
@@ -34396,7 +34320,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 50 m rifle 3 positions",
+          "Epreuve": "50 m rifle 3 positions",
           "Tour": "qualification"
         },
         {
@@ -34422,7 +34346,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Fosse olympique",
+          "Epreuve": "Fosse olympique",
           "Tour": "qualification jour 2"
         },
         {
@@ -34448,7 +34372,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Fosse olympique",
+          "Epreuve": "Fosse olympique",
           "Tour": "finale"
         },
         {
@@ -34474,7 +34398,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 50 m rifle 3 positions",
+          "Epreuve": "50 m rifle 3 positions",
           "Tour": "finale"
         },
         {
@@ -34500,7 +34424,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 50 m rifle 3 positions",
+          "Epreuve": "50 m rifle 3 positions",
           "Tour": "qualification"
         },
         {
@@ -34526,7 +34450,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "qualification jour 1"
         },
         {
@@ -34552,7 +34476,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 25 m pistolet",
+          "Epreuve": "25 m pistolet",
           "Tour": "qualification"
         },
         {
@@ -34578,7 +34502,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 50 m rifle 3 positions",
+          "Epreuve": "50 m rifle 3 positions",
           "Tour": "finale"
         },
         {
@@ -34604,7 +34528,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "qualification jour 2"
         },
         {
@@ -34630,7 +34554,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "qualification jour 1"
         },
         {
@@ -34656,7 +34580,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "finale"
         },
         {
@@ -34682,7 +34606,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 25 m pistolet",
+          "Epreuve": "25 m pistolet",
           "Tour": "finale"
         },
         {
@@ -34708,7 +34632,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 25 m pistolet feu rapide",
+          "Epreuve": "25 m pistolet feu rapide",
           "Tour": "qualification"
         },
         {
@@ -34734,7 +34658,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "qualification jour 2"
         },
         {
@@ -34760,7 +34684,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "finale"
         },
         {
@@ -34786,7 +34710,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "qualification"
         },
         {
@@ -34812,7 +34736,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Equipe mixte | Skeet",
+          "Epreuve": "Skeet",
           "Tour": "finale"
         },
         {
@@ -34838,7 +34762,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 25 m pistolet feu rapide",
+          "Epreuve": "25 m pistolet feu rapide",
           "Tour": "finale"
         },
         {
@@ -34864,7 +34788,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Street",
+          "Epreuve": "Street",
           "Tour": "préliminaires"
         },
         {
@@ -34890,7 +34814,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Street",
+          "Epreuve": "Street",
           "Tour": "finale"
         },
         {
@@ -34916,7 +34840,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Street",
+          "Epreuve": "Street",
           "Tour": "préliminaires"
         },
         {
@@ -34942,7 +34866,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Street",
+          "Epreuve": "Street",
           "Tour": "finale"
         },
         {
@@ -34968,7 +34892,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Park",
+          "Epreuve": "Park",
           "Tour": "préliminaires"
         },
         {
@@ -34994,7 +34918,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Park",
+          "Epreuve": "Park",
           "Tour": "finale"
         },
         {
@@ -35020,7 +34944,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Park",
+          "Epreuve": "Park",
           "Tour": "préliminaires"
         },
         {
@@ -35046,7 +34970,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Park",
+          "Epreuve": "Park",
           "Tour": "finale"
         },
         {
@@ -35073,7 +34997,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "1er tour (8 séries)"
+          "Tour": "1er tour"
         },
         {
           "Discipline": "SURF",
@@ -35099,7 +35023,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "1er tour (8 séries)"
+          "Tour": "1er tour"
         },
         {
           "Discipline": "SURF",
@@ -35125,7 +35049,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "2e tour (8 séries)"
+          "Tour": "2e tour"
         },
         {
           "Discipline": "SURF",
@@ -35151,7 +35075,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "2e tour (8 séries)"
+          "Tour": "2e tour"
         },
         {
           "Discipline": "SURF",
@@ -35177,7 +35101,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "3e tour (8 séries)"
+          "Tour": "3e tour"
         },
         {
           "Discipline": "SURF",
@@ -35203,7 +35127,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "3e tour (8 séries)"
+          "Tour": "3e tour"
         },
         {
           "Discipline": "SURF",
@@ -35229,7 +35153,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "quarts de finale"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "SURF",
@@ -35255,7 +35179,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "quarts de finale"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "SURF",
@@ -35281,7 +35205,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "demi-finales"
+          "Tour": "Demi-finales"
         },
         {
           "Discipline": "SURF",
@@ -35307,7 +35231,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "demi-finales"
+          "Tour": "Demi-finales"
         },
         {
           "Discipline": "SURF",
@@ -35333,7 +35257,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match pour la médaille de bronze"
+          "Tour": "Médailles de bronze"
         },
         {
           "Discipline": "SURF",
@@ -35359,7 +35283,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match pour la médaille de bronze"
+          "Tour": "Médailles de bronze"
         },
         {
           "Discipline": "SURF",
@@ -35385,7 +35309,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match pour la médaille d'or"
+          "Tour": "Médailles d'or"
         },
         {
           "Discipline": "SURF",
@@ -35411,7 +35335,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match pour la médaille d'or"
+          "Tour": "Médailles d'or"
         },
         {
           "Discipline": "NATATION ARTISTIQUE",
@@ -35437,7 +35361,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Épreuve d'équipe",
-          "Tour": "programme technique"
+          "Tour": "Programme technique"
         },
         {
           "Discipline": "NATATION ARTISTIQUE",
@@ -35463,7 +35387,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Épreuve d'équipe",
-          "Tour": "programme libre"
+          "Tour": "Programme libre"
         },
         {
           "Discipline": "NATATION ARTISTIQUE",
@@ -35489,7 +35413,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Épreuve d'équipe",
-          "Tour": "programme acrobatique"
+          "Tour": "Programme acrobatique"
         },
         {
           "Discipline": "NATATION ARTISTIQUE",
@@ -35515,7 +35439,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Épreuve de duo",
-          "Tour": "programme technique"
+          "Tour": "Programme technique"
         },
         {
           "Discipline": "NATATION ARTISTIQUE",
@@ -35541,7 +35465,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Épreuve de duo",
-          "Tour": "programme libre"
+          "Tour": "Programme libre"
         },
         {
           "Discipline": "NATATION",
@@ -35566,7 +35490,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m papillon",
+          "Epreuve": "100 m papillon",
           "Tour": "séries"
         },
         {
@@ -35592,7 +35516,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 400 m nage libre",
+          "Epreuve": "400 m nage libre",
           "Tour": "séries"
         },
         {
@@ -35618,7 +35542,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m brasse",
+          "Epreuve": "100 m brasse",
           "Tour": "séries"
         },
         {
@@ -35644,7 +35568,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 400 m nage libre",
+          "Epreuve": "400 m nage libre",
           "Tour": "séries"
         },
         {
@@ -35670,7 +35594,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Relais 4x100 m nage libre",
+          "Epreuve": "Relais 4x100 m nage libre",
           "Tour": "séries"
         },
         {
@@ -35696,7 +35620,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Relais 4x100 m nage libre",
+          "Epreuve": "Relais 4x100 m nage libre",
           "Tour": "séries"
         },
         {
@@ -35722,7 +35646,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m papillon",
+          "Epreuve": "100 m papillon",
           "Tour": "demi-finales"
         },
         {
@@ -35748,7 +35672,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 400 m nage libre",
+          "Epreuve": "400 m nage libre",
           "Tour": "finale"
         },
         {
@@ -35774,7 +35698,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 400 m nage libre",
+          "Epreuve": "400 m nage libre",
           "Tour": "finale"
         },
         {
@@ -35800,7 +35724,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m brasse",
+          "Epreuve": "100 m brasse",
           "Tour": "demi-finales"
         },
         {
@@ -35826,7 +35750,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Relais 4x100 m nage libre",
+          "Epreuve": "Relais 4x100 m nage libre",
           "Tour": "finale"
         },
         {
@@ -35852,7 +35776,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Relais 4x100 m nage libre",
+          "Epreuve": "Relais 4x100 m nage libre",
           "Tour": "finale"
         },
         {
@@ -35878,7 +35802,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m nage libre",
+          "Epreuve": "200 m nage libre",
           "Tour": "séries"
         },
         {
@@ -35904,7 +35828,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 400 m quatre nages individuel",
+          "Epreuve": "400 m quatre nages individuel",
           "Tour": "séries"
         },
         {
@@ -35930,7 +35854,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m brasse",
+          "Epreuve": "100 m brasse",
           "Tour": "séries"
         },
         {
@@ -35956,7 +35880,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m dos",
+          "Epreuve": "100 m dos",
           "Tour": "séries"
         },
         {
@@ -35982,7 +35906,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m nage libre",
+          "Epreuve": "200 m nage libre",
           "Tour": "séries"
         },
         {
@@ -36008,7 +35932,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 400 m quatre nages individuel",
+          "Epreuve": "400 m quatre nages individuel",
           "Tour": "finale"
         },
         {
@@ -36034,7 +35958,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m papillon",
+          "Epreuve": "100 m papillon",
           "Tour": "finale"
         },
         {
@@ -36060,7 +35984,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m nage libre",
+          "Epreuve": "200 m nage libre",
           "Tour": "demi-finales"
         },
         {
@@ -36086,7 +36010,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m brasse",
+          "Epreuve": "100 m brasse",
           "Tour": "demi-finales"
         },
         {
@@ -36112,7 +36036,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m dos",
+          "Epreuve": "100 m dos",
           "Tour": "demi-finales"
         },
         {
@@ -36138,7 +36062,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m brasse",
+          "Epreuve": "100 m brasse",
           "Tour": "finale"
         },
         {
@@ -36164,7 +36088,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m nage libre",
+          "Epreuve": "200 m nage libre",
           "Tour": "demi-finales"
         },
         {
@@ -36190,7 +36114,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 400 m quatre nages individuel",
+          "Epreuve": "400 m quatre nages individuel",
           "Tour": "séries"
         },
         {
@@ -36216,7 +36140,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m dos",
+          "Epreuve": "100 m dos",
           "Tour": "séries"
         },
         {
@@ -36242,7 +36166,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 800 m nage libre",
+          "Epreuve": "800 m nage libre",
           "Tour": "séries"
         },
         {
@@ -36268,7 +36192,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 400 m quatre nages individuel",
+          "Epreuve": "400 m quatre nages individuel",
           "Tour": "finale"
         },
         {
@@ -36294,7 +36218,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m nage libre",
+          "Epreuve": "200 m nage libre",
           "Tour": "finale"
         },
         {
@@ -36320,7 +36244,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m dos",
+          "Epreuve": "100 m dos",
           "Tour": "demi-finales"
         },
         {
@@ -36346,7 +36270,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m dos",
+          "Epreuve": "100 m dos",
           "Tour": "finale"
         },
         {
@@ -36372,7 +36296,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m brasse",
+          "Epreuve": "100 m brasse",
           "Tour": "finale"
         },
         {
@@ -36398,7 +36322,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m nage libre",
+          "Epreuve": "200 m nage libre",
           "Tour": "finale"
         },
         {
@@ -36424,7 +36348,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m papillon",
+          "Epreuve": "200 m papillon",
           "Tour": "séries"
         },
         {
@@ -36450,7 +36374,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m nage libre",
+          "Epreuve": "100 m nage libre",
           "Tour": "séries"
         },
         {
@@ -36476,7 +36400,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 1 500 m nage libre",
+          "Epreuve": "1 500 m nage libre",
           "Tour": "séries"
         },
         {
@@ -36502,7 +36426,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m nage libre",
+          "Epreuve": "100 m nage libre",
           "Tour": "séries"
         },
         {
@@ -36528,7 +36452,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m brasse",
+          "Epreuve": "200 m brasse",
           "Tour": "séries"
         },
         {
@@ -36554,7 +36478,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Relais 4x200 m nage libre",
+          "Epreuve": "Relais 4x200 m nage libre",
           "Tour": "séries"
         },
         {
@@ -36580,7 +36504,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m nage libre",
+          "Epreuve": "100 m nage libre",
           "Tour": "demi-finales"
         },
         {
@@ -36606,7 +36530,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m papillon",
+          "Epreuve": "200 m papillon",
           "Tour": "demi-finales"
         },
         {
@@ -36632,7 +36556,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m dos",
+          "Epreuve": "100 m dos",
           "Tour": "finale"
         },
         {
@@ -36658,7 +36582,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 800 m nage libre",
+          "Epreuve": "800 m nage libre",
           "Tour": "finale"
         },
         {
@@ -36684,7 +36608,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m nage libre",
+          "Epreuve": "100 m nage libre",
           "Tour": "demi-finales"
         },
         {
@@ -36710,7 +36634,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m brasse",
+          "Epreuve": "200 m brasse",
           "Tour": "demi-finales"
         },
         {
@@ -36736,7 +36660,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Relais 4x200 m nage libre",
+          "Epreuve": "Relais 4x200 m nage libre",
           "Tour": "finale"
         },
         {
@@ -36762,7 +36686,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m brasse",
+          "Epreuve": "200 m brasse",
           "Tour": "séries"
         },
         {
@@ -36788,7 +36712,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m dos",
+          "Epreuve": "200 m dos",
           "Tour": "séries"
         },
         {
@@ -36814,7 +36738,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m papillon",
+          "Epreuve": "200 m papillon",
           "Tour": "séries"
         },
         {
@@ -36840,7 +36764,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 100 m nage libre",
+          "Epreuve": "100 m nage libre",
           "Tour": "finale"
         },
         {
@@ -36866,7 +36790,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m papillon",
+          "Epreuve": "200 m papillon",
           "Tour": "finale"
         },
         {
@@ -36892,7 +36816,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m brasse",
+          "Epreuve": "200 m brasse",
           "Tour": "finale"
         },
         {
@@ -36918,7 +36842,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 1 500 m nage libre",
+          "Epreuve": "1 500 m nage libre",
           "Tour": "finale"
         },
         {
@@ -36944,7 +36868,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m dos",
+          "Epreuve": "200 m dos",
           "Tour": "demi-finales"
         },
         {
@@ -36970,7 +36894,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m brasse",
+          "Epreuve": "200 m brasse",
           "Tour": "demi-finales"
         },
         {
@@ -36996,7 +36920,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m papillon",
+          "Epreuve": "200 m papillon",
           "Tour": "demi-finales"
         },
         {
@@ -37022,7 +36946,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m nage libre",
+          "Epreuve": "100 m nage libre",
           "Tour": "finale"
         },
         {
@@ -37048,7 +36972,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m dos",
+          "Epreuve": "200 m dos",
           "Tour": "séries"
         },
         {
@@ -37074,7 +36998,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 50 m nage libre",
+          "Epreuve": "50 m nage libre",
           "Tour": "séries"
         },
         {
@@ -37100,7 +37024,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m quatre nages individuel",
+          "Epreuve": "200 m quatre nages individuel",
           "Tour": "séries"
         },
         {
@@ -37126,7 +37050,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Relais 4x200 m nage libre",
+          "Epreuve": "Relais 4x200 m nage libre",
           "Tour": "séries"
         },
         {
@@ -37152,7 +37076,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m papillon",
+          "Epreuve": "200 m papillon",
           "Tour": "finale"
         },
         {
@@ -37178,7 +37102,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m dos",
+          "Epreuve": "200 m dos",
           "Tour": "finale"
         },
         {
@@ -37204,7 +37128,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m dos",
+          "Epreuve": "200 m dos",
           "Tour": "demi-finales"
         },
         {
@@ -37230,7 +37154,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m brasse",
+          "Epreuve": "200 m brasse",
           "Tour": "finale"
         },
         {
@@ -37256,7 +37180,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m quatre nages individuel",
+          "Epreuve": "200 m quatre nages individuel",
           "Tour": "demi-finale"
         },
         {
@@ -37282,7 +37206,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 50 m nage libre",
+          "Epreuve": "50 m nage libre",
           "Tour": "demi-finales"
         },
         {
@@ -37308,7 +37232,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Relais 4x200 m nage libre",
+          "Epreuve": "Relais 4x200 m nage libre",
           "Tour": "finale"
         },
         {
@@ -37334,7 +37258,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m papillon",
+          "Epreuve": "100 m papillon",
           "Tour": "séries"
         },
         {
@@ -37360,7 +37284,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m quatre nages individuel",
+          "Epreuve": "200 m quatre nages individuel",
           "Tour": "séries"
         },
         {
@@ -37386,7 +37310,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 800 m nage libre",
+          "Epreuve": "800 m nage libre",
           "Tour": "séries"
         },
         {
@@ -37412,7 +37336,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Relais 4x100 m quatre nages",
+          "Epreuve": "Relais 4x100 m quatre nages",
           "Tour": "séries"
         },
         {
@@ -37438,7 +37362,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 50 m nage libre",
+          "Epreuve": "50 m nage libre",
           "Tour": "finale"
         },
         {
@@ -37464,7 +37388,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m dos",
+          "Epreuve": "200 m dos",
           "Tour": "finale"
         },
         {
@@ -37490,7 +37414,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 200 m quatre nages individuel",
+          "Epreuve": "200 m quatre nages individuel",
           "Tour": "finale"
         },
         {
@@ -37516,7 +37440,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m papillon",
+          "Epreuve": "100 m papillon",
           "Tour": "demi-finales"
         },
         {
@@ -37542,7 +37466,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m quatre nages individuel",
+          "Epreuve": "200 m quatre nages individuel",
           "Tour": "demi-finale"
         },
         {
@@ -37568,7 +37492,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 50 m nage libre",
+          "Epreuve": "50 m nage libre",
           "Tour": "séries"
         },
         {
@@ -37594,7 +37518,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 1 500 m nage libre",
+          "Epreuve": "1 500 m nage libre",
           "Tour": "séries"
         },
         {
@@ -37620,7 +37544,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Relais 4x100 m quatre nages",
+          "Epreuve": "Relais 4x100 m quatre nages",
           "Tour": "séries"
         },
         {
@@ -37646,7 +37570,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Relais 4x100 m quatre nages",
+          "Epreuve": "Relais 4x100 m quatre nages",
           "Tour": "séries"
         },
         {
@@ -37672,7 +37596,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 100 m papillon",
+          "Epreuve": "100 m papillon",
           "Tour": "finale"
         },
         {
@@ -37698,7 +37622,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 50 m nage libre",
+          "Epreuve": "50 m nage libre",
           "Tour": "demi-finales"
         },
         {
@@ -37724,7 +37648,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 200 m quatre nages individuel",
+          "Epreuve": "200 m quatre nages individuel",
           "Tour": "finale"
         },
         {
@@ -37750,7 +37674,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 800 m nage libre",
+          "Epreuve": "800 m nage libre",
           "Tour": "finale"
         },
         {
@@ -37776,7 +37700,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Mixte | Relais 4x100 m quatre nages",
+          "Epreuve": "Relais 4x100 m quatre nages",
           "Tour": "finale"
         },
         {
@@ -37802,7 +37726,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 50 m nage libre",
+          "Epreuve": "50 m nage libre",
           "Tour": "finale"
         },
         {
@@ -37828,7 +37752,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 1 500 m nage libre",
+          "Epreuve": "1 500 m nage libre",
           "Tour": "finale"
         },
         {
@@ -37854,7 +37778,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Relais 4x100 m quatre nages",
+          "Epreuve": "Relais 4x100 m quatre nages",
           "Tour": "finale"
         },
         {
@@ -37880,7 +37804,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Relais 4x100 m quatre nages",
+          "Epreuve": "Relais 4x100 m quatre nages",
           "Tour": "finale"
         },
         {
@@ -38738,8 +38662,8 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double mixtes",
-          "Tour": "match pour la médaille d'or"
+          "Epreuve": "match pour la médaille d'or",
+          "Tour": ""
         },
         {
           "Discipline": "TENNIS",
@@ -38764,8 +38688,8 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
-          "Tour": "match pour la médaille de bronze"
+          "Epreuve": "match pour la médaille de bronze",
+          "Tour": ""
         },
         {
           "Discipline": "TENNIS",
@@ -38790,8 +38714,8 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
-          "Tour": "match pour la médaille d'or"
+          "Epreuve": "match pour la médaille d'or",
+          "Tour": ""
         },
         {
           "Discipline": "TENNIS",
@@ -38816,8 +38740,8 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double hommes",
-          "Tour": "match pour la médaille d'or"
+          "Epreuve": "match pour la médaille d'or",
+          "Tour": ""
         },
         {
           "Discipline": "TENNIS",
@@ -38842,8 +38766,8 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double femmes",
-          "Tour": "match pour la médaille de bronze"
+          "Epreuve": "match pour la médaille de bronze",
+          "Tour": ""
         },
         {
           "Discipline": "TENNIS",
@@ -38868,8 +38792,8 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
-          "Tour": "match pour la médaille d'or"
+          "Epreuve": "match pour la médaille d'or",
+          "Tour": ""
         },
         {
           "Discipline": "TENNIS",
@@ -38894,8 +38818,8 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double femmes",
-          "Tour": "match pour la médaille d'or"
+          "Epreuve": "match pour la médaille d'or",
+          "Tour": ""
         },
         {
           "Discipline": "TAEKWONDO",
@@ -38920,7 +38844,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 49kg",
+          "Epreuve": "Qualifications",
           "Tour": "Hommes | 58kg"
         },
         {
@@ -38946,7 +38870,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 49kg",
+          "Epreuve": "Phases finales",
           "Tour": "Hommes | 58kg"
         },
         {
@@ -38972,7 +38896,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 49kg",
+          "Epreuve": "Repêchages",
           "Tour": "Hommes | 58kg"
         },
         {
@@ -38998,7 +38922,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 49kg",
+          "Epreuve": "Médailles de bronze",
           "Tour": "Hommes | 58kg"
         },
         {
@@ -39024,7 +38948,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 49kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39050,7 +38974,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 58kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39076,7 +39000,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 68kg",
+          "Epreuve": "Qualifications",
           "Tour": "Femmes | 57kg"
         },
         {
@@ -39102,7 +39026,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 68kg",
+          "Epreuve": "Phases finales",
           "Tour": "Femmes | 57kg"
         },
         {
@@ -39128,7 +39052,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 68kg",
+          "Epreuve": "Repêchages",
           "Tour": "Femmes | 57kg"
         },
         {
@@ -39154,7 +39078,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 68kg",
+          "Epreuve": "Médailles de bronze",
           "Tour": "Femmes | 57kg"
         },
         {
@@ -39180,7 +39104,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 68kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39206,7 +39130,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 57kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39232,7 +39156,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 67kg",
+          "Epreuve": "Qualifications",
           "Tour": "Hommes | 80kg"
         },
         {
@@ -39258,7 +39182,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 67kg",
+          "Epreuve": "Phases finales",
           "Tour": "Hommes | 80kg"
         },
         {
@@ -39284,7 +39208,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 67kg",
+          "Epreuve": "Repêchages",
           "Tour": "Hommes | 80kg"
         },
         {
@@ -39310,7 +39234,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 67kg",
+          "Epreuve": "Médailles de bronze",
           "Tour": "Hommes | 80kg"
         },
         {
@@ -39336,7 +39260,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | 67kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39362,7 +39286,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | 80kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39388,7 +39312,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +80kg",
+          "Epreuve": "Qualifications",
           "Tour": "Femmes | +67 kg"
         },
         {
@@ -39414,7 +39338,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +80kg",
+          "Epreuve": "Phases finales",
           "Tour": "Femmes | +67 kg"
         },
         {
@@ -39440,7 +39364,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +80kg",
+          "Epreuve": "Repêchages",
           "Tour": "Femmes | +67 kg"
         },
         {
@@ -39466,7 +39390,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +80kg",
+          "Epreuve": "Médailles de bronze",
           "Tour": "Femmes | +67 kg"
         },
         {
@@ -39492,7 +39416,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | +80kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39518,7 +39442,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | +67 kg",
+          "Epreuve": "Médailles d'or",
           "Tour": "médaille d'or"
         },
         {
@@ -39622,7 +39546,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour préliminaire"
         },
         {
@@ -39648,7 +39572,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double mixte",
+          "Epreuve": "Double",
           "Tour": "1/8e finale"
         },
         {
@@ -39674,7 +39598,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 1"
         },
         {
@@ -39700,7 +39624,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 1"
         },
         {
@@ -39726,7 +39650,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double mixte",
+          "Epreuve": "Double",
           "Tour": "quarts de finale"
         },
         {
@@ -39752,7 +39676,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 1"
         },
         {
@@ -39778,7 +39702,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 1"
         },
         {
@@ -39804,7 +39728,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double mixte",
+          "Epreuve": "Double",
           "Tour": "demi-finales"
         },
         {
@@ -39830,7 +39754,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 2"
         },
         {
@@ -39856,7 +39780,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 2"
         },
         {
@@ -39882,7 +39806,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double mixte",
+          "Epreuve": "Double",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -39908,7 +39832,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Double mixte",
+          "Epreuve": "Double",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -39934,7 +39858,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 2"
         },
         {
@@ -39960,7 +39884,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 3"
         },
         {
@@ -39986,7 +39910,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes et femmes",
+          "Epreuve": "Simple",
           "Tour": "tour 3"
         },
         {
@@ -40012,7 +39936,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
+          "Epreuve": "Simple",
           "Tour": "quarts de finale (2 matchs)"
         },
         {
@@ -40038,7 +39962,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
+          "Epreuve": "Simple",
           "Tour": "quart de finale (1 match)"
         },
         {
@@ -40064,7 +39988,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
+          "Epreuve": "Simple",
           "Tour": "quart de finale (1 match)"
         },
         {
@@ -40090,7 +40014,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
+          "Epreuve": "Simple",
           "Tour": "quarts de finale (2 matchs)"
         },
         {
@@ -40116,7 +40040,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
+          "Epreuve": "Simple",
           "Tour": "quart de finale (1 match)"
         },
         {
@@ -40142,7 +40066,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
+          "Epreuve": "Simple",
           "Tour": "quart de finale (1 match)"
         },
         {
@@ -40168,7 +40092,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
+          "Epreuve": "Simple",
           "Tour": "demi-finale"
         },
         {
@@ -40194,7 +40118,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
+          "Epreuve": "Simple",
           "Tour": "demi-finale"
         },
         {
@@ -40220,7 +40144,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
+          "Epreuve": "Simple",
           "Tour": "demi-finale"
         },
         {
@@ -40246,7 +40170,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
+          "Epreuve": "Simple",
           "Tour": "demi-finale"
         },
         {
@@ -40272,7 +40196,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
+          "Epreuve": "Simple",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -40298,7 +40222,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple femmes",
+          "Epreuve": "Simple",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -40324,7 +40248,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
+          "Epreuve": "Simple",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -40350,7 +40274,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Simple hommes",
+          "Epreuve": "Simple",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -40376,7 +40300,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "1/8e finale"
         },
         {
@@ -40402,7 +40326,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "1/8e finale"
         },
         {
@@ -40428,7 +40352,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "1/8e finale"
         },
         {
@@ -40454,7 +40378,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "1/8e finale"
         },
         {
@@ -40480,7 +40404,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "quart de finale"
         },
         {
@@ -40506,7 +40430,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "quart de finale"
         },
         {
@@ -40532,7 +40456,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "quart de finale"
         },
         {
@@ -40558,7 +40482,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipe hommes et femmes",
+          "Epreuve": "Par équipe",
           "Tour": "quart de finale"
         },
         {
@@ -40584,7 +40508,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes hommes",
+          "Epreuve": "Par équipe",
           "Tour": "demi-finale"
         },
         {
@@ -40610,7 +40534,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes hommes",
+          "Epreuve": "Par équipe",
           "Tour": "demi-finale"
         },
         {
@@ -40636,7 +40560,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes femmes",
+          "Epreuve": "Par équipe",
           "Tour": "demi-finale"
         },
         {
@@ -40662,7 +40586,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes femmes",
+          "Epreuve": "Par équipe",
           "Tour": "demi-finale"
         },
         {
@@ -40688,7 +40612,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes hommes",
+          "Epreuve": "Par équipe",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -40714,7 +40638,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes hommes",
+          "Epreuve": "Par équipe",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -40740,7 +40664,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes femmes",
+          "Epreuve": "Par équipe",
           "Tour": "match pour la médaille de bronze"
         },
         {
@@ -40766,7 +40690,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Par équipes femmes",
+          "Epreuve": "Par équipe",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -41910,7 +41834,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -41936,7 +41860,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -41962,7 +41886,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -41988,7 +41912,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42014,7 +41938,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42040,7 +41964,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42066,7 +41990,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42092,7 +42016,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42118,7 +42042,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42144,7 +42068,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42170,7 +42094,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42196,7 +42120,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42222,7 +42146,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42248,7 +42172,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42274,7 +42198,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42300,7 +42224,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42326,7 +42250,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42352,7 +42276,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42378,7 +42302,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42404,7 +42328,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42430,7 +42354,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42456,7 +42380,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42482,7 +42406,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42508,7 +42432,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42534,7 +42458,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42560,7 +42484,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42586,7 +42510,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42612,7 +42536,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42638,7 +42562,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42664,7 +42588,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42690,7 +42614,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42716,7 +42640,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42742,7 +42666,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42768,7 +42692,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42794,7 +42718,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42820,7 +42744,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Eliminatoires",
           "Tour": "Eliminatoires"
         },
         {
@@ -42846,7 +42770,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -42872,7 +42796,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -42898,7 +42822,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -42924,7 +42848,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -42950,7 +42874,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -42976,7 +42900,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -43002,7 +42926,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -43028,7 +42952,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quart de finale"
         },
         {
@@ -43054,7 +42978,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "Demi-finale"
         },
         {
@@ -43080,7 +43004,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "Demi-finale"
         },
         {
@@ -43106,7 +43030,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "Demi-finale"
         },
         {
@@ -43132,7 +43056,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "Demi-finale"
         },
         {
@@ -43158,7 +43082,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "Match pour la médaille de bronze"
         },
         {
@@ -43184,7 +43108,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "Match pour la médaille d'or"
         },
         {
@@ -43210,7 +43134,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "Match pour la médaille de bronze"
         },
         {
@@ -43236,7 +43160,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "Match pour la médaille d'or"
         },
         {
@@ -43523,7 +43447,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43549,7 +43473,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43575,7 +43499,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43601,7 +43525,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43627,7 +43551,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43653,7 +43577,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43679,7 +43603,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43705,7 +43629,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43731,7 +43655,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43757,7 +43681,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43783,7 +43707,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43809,7 +43733,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43835,7 +43759,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43861,7 +43785,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43887,7 +43811,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43913,7 +43837,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43939,7 +43863,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43965,7 +43889,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -43991,7 +43915,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -44017,7 +43941,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -44043,7 +43967,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -44069,7 +43993,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "tour préliminaire (2 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -44095,7 +44019,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (3 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -44121,7 +44045,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "tour préliminaire (3 matchs)"
+          "Tour": "Tour préliminaire"
         },
         {
           "Discipline": "WATER POLO",
@@ -44147,7 +44071,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "quarts de finale (2 matchs)"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44173,7 +44097,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "quarts de finale (2 matchs)"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44199,7 +44123,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "quarts de finale (2 matchs)"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44225,7 +44149,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "quarts de finale (2 matchs)"
+          "Tour": "Quarts de finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44251,7 +44175,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44277,7 +44201,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "demi-finale"
+          "Tour": "Demi-finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44303,7 +44227,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44329,7 +44253,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "demi-finale"
+          "Tour": "Demi-finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44355,7 +44279,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44381,7 +44305,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "demi-finale"
+          "Tour": "Demi-finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44407,7 +44331,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44433,7 +44357,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "demi-finale"
+          "Tour": "Demi-finale"
         },
         {
           "Discipline": "WATER POLO",
@@ -44459,7 +44383,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44485,7 +44409,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match pour la médaille de bronze"
+          "Tour": "Matchs pour la médaille de bronze"
         },
         {
           "Discipline": "WATER POLO",
@@ -44511,7 +44435,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44537,7 +44461,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Femmes",
-          "Tour": "match pour la médaille d'or"
+          "Tour": "Matchs pour la médaille d'or"
         },
         {
           "Discipline": "WATER POLO",
@@ -44563,7 +44487,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44589,7 +44513,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match de classement"
+          "Tour": "Matchs de classement"
         },
         {
           "Discipline": "WATER POLO",
@@ -44615,7 +44539,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match pour la médaille de bronze"
+          "Tour": "Matchs pour la médaille de bronze"
         },
         {
           "Discipline": "WATER POLO",
@@ -44641,7 +44565,7 @@ const app = Vue.createApp({
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
           "Epreuve": "Hommes",
-          "Tour": "match pour la médaille d'or"
+          "Tour": "Matchs pour la médaille d'or"
         },
         {
           "Discipline": "LUTTE",
@@ -44666,7 +44590,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 60 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "8e de finale"
         },
         {
@@ -44692,7 +44616,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Lutte libre | 68 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -44718,7 +44642,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 130 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "Hommes,8e de finale"
         },
         {
@@ -44744,7 +44668,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 60 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "quarts de finale"
         },
         {
@@ -44770,7 +44694,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Lutte libre | 68 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -44796,7 +44720,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 130 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "quarts de finale"
         },
         {
@@ -44822,7 +44746,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 60 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "demi-finales"
         },
         {
@@ -44848,7 +44772,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 130 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "demi-finales"
         },
         {
@@ -44874,7 +44798,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Lutte libre | 68 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -44900,7 +44824,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 60 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "repêchages"
         },
         {
@@ -44926,7 +44850,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Lutte libre | 68 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -44952,7 +44876,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 130 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "repêchages"
         },
         {
@@ -44978,7 +44902,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 77 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "8e de finale"
         },
         {
@@ -45004,7 +44928,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Lutte libre | 50 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -45030,7 +44954,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 97 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "Hommes,8e de finale"
         },
         {
@@ -45056,7 +44980,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 77 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "quarts de finale"
         },
         {
@@ -45082,7 +45006,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Lutte libre | 50 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -45108,7 +45032,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 97 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "quarts de finale"
         },
         {
@@ -45134,7 +45058,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 77 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "demi-finales"
         },
         {
@@ -45160,7 +45084,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 97 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "demi-finales"
         },
         {
@@ -45186,7 +45110,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 50 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -45212,7 +45136,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 60 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -45238,7 +45162,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 60 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -45264,7 +45188,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 130 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -45290,7 +45214,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 130 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -45316,7 +45240,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 68 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -45342,7 +45266,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 68 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -45368,7 +45292,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 77 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "repêchages"
         },
         {
@@ -45394,7 +45318,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 50 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -45420,7 +45344,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 97 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "repêchages"
         },
         {
@@ -45446,7 +45370,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 67 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "8e de finale"
         },
         {
@@ -45472,7 +45396,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 53 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -45498,7 +45422,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 87 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "Hommes,8e de finale"
         },
         {
@@ -45524,7 +45448,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 67 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "quarts de finale"
         },
         {
@@ -45550,7 +45474,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 53 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -45576,7 +45500,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 87 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "quarts de finale"
         },
         {
@@ -45602,7 +45526,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 67 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "demi-finales"
         },
         {
@@ -45628,7 +45552,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 87 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "demi-finales"
         },
         {
@@ -45654,7 +45578,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 53 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -45680,7 +45604,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 77 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -45706,7 +45630,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 77 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -45732,7 +45656,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 97 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -45758,7 +45682,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 97 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -45784,7 +45708,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 50 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -45810,7 +45734,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 50 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -45836,7 +45760,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 67 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "repêchages"
         },
         {
@@ -45862,7 +45786,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 53 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -45888,7 +45812,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 87 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "repêchages"
         },
         {
@@ -45914,7 +45838,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -45940,7 +45864,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -45966,7 +45890,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 86 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "Hommes,8e de finale"
         },
         {
@@ -45992,7 +45916,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -46018,7 +45942,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -46044,7 +45968,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 86 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -46070,7 +45994,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -46096,7 +46020,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 86 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -46122,7 +46046,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -46148,7 +46072,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 67 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -46174,7 +46098,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 67 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -46200,7 +46124,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 87 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -46226,7 +46150,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Lutte gréco-romaine | 87 kg",
+          "Epreuve": "Lutte gréco-romaine",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -46252,7 +46176,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 53 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -46278,7 +46202,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 53 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -46304,7 +46228,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -46330,7 +46254,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -46356,7 +46280,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 86 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -46382,7 +46306,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 74 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -46408,7 +46332,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 62 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -46434,7 +46358,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 125 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "Hommes,8e de finale"
         },
         {
@@ -46460,7 +46384,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 74 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -46486,7 +46410,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 62 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -46512,7 +46436,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 125 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -46538,7 +46462,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 74 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -46564,7 +46488,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 125 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -46590,7 +46514,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 62 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -46616,7 +46540,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -46642,7 +46566,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -46668,7 +46592,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 86 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -46694,7 +46618,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 86 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -46720,7 +46644,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -46746,7 +46670,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 57 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -46772,7 +46696,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 74 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -46798,7 +46722,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 62 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -46824,7 +46748,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 125 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -46850,7 +46774,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 65 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -46876,7 +46800,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 76 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -46902,7 +46826,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 97 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "8e de finale"
         },
         {
@@ -46928,7 +46852,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 65 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -46954,7 +46878,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 76 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "Femmes,quarts de finale"
         },
         {
@@ -46980,7 +46904,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 97 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "quarts de finale"
         },
         {
@@ -47006,7 +46930,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 65 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -47032,7 +46956,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 97 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -47058,7 +46982,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 76 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "demi-finales"
         },
         {
@@ -47084,7 +47008,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 74 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -47110,7 +47034,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 74 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -47136,7 +47060,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 125 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -47162,7 +47086,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 125 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -47188,7 +47112,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 62 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -47214,7 +47138,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 62 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -47240,7 +47164,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 65 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -47266,7 +47190,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 76 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -47292,7 +47216,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 97 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "repêchages"
         },
         {
@@ -47318,7 +47242,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 65 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -47344,7 +47268,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 65 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -47370,7 +47294,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 97 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -47396,7 +47320,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes | Libre | 97 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         },
         {
@@ -47422,7 +47346,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 76 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour les médailles de bronze"
         },
         {
@@ -47448,7 +47372,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes | Libre | 76 kg",
+          "Epreuve": "Lutte libre",
           "Tour": "match pour la médaille d'or"
         }
       ]
