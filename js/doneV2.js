@@ -31902,7 +31902,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Poules",
           "Tour": "Poules"
         },
         {
@@ -31928,7 +31928,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Poules",
           "Tour": "Poules"
         },
         {
@@ -31954,7 +31954,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Placement 9-12",
           "Tour": "Placement 9-12"
         },
         {
@@ -31980,7 +31980,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quarts de finale"
         },
         {
@@ -32006,7 +32006,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Placement 5-8",
           "Tour": "Placement 5-8"
         },
         {
@@ -32032,7 +32032,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Demi-finales",
           "Tour": "Demi-finales"
         },
         {
@@ -32058,7 +32058,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Placement 11-12",
           "Tour": "Placement 11-12"
         },
         {
@@ -32084,7 +32084,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Placement 9-10",
           "Tour": "Placement 9-10"
         },
         {
@@ -32110,7 +32110,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Placement 7-8",
           "Tour": "Placement 7-8"
         },
         {
@@ -32136,7 +32136,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Placement 5-6",
           "Tour": "Placement 5-6"
         },
         {
@@ -32162,7 +32162,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "Matchs pour la médaille de bronze"
         },
         {
@@ -32188,7 +32188,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Hommes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "Matchs pour la médaille d'or"
         },
         {
@@ -32214,7 +32214,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Poules",
           "Tour": "Poules"
         },
         {
@@ -32240,7 +32240,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Poules",
           "Tour": "Poules"
         },
         {
@@ -32266,7 +32266,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Placement 9-12",
           "Tour": "Placement 9-12"
         },
         {
@@ -32292,7 +32292,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Quarts de finale",
           "Tour": "Quarts de finale"
         },
         {
@@ -32318,7 +32318,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Placement 5-8",
           "Tour": "Placement 5-8"
         },
         {
@@ -32344,7 +32344,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Demi-finales",
           "Tour": "Demi-finales"
         },
         {
@@ -32370,7 +32370,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Placement 11-12",
           "Tour": "Placement 11-12"
         },
         {
@@ -32396,7 +32396,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Placement 9-10",
           "Tour": "Placement 9-10"
         },
         {
@@ -32422,7 +32422,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Placement 7-8",
           "Tour": "Placement 7-8"
         },
         {
@@ -32448,7 +32448,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Placement 5-6",
           "Tour": "Placement 5-6"
         },
         {
@@ -32474,7 +32474,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille de bronze",
           "Tour": "Matchs pour la médaille de bronze"
         },
         {
@@ -32500,7 +32500,7 @@ const app = Vue.createApp({
           "NationASuivre": "",
           "AthleteASuivreFR": "",
           "AthleteASuivreINT": "",
-          "Epreuve": "Femmes",
+          "Epreuve": "Matchs pour la médaille d'or",
           "Tour": "Matchs pour la médaille d'or"
         },
         {
