@@ -64,10 +64,10 @@
                     <label class="switch swisports">Sports</label>
                 </div>
             </div>
-        </fieldset>
-        <!-- * Filtre sur les deps -->
+            <!-- </fieldset> -->
+            <!-- * Filtre sur les deps -->
 
-        <fieldset class="menuDates">
+            <!-- <fieldset class="menuDates"> -->
             <!-- <legend><mark>Choisir une Date</mark></legend> -->
             <div class="mois"><mark>Juillet</mark></div>
             <div class="flex">
@@ -152,9 +152,9 @@
                 </label>
 
             </div>
-        </fieldset>
+            <!-- </fieldset> -->
 
-        <fieldset class="menuDates">
+            <!-- <fieldset class="menuDates"> -->
             <div v-if="(
                     (Mercredi24Juillet != false) || (Jeudi25Juillet != false)
                     || (Vendredi26Juillet != false) || (Samedi27Juillet != false)
@@ -208,8 +208,8 @@
                     </div>
                     <hr>
                     <div class="enLigne" v-if="
-                                    (medailleOn != false)
-                                    && (medailleOn != false)
+                                    (medailleOn != false
+                                    || medailleOff != false)
                         ">
                         <div>
                             <legend>A la télé</legend>
@@ -243,9 +243,10 @@
                     &&
                     (
                         (medailleOn != false)
-                        && (medailleOn != false)
+                        || (medailleOff != false)
                     )
             ">
+                <hr>
                 Sélectionner une plage horaire
             </div>
             <div v-else></div>
