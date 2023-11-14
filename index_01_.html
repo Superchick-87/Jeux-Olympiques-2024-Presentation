@@ -7,10 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <!-- <script src="https://unpkg.com/vue@next"></script> -->
 
-    <script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script>
-    <!-- <script src="https://unpkg.com/vue/dist/vue.global.prod.js"></script> -->
+    <script src="https://unpkg.com/vue@next"></script>
+    <!-- <script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script> -->
 
 
     <!-- * Sert à faire apparaître au défilement * -->
@@ -126,9 +125,11 @@
                         <div>
                             <legend>Choisir une épreuve</legend>
                         </div>
-                        <select v-model="selectedSSDisci" class="select">
+                        <select onchange="oo(this.value)" v-model="selectedSSDisci" class="select">
                             <option selected value="" disabled>Sélectionner une épreuve</option>
-                            <option v-for="(ss, index) in s.Detail">{{s.Detail[index]}}</option>
+                            <option v-for="(ss, index) in s.Detail" :value="s.Detail[index]" class="mm">
+                                {{s.Detail[index]}}
+                            </option>
                         </select>
                     </div>
                 </div>
@@ -153,16 +154,14 @@
                             <span class="libele">mixte</span>
                         </label>
                     </div>
-                    <hr>
                     <div v-if=" 
-                        (
-                           ( 
-                                (hommes != false)
-                                || (femmes != false)
-                                || (mixte != false)
-                            )
-                        )">
-                        <div>
+                         (hommes != false)
+                            || (femmes != false)
+                            || (mixte != false)
+                            ">
+                        <div class="med">
+                            <!-- <div> -->
+                            <hr>
                             <legend>Médailles en jeu</legend>
                             <div class="enLigne">
                                 <label class="center">
@@ -203,7 +202,9 @@
                         </div>
                         <div v-else>Sélectionner "Oui" ou "Non"</div>
                     </div>
-                    <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
+                    <div v-else>
+                        <hr>Sélectionner "Hommes, femmes ou mixte"
+                    </div>
                 </div>
                 <div v-if="
                             (
@@ -272,7 +273,7 @@
                         <div class="flexPictoSport">
                             <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
                             <div class="traitPictoSport"></div>
-                            <h1>{{p.Discipline}} </h1>
+                            <h1>{{p.Discipline}}</h1>
                         </div>
                         <div :class="[medailles[index]]"></div>
                         <h3 class="">{{miseEnForme[index]}}</h3>
@@ -319,6 +320,20 @@
         };
 
 
+        function oo(val) {
+            var divss = document.querySelectorAll('.mm');
+            var med = document.querySelector('.med');
+            // Parcourez les divs et changez la classe sur chaque deuxième div
+            console.log(val)
+            for (let i = 0; i < divss.length; i++) {
+                if (val == 'Poules') { // L'indice est impair (0-based)
+                    med.style.display = "none";
+                }
+                else {
+                    med.style.display = "block";
+                }
+            }
+        }
 
     </script>
     <div class="cRetour"></div>

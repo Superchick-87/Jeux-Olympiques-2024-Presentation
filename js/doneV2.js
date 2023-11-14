@@ -2,7 +2,7 @@ const app = Vue.createApp({
   el: '#hide',
   data() {
     return {
-     selected: false,
+      selected: false,
       selectedSSDisci: false,
 
       /**
@@ -47391,6 +47391,17 @@ const app = Vue.createApp({
         else {
           return "M";
         }
+      })
+    },
+
+    afficheMasque: function () {
+      return this.ssDiscipline.map(function (ss) {
+        if (ss.Detail == 'Poules') {
+          return "masque";
+        }
+        // else {
+        //   return "affiche";
+        // }
       })
     },
 

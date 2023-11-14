@@ -205,6 +205,14 @@ input[type="checkbox"],
     display: contents;
 }
 
+.masque {
+    display: none;
+}
+
+.affiche {
+    display: block;
+}
+
 .enLigne {
     display: flex;
     margin: 0px auto;
