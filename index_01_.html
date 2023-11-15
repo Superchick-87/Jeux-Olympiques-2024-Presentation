@@ -68,11 +68,12 @@
                 <legend>Choisir un sport</legend>
             </div>
             <!-- <div>Selected: {{ selected }}</div> -->
-            <select v-model="selected" class="select" @change="resetDropdown">
+            <!-- onchange="xx(this.value)" -->
+            <select id="selepreuve" onchange="xx(this.value)" v-model="selected" class="select" @change="resetDropdown">
                 <option value="" disabled>Sélectionner un sport</option>
                 <option>ATHLETISME</option>
                 <option>AVIRON</option>
-                <option>BADMINTON</option>
+                <option value="BADMINTON">BADMINTON</option>
                 <option>BASKETBALL</option>
                 <option>BASKETBALL 3x3</option>
                 <option>BEACH VOLLEYBALL</option>
@@ -100,7 +101,7 @@
                 <option>NATATION MARATHON</option>
                 <option>PENTATHLON MODERNE</option>
                 <option>PLONGEON</option>
-                <option>RUGBY</option>
+                <option value="RUGBY">RUGBY</option>
                 <option>SKATEBOARD</option>
                 <option>SPORTS EQUESTRES</option>
                 <option>SURF</option>
@@ -125,6 +126,7 @@
                         <div>
                             <legend>Choisir une épreuve</legend>
                         </div>
+                        <!-- onchange="oo(this.value)" -->
                         <select onchange="oo(this.value)" v-model="selectedSSDisci" class="select">
                             <option selected value="" disabled>Sélectionner une épreuve</option>
                             <option v-for="(ss, index) in s.Detail" :value="s.Detail[index]" class="mm">
@@ -133,10 +135,7 @@
                         </select>
                     </div>
                 </div>
-                <!-- </fieldset> -->
-                <!-- <div v-else>mmmmm</div> -->
-                <div v-if="(selectedSSDisci != false || selectedSSDisci != '')">
-                    <!-- <fieldset> -->
+                <div>
                     <div class="enLigne marginT">
                         <label class="center">
                             <input type="checkbox" v-model="hommes" class="">
@@ -154,13 +153,14 @@
                             <span class="libele">mixte</span>
                         </label>
                     </div>
-                    <div v-if=" 
-                         (hommes != false)
-                            || (femmes != false)
-                            || (mixte != false)
-                            ">
+                    <div v-if="
+                        (
+                            (hommes != false) || (femmes != false) || (mixte != false)
+                        )
+                        ">
+                        <!-- && (selected != 'CYCLISME SUR ROUTE') -->
+                        <!-- && (selected != 'NATATION MARATHON') -->
                         <div class="med">
-                            <!-- <div> -->
                             <hr>
                             <legend>Médailles en jeu</legend>
                             <div class="enLigne">
@@ -176,8 +176,32 @@
                                 </label>
                             </div>
                         </div>
-                        <hr>
-                        <div class="enLigne" v-if="
+                    </div>
+                    <div v-if="
+                        (hommes == false) && (femmes == false) && (mixte == false)
+                    ">
+                        <hr>Sélectionner "Hommes, femmes ou mixte"
+                    </div>
+
+                    <!-- <div class="med">
+                            <hr>
+                            <legend>Médailles en jeu</legend>
+                            <div class="enLigne">
+                                <label class="center">
+                                    <input type="checkbox" v-model="medailleOn">
+                                    <span class="medaille"></span>
+                                    <span class="libele">Oui</span>
+                                </label>
+                                <label class="center">
+                                    <input type="checkbox" v-model="medailleOff">
+                                    <span class="medaille"></span>
+                                    <span class="libele">Non</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <hr> -->
+                    <!-- <div class="enLigne" v-if="
                                 (medailleOn != false
                                 || medailleOff != false)
                             ">
@@ -199,14 +223,12 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
-                        <div v-else>Sélectionner "Oui" ou "Non"</div>
-                    </div>
-                    <div v-else>
-                        <hr>Sélectionner "Hommes, femmes ou mixte"
-                    </div>
+                        </div> -->
+                    <!-- <div v-else>Sélectionner "Oui" ou "Non"</div> -->
                 </div>
-                <div v-if="
+
+            </div>
+            <div v-if="
                             (
                                 (matin == false)
                                 && (am == false)
@@ -218,10 +240,11 @@
                                 || (medailleOff != false)
                             )
                 ">
-                    <hr>
-                    Sélectionner une plage horaire
-                </div>
-                <div v-else></div>
+                <hr>
+                Sélectionner une plage horaire
+            </div>
+            <div v-else></div>
+
         </fieldset>
         <!-- * Vignette -->
         <div id="container" class="flex center">
@@ -269,6 +292,7 @@
                         )
                             
                 ">
+
                     <div class="large desk" :class="[couleurSex[index]]">
                         <div class="flexPictoSport">
                             <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
@@ -320,20 +344,52 @@
         };
 
 
+
+
+        function xx(vall) {
+            const med = document.querySelector('.med');
+            // console.log(vall);
+            // var selepreuve = document.getElementById('selepreuve');
+            // console.log(selepreuve);
+            med.style.display = "block";
+            // if (vall == 'AVIRON') {
+            //     med.style.display = "none";
+            // }
+        }
         function oo(val) {
-            var divss = document.querySelectorAll('.mm');
-            var med = document.querySelector('.med');
+            var divss = document.querySelectorAll('.medaillesOff');
+            const med = document.querySelector('.med');
             // Parcourez les divs et changez la classe sur chaque deuxième div
             console.log(val)
-            for (let i = 0; i < divss.length; i++) {
-                if (val == 'Poules') { // L'indice est impair (0-based)
-                    med.style.display = "none";
-                }
-                else {
-                    med.style.display = "block";
-                }
+            var selepreuve = document.getElementById('selepreuve');
+            console.log(selepreuve.value);
+
+            if (selepreuve.value == 'ATHLETISME'
+                || selepreuve.value == 'AVIRON'
+                || selepreuve.value == 'BMX'
+                || selepreuve.value == 'CANOE SLALOM'
+                || selepreuve.value == 'CANOË, COURSE EN LIGNE'
+                || selepreuve.value == 'CYCLISME SUR PISTE'
+                || selepreuve.value == 'ESCRIME'
+                || selepreuve.value == 'GYMNASTIQUE RYTHMIQUE'
+                || selepreuve.value == 'LUTTE'
+                || selepreuve.value == 'NATATION'
+                || selepreuve.value == 'NATATION ARTISTIQUE'
+                // || selepreuve.value == 'PLONGEON'
+
+            ) {
+
+                med.style.display = "block";
             }
+            // if (val == 'Tremplin 3 m synchronisé') {
+            //     med.style.display = "none";
+
+            // }
+            else { med.style.display = "none"; }
+
         }
+
+
 
     </script>
     <div class="cRetour"></div>

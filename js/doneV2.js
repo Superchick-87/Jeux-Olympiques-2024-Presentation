@@ -47379,6 +47379,22 @@ const app = Vue.createApp({
         }
       })
     },
+    med: function () {
+      return this.personnes.map(function (p) {
+        if (p.Medaille == 'BRONZE - ARGENT - OR') {
+          return "display:block;";
+        }
+        if (p.Medaille == 'ARGENT - OR') {
+          return "display:block;";
+        }
+        if (p.Medaille == 'BRONZE') {
+          return "display:block;";
+        }
+        else {
+          return "display:none;";
+        }
+      })
+    },
     couleurSex: function () {
       // x = this.femmes;
       return this.personnes.map(function (p) {
