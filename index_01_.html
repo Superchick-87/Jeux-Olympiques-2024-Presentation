@@ -122,7 +122,7 @@
                 <!-- <fieldset> -->
                 <!-- <div>Epreuve : {{ selectedSSDisci }}</div> -->
                 <div v-for="(s, index) in ssDiscipline">
-                    <div v-if="(selected == s.Discipline)">
+                    <div id="sselepreuve" v-if="(selected == s.Discipline)">
                         <div>
                             <legend>Choisir une épreuve</legend>
                         </div>
@@ -347,22 +347,30 @@
 
 
         function xx(vall) {
+            var selepreuve = document.getElementById('selepreuve');
+            console.log(selepreuve.value);
+            var sselepreuve = document.getElementById('sselepreuve');
+            console.log(sselepreuve.value);
             const med = document.querySelector('.med');
-            // console.log(vall);
-            // var selepreuve = document.getElementById('selepreuve');
-            // console.log(selepreuve);
-            med.style.display = "block";
-            // if (vall == 'AVIRON') {
-            //     med.style.display = "none";
-            // }
+
+            if (selepreuve.value == 'NATATION MARATHON'
+                || selepreuve.value == 'TRIATHLON'
+                || selepreuve.value == 'VTT') {
+                sselepreuve.style.display = "none";
+                med.style.display = "none";
+            }
+            else {
+                med.style.display = "block";
+            }
         }
         function oo(val) {
             var divss = document.querySelectorAll('.medaillesOff');
             const med = document.querySelector('.med');
-            // Parcourez les divs et changez la classe sur chaque deuxième div
             console.log(val)
             var selepreuve = document.getElementById('selepreuve');
             console.log(selepreuve.value);
+            var sselepreuve = document.getElementById('sselepreuve');
+            console.log(sselepreuve.value);
 
             if (selepreuve.value == 'ATHLETISME'
                 || selepreuve.value == 'AVIRON'
@@ -375,22 +383,24 @@
                 || selepreuve.value == 'LUTTE'
                 || selepreuve.value == 'NATATION'
                 || selepreuve.value == 'NATATION ARTISTIQUE'
-                // || selepreuve.value == 'PLONGEON'
-
+                || selepreuve.value == 'SKATEBOARD'
+                || selepreuve.value == 'SPORTS EQUESTRES'
+                || selepreuve.value == 'TENNIS DE TABLE'
+                || selepreuve.value == 'TIR'
+                || selepreuve.value == 'TIR A L\'ARC'
+                || selepreuve.value == 'VOILE'
             ) {
-
                 med.style.display = "block";
             }
-            // if (val == 'Tremplin 3 m synchronisé') {
-            //     med.style.display = "none";
 
-            // }
+            else if (val == 'Tremplin 3m'
+                || val == 'Haut vol 10m') {
+                med.style.display = "block";
+            }
+
             else { med.style.display = "none"; }
 
         }
-
-
-
     </script>
     <div class="cRetour"></div>
 </body>
