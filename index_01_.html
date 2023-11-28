@@ -137,17 +137,17 @@
                 </div>
                 <div>
                     <div class="enLigne marginT">
-                        <label class="center">
+                        <label id="bloc_hommes" class="center">
                             <input type="checkbox" v-model="hommes" class="">
                             <span class="hommes"></span>
                             <span class="libele">hommes</span>
                         </label>
-                        <label class="center">
+                        <label id="bloc_femmes" class="center">
                             <input type="checkbox" v-model="femmes" class="">
                             <span class="femmes"></span>
                             <span class="libele">femmes</span>
                         </label>
-                        <label class="center">
+                        <label id="bloc_mixte" class="center">
                             <input type="checkbox" v-model="mixte" class="">
                             <span class="mixte"></span>
                             <span class="libele">mixte</span>
@@ -176,34 +176,10 @@
                                 </label>
                             </div>
                         </div>
-                    </div>
-                    <div v-if="
-                        (hommes == false) && (femmes == false) && (mixte == false)
-                    ">
-                        <hr>Sélectionner "Hommes, femmes ou mixte"
-                    </div>
-
-                    <!-- <div class="med">
-                            <hr>
-                            <legend>Médailles en jeu</legend>
-                            <div class="enLigne">
-                                <label class="center">
-                                    <input type="checkbox" v-model="medailleOn">
-                                    <span class="medaille"></span>
-                                    <span class="libele">Oui</span>
-                                </label>
-                                <label class="center">
-                                    <input type="checkbox" v-model="medailleOff">
-                                    <span class="medaille"></span>
-                                    <span class="libele">Non</span>
-                                </label>
-                            </div>
-                        </div>
-
-                        <hr> -->
-                    <!-- <div class="enLigne" v-if="
-                                (medailleOn != false
-                                || medailleOff != false)
+                        <hr>
+                        <div class="enLigne" v-if="
+                                        (medailleOn != false
+                                        || medailleOff != false)
                             ">
                             <div>
                                 <legend>A la télé</legend>
@@ -223,27 +199,27 @@
                                     </label>
                                 </div>
                             </div>
-                        </div> -->
-                    <!-- <div v-else>Sélectionner "Oui" ou "Non"</div> -->
+                        </div>
+                        <div v-else>Sélectionner "Oui" ou "Non"</div>
+                    </div>
+                    <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
                 </div>
-
-            </div>
-            <div v-if="
-                            (
-                                (matin == false)
-                                && (am == false)
-                                && (soir == false)
-                            )
-                            &&
-                            (
-                                (medailleOn != false)
-                                || (medailleOff != false)
-                            )
+                <div v-if="
+                        (
+                            (matin == false)
+                            && (am == false)
+                            && (soir == false)
+                        )
+                        &&
+                        (
+                            (medailleOn != false)
+                            || (medailleOff != false)
+                        )
                 ">
-                <hr>
-                Sélectionner une plage horaire
-            </div>
-            <div v-else></div>
+                    <hr>
+                    Sélectionner une plage horaire
+                </div>
+                <div v-else></div>
 
         </fieldset>
         <!-- * Vignette -->
@@ -346,6 +322,10 @@
 
 
 
+
+
+
+
         function xx(vall) {
             var selepreuve = document.getElementById('selepreuve');
             console.log(selepreuve.value);
@@ -361,6 +341,20 @@
             }
             else {
                 med.style.display = "block";
+            }
+
+
+            const mixte = document.querySelector('.M');
+            console.log(mixte);
+            var bloc_mixte = document.getElementById('bloc_mixte');
+
+            if (mixte == null) {
+                // bloc_mixte.style.display = 'none';
+                bloc_mixte.classList.replace("center", "masque");
+            }
+            else {
+                // bloc_mixte.style.display = 'block';
+                bloc_mixte.classList.replace("masque", "center");
             }
         }
         function oo(val) {

@@ -47409,15 +47409,11 @@ const app = Vue.createApp({
         }
       })
     },
-
     afficheMasque: function () {
       return this.ssDiscipline.map(function (ss) {
         if (ss.Detail == 'Poules') {
           return "masque";
         }
-        // else {
-        //   return "affiche";
-        // }
       })
     },
 
