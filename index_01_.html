@@ -69,7 +69,7 @@
             </div>
             <!-- <div>Selected: {{ selected }}</div> -->
             <!-- onchange="xx(this.value)" -->
-            <select id="selepreuve" onchange="xx(this.value)" v-model="selected" class="select" @change="resetDropdown">
+            <select id="selepreuve" onchange="menuDisciplines(this.value)"  v-model="selected" class="select" @change="resetDropdown">
                 <option value="" disabled>Sélectionner un sport</option>
                 <option>ATHLETISME</option>
                 <option>AVIRON</option>
@@ -152,6 +152,7 @@
                             <span class="mixte"></span>
                             <span class="libele">mixte</span>
                         </label>
+                        
                     </div>
                     <div v-if="
                         (
@@ -202,6 +203,7 @@
                         </div>
                         <div v-else>Sélectionner "Oui" ou "Non"</div>
                     </div>
+                    
                     <div v-else>Sélectionner "Hommes, femmes ou mixte"</div>
                 </div>
                 <div v-if="
@@ -321,12 +323,20 @@
 
 
 
+/**
+ * Fonctions agissants sur le premier menu déroulant
+ * "Discipline"
+ **/
+    function menuDisciplines(vall) {
+        suppMenuEpreuve();
+        afficheMasqSex();
+    }
 
-
-
-
-
-        function xx(vall) {
+        /**
+         * Fonctions qui masque ou affiche sur le deuxième menu déroulant
+         * "Epreuves"
+         **/
+        function suppMenuEpreuve() {
             var selepreuve = document.getElementById('selepreuve');
             console.log(selepreuve.value);
             var sselepreuve = document.getElementById('sselepreuve');
@@ -342,21 +352,52 @@
             else {
                 med.style.display = "block";
             }
+        };
 
-
+        /**
+         * Fonctions qui masque ou affiche
+         * les pastilles si le sexe existe ou pas
+         **/
+        function afficheMasqSex() {
             const mixte = document.querySelector('.M');
+            const femmes = document.querySelector('.F');
+            const hommes = document.querySelector('.H');
             console.log(mixte);
             var bloc_mixte = document.getElementById('bloc_mixte');
+            var bloc_femmes = document.getElementById('bloc_femmes');
+            var bloc_hommes = document.getElementById('bloc_hommes');
 
             if (mixte == null) {
-                // bloc_mixte.style.display = 'none';
                 bloc_mixte.classList.replace("center", "masque");
             }
-            else {
-                // bloc_mixte.style.display = 'block';
+            if (mixte != null) {
                 bloc_mixte.classList.replace("masque", "center");
             }
-        }
+
+            if (femmes == null) {
+                bloc_femmes.classList.replace("center", "masque");
+            }
+            if (femmes != null) {
+                bloc_femmes.classList.replace("masque", "center");
+            }
+        
+            if (hommes == null && femmes != null) {
+                bloc_femmes.classList.replace("center", "masque");
+            }
+
+            if (hommes == null) {
+                bloc_hommes.classList.replace("center", "masque");
+            }
+            if (hommes != null) {
+                bloc_hommes.classList.replace("masque", "center");
+            }
+
+            // if (hommes != null && femmes != null) {
+            //     bloc_hommes.classList.replace("masque", "center");
+            //     bloc_femmes.classList.replace("masque", "center");
+            // }
+        };
+
         function oo(val) {
             var divss = document.querySelectorAll('.medaillesOff');
             const med = document.querySelector('.med');
@@ -393,6 +434,20 @@
             }
 
             else { med.style.display = "none"; }
+
+
+            // var mixte = document.querySelector('.M');
+            // console.log(mixte);
+            // var bloc_mixte = document.getElementById('bloc_mixte');
+
+            // if (mixte == null) {
+            //     // bloc_mixte.style.display = 'none';
+            //     bloc_mixte.classList.replace("center", "masque");
+            // }
+            // else {
+            //     // bloc_mixte.style.display = 'block';
+            //     bloc_mixte.classList.replace("masque", "center");
+            // }
 
         }
     </script>
