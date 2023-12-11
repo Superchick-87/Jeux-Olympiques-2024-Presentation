@@ -5,6 +5,8 @@ const app = Vue.createApp({
       selected: false,
       selectedSSDisci: false,
 
+      selectedSSDisci_C: false,
+
       /**
        * nouvelles données
       */
@@ -129,7 +131,6 @@ const app = Vue.createApp({
             "Poules préliminaires",
             "8e de finale",
             "Quarts de finale",
-            "Demi-finale",
             "Demi-finales",
             "Match bronze",
             "Match or"
@@ -47409,6 +47410,19 @@ const app = Vue.createApp({
         }
       })
     },
+    tele: function () {
+      return this.personnes.map(function (p) {
+        if (p.Matin == 'oui') {
+          return "Matin";
+        }
+        if (p.Am == 'oui') {
+          return "Am";
+        }
+        if (p.Soir == 'oui') {
+          return "Soir";
+        }
+      })
+    },
     afficheMasque: function () {
       return this.ssDiscipline.map(function (ss) {
         if (ss.Detail == 'Poules') {
@@ -47471,6 +47485,17 @@ const app = Vue.createApp({
       this.am = true;
       this.soir = true;
     },
+    resetDropdown_C() {
+      this.selectedSSDisci_C = false;
+      this.medailleOn = true;
+      this.medailleOff = true;
+      this.hommes = true;
+      this.femmes = true;
+      this.mixte = true;
+      this.matin = true;
+      this.am = true;
+      this.soir = true;
+      },
     handleInputOnChange() {
       this.filtreVille = this.filtreVille.toUpperCase()
       console.log(this.filtreVille)

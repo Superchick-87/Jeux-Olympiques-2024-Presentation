@@ -19,8 +19,10 @@
     <link rel="stylesheet" href="css/style_V2.css">
     <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
     <style>
-        .maclass {
-            display: block;
+        .planque {
+            /* position: absolute;
+            left: 80px; */
+            display: none;
         }
     </style>
 </head>
@@ -57,15 +59,15 @@
     </script>
     <div id="app">
         <fieldset>
-            <div class="selctMode">Sélectionner un mode de recherche</div>
+            <div class="selctMode">Le programme des JO de Paris 2024</div>
             <div class="enLigne">
                 <div id="sportsBouton">
                     <input type="radio" />
-                    <label class="switch swidates">Dates</label>
+                    <label class="switch swidates">Par date</label>
                 </div>
                 <div>
                     <input type="radio" checked />
-                    <label class="switch swisports">Sports</label>
+                    <label class="switch swisports">Par sport</label>
                 </div>
             </div>
             <br>
@@ -133,7 +135,7 @@
                             <legend>Choisir une épreuve</legend>
                         </div>
                         <!-- onchange="oo(this.value)" -->
-                        <select onchange="menuEpreuve(this.value)" v-model="selectedSSDisci" class="select">
+                        <select @change="resetDropdown_C" v-model="selectedSSDisci"  onchange="menuEpreuve(this.value)"   class="select" >
                             <option selected value="" disabled>Sélectionner une épreuve</option>
                             <option v-for="(ss, index) in s.Detail" :value="s.Detail[index]" class="mm">
                                 {{s.Detail[index]}}
@@ -153,7 +155,7 @@
                             <span class="femmes"></span>
                             <span class="libele">femmes</span>
                         </label>
-                        <label id="bloc_mixte" class="center">
+                        <label id="bloc_mixte" class="center" >
                             <input type="checkbox" v-model="mixte" class="">
                             <span class="mixte"></span>
                             <span class="libele">mixte</span>
@@ -161,13 +163,8 @@
                     </div>
                     <div v-if="
                         (
-                            ((hommes != false) || (femmes != false) || (mixte != false))
+                            (hommes != false) || (femmes != false) || (mixte != false)
                             
-                           
-                            || ((hommes != false) || (mixte != false))
-                            || ((femmes != false) || (mixte != false))
-
-                            && (hommes != false || femmes != false)
                         )
                         ">
                         <!-- && (selected != 'CYCLISME SUR ROUTE') -->
@@ -176,12 +173,12 @@
                             <hr>
                             <legend>Médailles en jeu</legend>
                             <div class="enLigne">
-                                <label class="center">
+                                <label id="bloc_med_yes" class="center">
                                     <input type="checkbox" v-model="medailleOn">
                                     <span class="medaille"></span>
                                     <span class="libele">Oui</span>
                                 </label>
-                                <label class="center">
+                                <label id="bloc_med_no" class="center">
                                     <input type="checkbox" v-model="medailleOff">
                                     <span class="medaille"></span>
                                     <span class="libele">Non</span>
@@ -196,16 +193,16 @@
                             <div>
                                 <legend>A la télé</legend>
                                 <div style="display: flex;">
-                                    <label>
+                                    <label id="bloc_matin">
                                         <input type="checkbox" v-model="matin">
                                         <span class="progTV">Matin</span>
                                     </label>
 
-                                    <label>
+                                    <label id="bloc_am">
                                         <input type="checkbox" v-model="am">
                                         <span class="progTV">Après-midi</span>
                                     </label>
-                                    <label>
+                                    <label id="bloc_soir">
                                         <input type="checkbox" v-model="soir">
                                         <span class="progTV">Soirée</span>
                                     </label>
@@ -282,7 +279,7 @@
                             
                 ">
 
-                    <div class="large desk" :class="[couleurSex[index]]">
+                    <div class="large desk" :class="[couleurSex[index]],[tele[index]]">
                         <div class="flexPictoSport">
                             <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
                             <div class="traitPictoSport"></div>
@@ -297,7 +294,7 @@
                         <p> {{p.Lieu}}</p>
                         <img class="tv" :src="'images/'+p.TV+'.png'">
                     </div>
-                    <div class="large mob" :class="[couleurSex[index]]">
+                    <div class="large mob" :class="[couleurSex[index]],[tele[index]]">
                         <div class="flexMob">
                             <div class="flexPictoSport">
                                 <img class="pictoSport" :src="'images/'+[pictoSport[index]]+'.png'" alt="">
@@ -317,7 +314,8 @@
         </div>
     </div>
     <div style="height: 200px;"></div>
-    <script src="js/doneV2.js"></script>
+
+    <script type="text/javascript"  src="js/doneV2.js"></script>
     <script language="javascript" type="text/javascript">
         function bascule(hide) {
             etat = document.getElementById(hide).style.display;
@@ -344,11 +342,11 @@
          **/
         function suppMenuEpreuve() {
             var selepreuve = document.getElementById('selepreuve');
-            console.log(selepreuve.value);
+            // console.log(selepreuve.value);
             var sselepreuve = document.getElementById('sselepreuve');
             // console.log(sselepreuve.value);
             const med = document.querySelector('.med');
-            console.log(med);
+            // console.log(med);
             if (selepreuve.value == 'NATATION MARATHON'
                 || selepreuve.value == 'TRIATHLON'
                 || selepreuve.value == 'VTT') {
@@ -356,59 +354,24 @@
                 med.style.display = "none";
             }
 
-            else {
-                // med.style.display == "block";
-                sselepreuve.style.display = "block";
-            }
+            // else {
+            //     // med.style.display == "block";
+            //     sselepreuve.style.display = "block";
+            // }
 
         };
 
 
-        /**
-         * Fonctions qui masque ou affiche
-         * les pastilles si le sexe existe ou pas
-         **/
-        function afficheMasqSex() {
-            const mixte = document.querySelector('.M');
-            const femmes = document.querySelector('.F');
-            const hommes = document.querySelector('.H');
-            console.log(mixte);
-
-            var bloc_mixte = document.getElementById('bloc_mixte');
-            var bloc_femmes = document.getElementById('bloc_femmes');
-            var bloc_hommes = document.getElementById('bloc_hommes');
-
-            if (mixte == null) {
-                bloc_mixte.className = "center";
-                bloc_mixte.classList.replace("center", "masque");
-            }
-            if (mixte !== null) {
-                bloc_mixte.className = "center";
-            }
-            // if (femmes == null) {
-            //     bloc_femmes.classList.replace("center", "masque");
-            // }
-            // if (femmes != null) {
-            //     bloc_femmes.classList.replace("masque", "center");
-            // }
-
-            // if (hommes == null) {
-            //     bloc_hommes.classList.replace("center", "masque");
-            // }
-            // if (hommes != null) {
-            //     bloc_hommes.classList.replace("masque", "center");
-            // }
-        };
-
+     
 
         function ajoutMenuEpreuve() {
             var divss = document.querySelectorAll('.medaillesOff');
             const med = document.querySelector('.med');
-            console.log(med)
+            // console.log(med)
             var selepreuve = document.getElementById('selepreuve');
-            console.log(selepreuve.value);
+            // console.log(selepreuve.value);
             var sselepreuve = document.getElementById('sselepreuve');
-            console.log(sselepreuve.value);
+            // console.log(sselepreuve.value);
 
             if (selepreuve.value == 'ATHLETISME'
                 || selepreuve.value == 'AVIRON'
@@ -431,26 +394,20 @@
                 med.style.display = "block";
             }
 
-            else if (val == 'Tremplin 3m'
-                || val == 'Haut vol 10m') {
+            if (sselepreuve.value == 'Tremplin 3m'
+                || sselepreuve.value  == 'Haut vol 10m') {
                 med.style.display = "block";
             }
-            else { med.style.display = "none"; }
-
-        };
-
-        function affiAll() {
-            // const mixtev = document.querySelector('.M');
-            // mixtev.classList.add("desk");
-            // mixte.style.display = 'block';
-
-            var elements = document.getElementsByClassName("M");
-
-            // Parcourir les éléments sélectionnés
-            for (var i = 0; i < elements.length; i++) {
-                elements[i].classList.add("desk");
+            if (sselepreuve.value == 'Heptathlon' || sselepreuve.value == 'Décathlon'
+                || sselepreuve.value == 'Marche sur un marathon en relais mixte')
+            {
+                med.style.display = "none";
             }
+            // else {med.style.display = "none"; }
+
         };
+
+     
 
         /**
          * Fonctions agissants sur le premier menu déroulant
@@ -462,13 +419,106 @@
         // }
 
         /**
+         * Fonctions qui masque ou affiche
+         * les pastilles si le sexe existe ou pas
+         **/
+         function afficheMasqSex() {
+            var femmes = document.querySelectorAll('.F');
+            var hommes = document.querySelectorAll('.H');
+            var mixte = document.querySelectorAll('.M');
+            // console.log(hommes.length);
+
+            var bloc_femmes = document.getElementById('bloc_femmes');
+            var bloc_hommes = document.getElementById('bloc_hommes');
+            var bloc_mixte = document.getElementById('bloc_mixte');
+            // console.log(bloc_mixte);
+
+            var medBron = document.querySelectorAll('.bron');
+            var medBronArgOr = document.querySelectorAll('.bronArgOr');
+            var medArgOr = document.querySelectorAll('.argOr');
+            var boites = document.querySelectorAll('.desk');
+
+            var bloc_med_no = document.getElementById('bloc_med_no');
+            var bloc_med_yes = document.getElementById('bloc_med_yes');
+            
+            
+            console.log(medBron.length + medBronArgOr.length+ medArgOr.length);
+          
+            
+            var matin = document.querySelectorAll('.Matin');
+            var am = document.querySelectorAll('.Am');
+            var soir = document.querySelectorAll('.Soir');
+
+            var bloc_matin = document.getElementById('bloc_matin');
+            var bloc_am = document.getElementById('bloc_am');
+            var bloc_soir = document.getElementById('bloc_soir');
+
+            // const medm = document.querySelector('.med');
+
+
+            if (femmes.length === 0){
+                bloc_femmes.classList = 'planque';
+            }
+            else {bloc_femmes.classList = 'center';}
+
+            if (hommes.length === 0){
+                bloc_hommes.classList = 'planque';
+            }
+            else {bloc_hommes.classList = 'center';}
+
+            if (mixte.length === 0){
+                bloc_mixte.classList = 'planque';
+            }
+            else {bloc_mixte.classList = 'center';}
+
+
+
+            if (medBron.length + medBronArgOr.length+ medArgOr.length === 0 ){
+                
+                bloc_med_no.classList = 'center';
+                bloc_med_yes.classList = 'planque';
+            }
+            if (medBron.length + medBronArgOr.length+ medArgOr.length > 0 )
+            {
+                bloc_med_yes.classList = 'center';
+                bloc_med_no.classList = 'planque';
+            }
+            
+            if ((medBron.length + medBronArgOr.length+ medArgOr.length) < boites.length
+            || (medBron.length + medBronArgOr.length+ medArgOr.length) == boites.length)
+            {
+                bloc_med_no.classList = 'center';
+                bloc_med_yes.classList = 'center';
+            }
+            // console.log(boites.length)
+            // if (boites.length === 2) {
+            //     medm.style.display = 'none';
+            // }
+
+
+            if (matin.length === 0){
+                bloc_matin.classList = 'planque';
+            }
+            else {bloc_matin.classList = 'center';}
+
+            if (am.length === 0){
+                bloc_am.classList = 'planque';
+            }
+            else {bloc_am.classList = 'center';}
+
+            if (soir.length === 0){
+                bloc_soir.classList = 'planque';
+            }
+            else {bloc_soir.classList = 'center';}
+        };
+
+        /**
         * Fonctions agissants sur le deuxième menu déroulant
         * "Epreuve"
         **/
         function menuEpreuve() {
-            affiAll();
-            ajoutMenuEpreuve();
             afficheMasqSex();
+            ajoutMenuEpreuve();
         };
 
 
