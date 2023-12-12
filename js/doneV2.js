@@ -10,6 +10,14 @@ const app = Vue.createApp({
       /**
        * nouvelles données
       */
+      // femmes: false,
+      // hommes: false,
+      // mixte: false,
+      // medailleOn: false,
+      // medailleOff: false,
+      // matin: false,
+      // am: false,
+      // soir: false,
       femmes: true,
       hommes: true,
       mixte: true,
@@ -47495,7 +47503,7 @@ const app = Vue.createApp({
       this.matin = true;
       this.am = true;
       this.soir = true;
-      },
+    },
     handleInputOnChange() {
       this.filtreVille = this.filtreVille.toUpperCase()
       console.log(this.filtreVille)

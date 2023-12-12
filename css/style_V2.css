@@ -43,6 +43,10 @@ hr {
     margin: 0px auto;
 }
 
+.decalTop {
+    margin-top: 20px;
+}
+
 img {
     margin-right: 0.2rem;
 }

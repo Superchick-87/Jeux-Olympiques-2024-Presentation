@@ -55,12 +55,12 @@
         <fieldset>
             <div class="selctMode">Le programme des JO de Paris 2024</div>
             <div class="enLigne">
-                <div id="sportsBouton">
-                    <input type="radio" />
-                    <label class="switch swidates">Par date</label>
-                </div>
                 <div>
                     <input type="radio" checked />
+                    <label class="switch swidates">Par date</label>
+                </div>
+                <div id="sportsBouton">
+                    <input type="radio" />
                     <label class="switch swisports">Par sport</label>
                 </div>
             </div>
@@ -155,7 +155,7 @@
             <!-- </fieldset> -->
 
             <!-- <fieldset class="menuDates"> -->
-            <div v-if="(
+            <div class='decalTop' v-if="(
                     (Mercredi24Juillet != false) || (Jeudi25Juillet != false)
                     || (Vendredi26Juillet != false) || (Samedi27Juillet != false)
                     || (Dimanche28Juillet != false) || (Lundi29Juillet != false)

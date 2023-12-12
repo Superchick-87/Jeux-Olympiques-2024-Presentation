@@ -135,7 +135,8 @@
                             <legend>Choisir une épreuve</legend>
                         </div>
                         <!-- onchange="oo(this.value)" -->
-                        <select @change="resetDropdown_C" v-model="selectedSSDisci"  onchange="menuEpreuve(this.value)"   class="select" >
+                        <select @change="resetDropdown_C" v-model="selectedSSDisci" onchange="menuEpreuve(this.value)"
+                            class="select">
                             <option selected value="" disabled>Sélectionner une épreuve</option>
                             <option v-for="(ss, index) in s.Detail" :value="s.Detail[index]" class="mm">
                                 {{s.Detail[index]}}
@@ -143,7 +144,7 @@
                         </select>
                     </div>
                 </div>
-                <div v-if="(selectedSSDisci != false || selectedSSDisci != '')">
+                <div class='decalTop' v-if="(selectedSSDisci != false || selectedSSDisci != '')">
                     <div id="choix_sex" class="enLigne marginT">
                         <label id="bloc_hommes" class="center">
                             <input type="checkbox" v-model="hommes" class="">
@@ -155,7 +156,7 @@
                             <span class="femmes"></span>
                             <span class="libele">femmes</span>
                         </label>
-                        <label id="bloc_mixte" class="center" >
+                        <label id="bloc_mixte" class="center">
                             <input type="checkbox" v-model="mixte" class="">
                             <span class="mixte"></span>
                             <span class="libele">mixte</span>
@@ -190,7 +191,7 @@
                                         (medailleOn != false
                                         || medailleOff != false)
                             ">
-                            <div>
+                            <div id="tv">
                                 <legend>A la télé</legend>
                                 <div style="display: flex;">
                                     <label id="bloc_matin">
@@ -315,7 +316,7 @@
     </div>
     <div style="height: 200px;"></div>
 
-    <script type="text/javascript"  src="js/doneV2.js"></script>
+    <script type="text/javascript" src="js/doneV2.js"></script>
     <script language="javascript" type="text/javascript">
         function bascule(hide) {
             etat = document.getElementById(hide).style.display;
@@ -337,7 +338,7 @@
 
 
         /**
-         * Fonctions qui masque ou affiche sur le deuxième menu déroulant
+         * *Fonctions qui masque ou affiche sur le deuxième menu déroulant
          * "Epreuves"
          **/
         function suppMenuEpreuve() {
@@ -353,98 +354,99 @@
                 sselepreuve.style.display = "none";
                 med.style.display = "none";
             }
-
-            // else {
-            //     // med.style.display == "block";
-            //     sselepreuve.style.display = "block";
-            // }
-
         };
 
 
-     
 
-        function ajoutMenuEpreuve() {
-            var divss = document.querySelectorAll('.medaillesOff');
-            const med = document.querySelector('.med');
-            // console.log(med)
-            var selepreuve = document.getElementById('selepreuve');
-            // console.log(selepreuve.value);
-            var sselepreuve = document.getElementById('sselepreuve');
-            // console.log(sselepreuve.value);
 
-            if (selepreuve.value == 'ATHLETISME'
-                || selepreuve.value == 'AVIRON'
-                || selepreuve.value == 'BMX'
-                || selepreuve.value == 'CANOE SLALOM'
-                || selepreuve.value == 'CANOË, COURSE EN LIGNE'
-                || selepreuve.value == 'CYCLISME SUR PISTE'
-                || selepreuve.value == 'ESCRIME'
-                || selepreuve.value == 'GYMNASTIQUE RYTHMIQUE'
-                || selepreuve.value == 'LUTTE'
-                || selepreuve.value == 'NATATION'
-                || selepreuve.value == 'NATATION ARTISTIQUE'
-                || selepreuve.value == 'SKATEBOARD'
-                || selepreuve.value == 'SPORTS EQUESTRES'
-                || selepreuve.value == 'TENNIS DE TABLE'
-                || selepreuve.value == 'TIR'
-                || selepreuve.value == 'TIR A L\'ARC'
-                || selepreuve.value == 'VOILE'
-            ) {
-                med.style.display = "block";
-            }
+        // function ajoutMenuEpreuve() {
+        //     var divss = document.querySelectorAll('.medaillesOff');
+        //     const med = document.querySelector('.med');
+        //     // console.log(med)
+        //     var selepreuve = document.getElementById('selepreuve');
+        //     // console.log(selepreuve.value);
+        //     var sselepreuve = document.getElementById('sselepreuve');
+        //     // console.log(sselepreuve.value);
 
-            if (sselepreuve.value == 'Tremplin 3m'
-                || sselepreuve.value  == 'Haut vol 10m') {
-                med.style.display = "block";
-            }
-            if (sselepreuve.value == 'Heptathlon' || sselepreuve.value == 'Décathlon'
-                || sselepreuve.value == 'Marche sur un marathon en relais mixte')
-            {
-                med.style.display = "none";
-            }
-            else {med.style.display = "none"; }
+        //     if (selepreuve.value == 'ATHLETISME'
+        //         || selepreuve.value == 'AVIRON'
+        //         || selepreuve.value == 'BMX'
+        //         || selepreuve.value == 'CANOE SLALOM'
+        //         || selepreuve.value == 'CANOË, COURSE EN LIGNE'
+        //         || selepreuve.value == 'CYCLISME SUR PISTE'
+        //         || selepreuve.value == 'ESCRIME'
+        //         || selepreuve.value == 'GYMNASTIQUE RYTHMIQUE'
+        //         || selepreuve.value == 'LUTTE'
+        //         || selepreuve.value == 'NATATION'
+        //         || selepreuve.value == 'NATATION ARTISTIQUE'
+        //         || selepreuve.value == 'SKATEBOARD'
+        //         || selepreuve.value == 'SPORTS EQUESTRES'
+        //         || selepreuve.value == 'TENNIS DE TABLE'
+        //         || selepreuve.value == 'TIR'
+        //         || selepreuve.value == 'TIR A L\'ARC'
+        //         || selepreuve.value == 'VOILE'
+        //     ) {
+        //         med.style.display = "block";
+        //     }
 
-        };
+        //     if (sselepreuve.value == 'Tremplin 3m'
+        //         || sselepreuve.value == 'Haut vol 10m') {
+        //         med.style.display = "block";
+        //     }
+        //     if (sselepreuve.value == 'Décathlon'
+        //         || sselepreuve.value == 'Marche sur un marathon en relais mixte') {
+        //         med.style.display = "none";
+        //     }
+        //     // else { med.style.display = "none"; }
 
-     
+        // };
 
-        /**
-         * Fonctions agissants sur le premier menu déroulant
-         * "Discipline"
-         **/
-        // function menuDisciplines() {
-        //     suppMenuEpreuve();
-        //     // afficheMasqSex();
-        // }
+        function menuEpreuve() {
+            /**
+             * ! @change 2e select
+             * */
 
-        /**
-         * Fonctions qui masque ou affiche
-         * les pastilles si le sexe existe ou pas
-         **/
-         function afficheMasqSex() {
+            /**
+            * * Sous tri sexe
+            * On trie les ss-blocs 'choix_sex' ('bloc_hommes' | 'bloc_femmes' | 'bloc_mixte') via un changement de class
+            *  - 'planque'
+            *  - 'center'
+            **/
+
             var femmes = document.querySelectorAll('.F');
             var hommes = document.querySelectorAll('.H');
             var mixte = document.querySelectorAll('.M');
             // console.log(hommes.length);
-
             var bloc_femmes = document.getElementById('bloc_femmes');
             var bloc_hommes = document.getElementById('bloc_hommes');
             var bloc_mixte = document.getElementById('bloc_mixte');
             // console.log(bloc_mixte);
 
-            var medBron = document.querySelectorAll('.bron');
-            var medBronArgOr = document.querySelectorAll('.bronArgOr');
-            var medArgOr = document.querySelectorAll('.argOr');
-            var boites = document.querySelectorAll('.desk');
+            if (femmes.length === 0) {
+                bloc_femmes.classList = 'planque';
+            }
+            // if (femmes.length != 0) {
+            //     bloc_femmes.classList = 'center';
+            // }
+            // else { bloc_femmes.classList = 'center'; }
 
-            var bloc_med_no = document.getElementById('bloc_med_no');
-            var bloc_med_yes = document.getElementById('bloc_med_yes');
-            
-            
-            console.log(medBron.length + medBronArgOr.length+ medArgOr.length);
-          
-            
+            if (hommes.length === 0) {
+                bloc_hommes.classList = 'planque';
+            }
+            else { bloc_hommes.classList = 'center'; }
+
+            if (mixte.length === 0) {
+                bloc_mixte.classList = 'planque';
+            }
+            else { bloc_mixte.classList = 'center'; }
+
+            /**
+           * * Sous tri plage horaire
+           * On trie les ss-blocs 'tv' ('bloc_matin' | 'bloc_am' | 'bloc_soir') via un changement de class
+           *  - 'planque'
+           *  - 'center'
+           **/
+
             var matin = document.querySelectorAll('.Matin');
             var am = document.querySelectorAll('.Am');
             var soir = document.querySelectorAll('.Soir');
@@ -452,76 +454,63 @@
             var bloc_matin = document.getElementById('bloc_matin');
             var bloc_am = document.getElementById('bloc_am');
             var bloc_soir = document.getElementById('bloc_soir');
-
-            // const medm = document.querySelector('.med');
-
-
-            if (femmes.length === 0){
-                bloc_femmes.classList = 'planque';
-            }
-            else {bloc_femmes.classList = 'center';}
-
-            if (hommes.length === 0){
-                bloc_hommes.classList = 'planque';
-            }
-            else {bloc_hommes.classList = 'center';}
-
-            if (mixte.length === 0){
-                bloc_mixte.classList = 'planque';
-            }
-            else {bloc_mixte.classList = 'center';}
-
-
-
-            if (medBron.length + medBronArgOr.length+ medArgOr.length === 0 ){
-                
-                bloc_med_no.classList = 'center';
-                bloc_med_yes.classList = 'planque';
-            }
-            if (medBron.length + medBronArgOr.length+ medArgOr.length > 0 )
-            {
-                bloc_med_yes.classList = 'center';
-                bloc_med_no.classList = 'planque';
-            }
-            
-            if ((medBron.length + medBronArgOr.length+ medArgOr.length) < boites.length
-            || (medBron.length + medBronArgOr.length+ medArgOr.length) == boites.length)
-            {
-                bloc_med_no.classList = 'center';
-                bloc_med_yes.classList = 'center';
-            }
-            // console.log(boites.length)
-            // if (boites.length === 2) {
-            //     medm.style.display = 'none';
-            // }
-
-
-            if (matin.length === 0){
+            var tv = document.getElementById('tv');
+            if (matin.length === 0) {
                 bloc_matin.classList = 'planque';
             }
-            else {bloc_matin.classList = 'center';}
+            else { bloc_matin.classList = 'center'; }
 
-            if (am.length === 0){
+            if (am.length === 0) {
                 bloc_am.classList = 'planque';
             }
-            else {bloc_am.classList = 'center';}
+            else { bloc_am.classList = 'center'; }
 
-            if (soir.length === 0){
+            if (soir.length === 0) {
                 bloc_soir.classList = 'planque';
             }
-            else {bloc_soir.classList = 'center';}
+            else { bloc_soir.classList = 'center'; }
+
+            /**
+             * * Sous tri médailles
+             * On trie le bloc médailles 
+             *  - display block si médailles exist et pas
+             *  - display none si uniquement médailles ou si uniquement non
+            **/
+
+            var medm = document.querySelector('.med');
+
+            var medBron = document.querySelectorAll('.bron');
+            var medBronArgOr = document.querySelectorAll('.bronArgOr');
+            var medArgOr = document.querySelectorAll('.argOr');
+            var boites = document.querySelectorAll('.desk');
+            var totalMed = medBron.length + medBronArgOr.length + medArgOr.length;
+            console.log("Total médailles : " + totalMed);
+            console.log("Total boites : " + boites.length);
+
+            if ((totalMed > 0) && (boites.length === 0)) {
+                medm.style.display = 'none';
+            }
+            if (totalMed === 0) {
+                medm.style.display = 'none';
+            }
+            else {
+                medm.style.display = 'block';
+            }
+            if ((totalMed / 2) === boites.length) {
+                medm.style.display = 'none';
+            }
         };
 
         /**
-        * Fonctions agissants sur le deuxième menu déroulant
+        * ! @change 2e select
+        * *Fonctions agissants sur le deuxième menu déroulant
         * "Epreuve"
         **/
-        function menuEpreuve() {
-            afficheMasqSex();
-            ajoutMenuEpreuve();
-        };
 
-
+        // function menuEpreuve() {
+        //     afficheMasqSex();
+        //     // ajoutMenuEpreuve();
+        // };
     </script>
     <div class="cRetour"></div>
 </body>
