@@ -181,7 +181,7 @@
                                 </label>
                                 <label id="bloc_med_no" class="center">
                                     <input type="checkbox" v-model="medailleOff">
-                                    <span class="medaille"></span>
+                                    <span class="medaille_O"></span>
                                     <span class="libele">Non</span>
                                 </label>
                             </div>
@@ -287,7 +287,7 @@
                             <h1>{{p.Discipline}}</h1>
                         </div>
                         <div :class="[medailles[index]]"></div>
-                        <h3 class="">{{miseEnForme[index]}}</h3>
+                        <h3 class="pre-formatted">{{miseEnForme[index]}}</h3>
                         <hr class="hrWhite">
                         <h2>{{jours[index]}}
                             <br>{{p.Debut}} - {{p.Fin}}
@@ -453,19 +453,19 @@
             var bloc_soir = document.getElementById('bloc_soir');
             var tv = document.getElementById('tv');
             if (matin.length === 0) {
-                bloc_matin.classList = 'planque';
+                bloc_matin.style.display = 'none';
             }
-            else { bloc_matin.classList = 'center'; }
+            else { bloc_matin.style.display = 'block'; }
 
             if (am.length === 0) {
-                bloc_am.classList = 'planque';
+                bloc_am.style.display = 'none';
             }
-            else { bloc_am.classList = 'center'; }
+            else { bloc_am.style.display = 'block'; }
 
             if (soir.length === 0) {
-                bloc_soir.classList = 'planque';
+                bloc_soir.style.display = 'none';
             }
-            else { bloc_soir.classList = 'center'; }
+            else { bloc_soir.style.display = 'block'; }
 
             /**
              * * Sous tri médailles

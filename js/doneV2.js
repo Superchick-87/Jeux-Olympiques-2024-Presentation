@@ -47441,15 +47441,17 @@ const app = Vue.createApp({
 
     miseEnForme: function () {
       return this.personnes.map(function (p) {
-        if (window.innerWidth < 420) {
-          return p.Nom.replace(", ", ' \n')
-            .replace(" kg", ' kg')
+        // if (window.innerWidth < 420) {
+          return p.Nom
             .replace(" kg", ' kg')
             .replace("femmes", 'Femmes')
-            .replace("hommes", 'Hommes');
-        } else {
-          return p.Nom.replace(" - ", '\n').replace(", ", '\n');
-        }
+            .replace("hommes", 'Hommes')
+            .replace("mixte", 'Mixte')
+            .replace(" - ", '\n');
+            // .replace(", ", '\n');
+        // } else {
+          // return p.Nom.replace(" - ", '\n').replace(", ", '\n');
+        // }
 
       })
 
