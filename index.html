@@ -17,6 +17,7 @@
 
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style_V2.css">
+    
     <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
 </head>
 
@@ -192,6 +193,7 @@
                     || (mixte != false)
                     )">
                     <div>
+
                         <legend>Médailles en jeu</legend>
                         <div class="enLigne">
                             <label class="center">
@@ -310,7 +312,7 @@
                         <h2>{{jours[index]}}</br>{{p.Debut}} - {{p.Fin}}</h2>
                         <p>
                             {{p.Lieu}}</p>
-                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                            <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
 
                     </div>
 
@@ -326,7 +328,7 @@
                         <h3 class="x pre-formatted">{{miseEnForme[index]}}</h3>
                         <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
                         <p>{{p.Lieu}}</p>
-                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                        <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
                     </div>
                 </div>
 

@@ -293,7 +293,7 @@
                             <br>{{p.Debut}} - {{p.Fin}}
                         </h2>
                         <p> {{p.Lieu}}</p>
-                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                        <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
                     </div>
                     <div class="large mob" :class="[couleurSex[index]],[tele[index]]">
                         <div class="flexMob">
@@ -307,7 +307,7 @@
                         <h3 class="x">{{miseEnForme[index]}}</h3>
                         <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
                         <p>{{p.Lieu}}</p>
-                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                       <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">   
                     </div>
                 </div>
                 <div v-else></div>
