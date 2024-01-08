@@ -8,8 +8,8 @@
     <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 
-    <script src="https://unpkg.com/vue@next"></script>
-    <!-- <script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script> -->
+    <!-- <script src="https://unpkg.com/vue@next"></script> -->
+    <script src="https://unpkg.com/vue@3.1.1/dist/vue.global.prod.js"></script>
 
 
     <!-- * Sert à faire apparaître au défilement * -->
@@ -28,7 +28,7 @@
 </head>
 
 <body class="fond">
-    <!-- <div class="fond"></div> -->
+
     <script>
         /**
          * Sert à faire apparaître la flêche au défilement
@@ -59,7 +59,13 @@
     </script>
     <div id="app">
         <fieldset>
-            <div class="selctMode">Le programme des JO de Paris 2024</div>
+            <div class="lienTop">
+                <img class="logo" src="images/Logo_SO.png" alt="Sud Ouest">
+            </div>
+            <h4><span>Toute l'actualité des JO de Paris 2024 sur </span><span><a
+                        href="https://www.sudouest.fr/sport/jeux-olympiques/" target="_blank">sudouest.fr</a></span>
+            </h4>
+            <div class="selctMode">Le programme</div>
             <div class="enLigne">
                 <div id="sportsBouton">
                     <input type="radio" />
@@ -293,7 +299,7 @@
                             <br>{{p.Debut}} - {{p.Fin}}
                         </h2>
                         <p> {{p.Lieu}}</p>
-                        <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
+                        <img class="tv" :src="'images/'+p.TV+'.png'">
                     </div>
                     <div class="large mob" :class="[couleurSex[index]],[tele[index]]">
                         <div class="flexMob">
@@ -307,7 +313,7 @@
                         <h3 class="x">{{miseEnForme[index]}}</h3>
                         <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
                         <p>{{p.Lieu}}</p>
-                       <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">   
+                        <img class="tv" :src="'images/'+p.TV+'.png'">
                     </div>
                 </div>
                 <div v-else></div>

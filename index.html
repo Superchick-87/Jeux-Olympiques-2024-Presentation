@@ -17,7 +17,6 @@
 
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style_V2.css">
-    
     <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
 </head>
 
@@ -54,7 +53,13 @@
 
     <div id="app">
         <fieldset>
-            <div class="selctMode">Le programme des JO de Paris 2024</div>
+            <div class="lienTop">
+                <img class="logo" src="images/Logo_SO.png" alt="Sud Ouest">
+            </div>
+            <h4><span>Toute l'actualité des JO de Paris 2024 sur </span><span><a
+                        href="https://www.sudouest.fr/sport/jeux-olympiques/" target="_blank">sudouest.fr</a></span>
+            </h4>
+            <div class="selctMode">Le programme</div>
             <div class="enLigne">
                 <div>
                     <input type="radio" checked />
@@ -193,7 +198,6 @@
                     || (mixte != false)
                     )">
                     <div>
-
                         <legend>Médailles en jeu</legend>
                         <div class="enLigne">
                             <label class="center">
@@ -312,7 +316,7 @@
                         <h2>{{jours[index]}}</br>{{p.Debut}} - {{p.Fin}}</h2>
                         <p>
                             {{p.Lieu}}</p>
-                            <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
+                        <img class="tv" :src="'images/'+p.TV+'.png'">
 
                     </div>
 
@@ -328,7 +332,7 @@
                         <h3 class="x pre-formatted">{{miseEnForme[index]}}</h3>
                         <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
                         <p>{{p.Lieu}}</p>
-                        <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
+                        <img class="tv" :src="'images/'+p.TV+'.png'">
                     </div>
                 </div>
 

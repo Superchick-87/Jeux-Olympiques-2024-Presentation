@@ -33,6 +33,18 @@ hr {
     opacity: 0.5;
 }
 
+.lienTop {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo {
+    max-width: 80px;
+    height: auto;
+    padding-bottom: 20px;
+    margin: 0 auto;
+}
+
 .hrWhite {
     color: rgb(255, 255, 255);
     opacity: 0.5;
@@ -92,6 +104,21 @@ h3 {
     line-height: 21px;
     font-size: 1em;
     font-weight: 200;
+}
+
+h4 {
+    margin-top: 0px;
+    margin-bottom: 5px;
+    color: rgb(0, 0, 0);
+    /* line-height: 21px; */
+    font-size: 1.7rem;
+    font-weight: 200;
+    font-family: 'Cormorant', serif;
+}
+
+a {
+    color: #da131f;
+    text-decoration: underline;
 }
 
 button {
@@ -364,6 +391,7 @@ input[type=checkbox]:checked~.medaille {
     background-color: #E9B824;
     cursor: pointer;
 }
+
 input[type=checkbox]:checked~.medaille_O {
     background-color: #d09d00;
     cursor: pointer;
@@ -399,6 +427,7 @@ input[type=checkbox]:checked~.progTV {
     /* background: url("../images/filtres.png") no-repeat; */
     background-color: #d3a0088b;
 }
+
 label {
     display: flex;
     flex-direction: column;
