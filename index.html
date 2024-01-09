@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sud-Ouest - Le programme des Jeux Olympiques 2024</title>
+    <meta name="description" content="Voici le calendrier complet des Jeux olympiques de Paris, dans une présentation qui vous permettra facilement de découvrir le programme jour par jour">
+    <title>Sud-Ouest - Le programme des Jeux Olympiques 2024 par date</title>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <!-- <script src="https://unpkg.com/vue@next"></script> -->
 
@@ -17,6 +18,7 @@
 
     <!-- <link rel="stylesheet" href="css/style.css"> -->
     <link rel="stylesheet" href="css/style_V2.css">
+    
     <!-- <link href="https://unpkg.com/pattern.css" rel="stylesheet"> -->
 </head>
 
@@ -54,12 +56,15 @@
     <div id="app">
         <fieldset>
             <div class="lienTop">
+                <a href="https://www.sudouest.fr" target="_blank">
                 <img class="logo" src="images/Logo_SO.png" alt="Sud Ouest">
+                </a>
             </div>
-            <h4><span>Toute l'actualité des JO de Paris 2024 sur </span><span><a
-                        href="https://www.sudouest.fr/sport/jeux-olympiques/" target="_blank">sudouest.fr</a></span>
+            <h4><span>Toute l'<a href="https://www.sudouest.fr/sport/jeux-olympiques/" target="_blank">actualité des JO de Paris 2024
+               </a> sur sudouest.fr
+            </span>
             </h4>
-            <div class="selctMode">Le programme</div>
+            <div class="selctMode">Le programme des JO de Paris 2024</div>
             <div class="enLigne">
                 <div>
                     <input type="radio" checked />
@@ -198,6 +203,7 @@
                     || (mixte != false)
                     )">
                     <div>
+
                         <legend>Médailles en jeu</legend>
                         <div class="enLigne">
                             <label class="center">
@@ -316,7 +322,7 @@
                         <h2>{{jours[index]}}</br>{{p.Debut}} - {{p.Fin}}</h2>
                         <p>
                             {{p.Lieu}}</p>
-                        <!-- <img class="tv" :src="'images/'+p.TV+'.png'"> -->
+                            <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
 
                     </div>
 
@@ -332,7 +338,7 @@
                         <h3 class="x pre-formatted">{{miseEnForme[index]}}</h3>
                         <h2>{{jours[index]}} | {{p.Debut}} - {{p.Fin}}</h2>
                         <p>{{p.Lieu}}</p>
-                        <img class="tv" :src="'images/'+p.TV+'.png'">
+                        <img v-if="p.Tv != ''" class="tv" :src="'images/'+p.Tv+'.png'">
                     </div>
                 </div>
 
